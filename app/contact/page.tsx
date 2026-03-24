@@ -155,10 +155,10 @@ export default function ContactPage() {
                         className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm font-body ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                       >
                         <option value="">Büdcə aralığı seçin</option>
-                        <option value="under-1k">$1.000-dən az</option>
-                        <option value="1k-5k">$1.000 – $5.000</option>
-                        <option value="5k-10k">$5.000 – $10.000</option>
-                        <option value="10k+">$10.000+</option>
+                        <option value="under-300">300 ₼-dən az</option>
+                        <option value="300-600">300 ₼ – 600 ₼</option>
+                        <option value="600-1000">600 ₼ – 1.000 ₼</option>
+                        <option value="1000+">1.000 ₼+</option>
                       </select>
                     </div>
                   </div>
