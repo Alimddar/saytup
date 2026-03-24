@@ -258,8 +258,8 @@ export const PROCESS_STEPS: ProcessStep[] = [
     id: 'launch',
     number: '04',
     icon: 'Rocket',
-    title: 'Buraxılış və Dəstək',
-    description: 'Texniki yerləşdirməni tam öhdəmizə götürürük. Buraxılışdan sonra 1 il ərzində dəstək xidməti göstəririk — saytınız həmişə işlək qalır.',
+    title: 'Buraxılış və Davamlılıq',
+    description: 'Texniki yerləşdirməni tam öhdəmizə götürürük. Buraxılışdan sonra seçdiyiniz paketə uyğun dəstək xidməti ilə saytınız həmişə işlək və yenilənmiş qalır.',
   },
 ];
 

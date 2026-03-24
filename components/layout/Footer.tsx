@@ -98,9 +98,6 @@ export default function Footer() {
           <p className="text-sm text-white/40 font-body">
             © 2026 Saytup.az — Bütün hüquqlar qorunur
           </p>
-          <p className="text-sm text-white/40 font-body">
-            Next.js ilə Bakıda hazırlanıb ❤️
-          </p>
         </div>
       </Container>
     </footer>
