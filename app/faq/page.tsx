@@ -81,12 +81,6 @@ const FAQ_ITEMS = [
   },
 ];
 
-const categories = [
-  { label: 'Hamısı', value: 'all' },
-  { label: 'Proses', value: 'proses' },
-  { label: 'Qiymətlər', value: 'qiymət' },
-  { label: 'Texniki', value: 'texniki' },
-];
 
 function FaqItem({ item, isOpen, onToggle }: {
   item: typeof FAQ_ITEMS[0];
