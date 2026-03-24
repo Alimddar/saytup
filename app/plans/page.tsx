@@ -1,4 +1,4 @@
-import { Check, X, Zap, Star, Crown } from 'lucide-react';
+import { Check, Zap, Star, Crown } from 'lucide-react';
 import Container from '@/components/layout/Container';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -11,56 +11,76 @@ export const metadata: Metadata = {
 const PLANS = [
   {
     id: 'starter',
-    name: 'Başlanğıc',
-    subtitle: 'Kiçik bizneslər üçün',
+    name: 'Small',
+    subtitle: 'Yeni başlayan bizneslər üçün',
     icon: Zap,
-    price: '800',
+    originalPrice: '450',
+    price: '225',
     currency: '₼',
     period: 'layihə başına',
+    discount: '50%',
     color: 'from-slate-500 to-slate-700',
-    accentColor: 'text-slate-600',
-    badgeColor: 'bg-slate-100 text-slate-700',
     borderColor: 'border-gray-200',
     popular: false,
     features: [
-      { text: '5 səhifəyə qədər', included: true },
-      { text: 'Responsiv (mobil uyğun) dizayn', included: true },
-      { text: 'Əsas SEO optimallaşdırması', included: true },
-      { text: 'Əlaqə forması', included: true },
-      { text: 'Sosial media linklər', included: true },
-      { text: '3 aylıq pulsuz dəstək', included: true },
-      { text: 'E-ticarət funksionallığı', included: false },
-      { text: 'Xüsusi animasiyalar', included: false },
-      { text: 'CMS inteqrasiyası', included: false },
-      { text: 'Xüsusi API inteqrasiyası', included: false },
+      'Responsiv dizayn (Mobil uyumlu)',
+      'Yarı xüsusi dizayn',
+      '2 dəfə düzəliş paketi',
+      '1–3 səhifə',
+      'Əlaqə forması',
+      'SSL sertifikatı',
+      'Google Maps inteqrasiyası',
+      '1 il .az domen',
+      '1 il hosting',
+      'SEO inteqrasiyası',
+      'WhatsApp düyməsi',
+    ],
+    suitableFor: [
+      'Yeni fəaliyyətə başlayan bizneslər üçün',
+      'Yalnız 1 məhsul və ya 1 xidmət təqdim edənlər üçün',
+      'Müştərilərin sizi asan tapmasını istəyənlər üçün',
+      'Sadə, sürətli və büdcəyə uyğun sayt axtaranlar üçün',
     ],
     cta: 'Başla',
     ctaHref: '/contact',
   },
   {
-    id: 'standard',
-    name: 'Standart',
+    id: 'medium',
+    name: 'Medium',
     subtitle: 'Böyüməkdə olan bizneslər üçün',
     icon: Star,
-    price: '2,000',
+    originalPrice: '900',
+    price: '450',
     currency: '₼',
     period: 'layihə başına',
+    discount: '50%',
     color: 'from-brand-blue to-brand-blue-dark',
-    accentColor: 'text-brand-blue',
-    badgeColor: 'bg-brand-blue-light text-brand-blue',
     borderColor: 'border-brand-blue',
     popular: true,
     features: [
-      { text: '15 səhifəyə qədər', included: true },
-      { text: 'Responsiv dizayn + animasiyalar', included: true },
-      { text: 'Tam SEO paketi', included: true },
-      { text: 'Əlaqə forması + xəritə', included: true },
-      { text: 'Sosial media inteqrasiyası', included: true },
-      { text: '6 aylıq pulsuz dəstək', included: true },
-      { text: 'E-ticarət (50 məhsula qədər)', included: true },
-      { text: 'Xüsusi animasiyalar', included: true },
-      { text: 'CMS inteqrasiyası', included: true },
-      { text: 'Xüsusi API inteqrasiyası', included: false },
+      'Responsiv dizayn (Mobil uyumlu)',
+      'Xüsusi dizayn',
+      '3 dəfə düzəliş paketi',
+      '5–7 səhifə',
+      '1 il .az domen',
+      '1 il hosting',
+      'Google Maps inteqrasiyası',
+      'SEO inteqrasiyası',
+      'Google Analytics qurulumu',
+      'Əlaqə forması',
+      'SSL sertifikatı',
+      'WhatsApp düyməsi',
+      'Bloq bölməsi',
+      'Sosial media inteqrasiyası',
+      'Korporativ e-poçt (1 ədəd)',
+      '1 ay pulsuz nəzarət',
+    ],
+    suitableFor: [
+      'Artıq fəaliyyətdə olan bizneslər üçün',
+      'Bir neçə məhsul və ya xidmət təqdim edənlər üçün',
+      'Daha geniş və funksional sayt istəyənlər üçün',
+      'Müştəri axınını artırmaq istəyənlər üçün',
+      'Peşəkar görünüşə önəm verənlər üçün',
     ],
     cta: 'Ətraflı Müzakirə Et',
     ctaHref: '/contact',
@@ -70,25 +90,42 @@ const PLANS = [
     name: 'Premium',
     subtitle: 'Böyük layihələr üçün',
     icon: Crown,
-    price: '5,000',
+    originalPrice: '1,250',
+    price: '625',
     currency: '₼',
     period: 'layihə başına',
+    discount: '50%',
     color: 'from-orange-500 to-orange-700',
-    accentColor: 'text-brand-orange',
-    badgeColor: 'bg-brand-orange-light text-brand-orange',
     borderColor: 'border-orange-200',
     popular: false,
     features: [
-      { text: 'Limitsiz səhifə', included: true },
-      { text: 'Premium dizayn + mikro animasiyalar', included: true },
-      { text: 'Tam SEO + performans auditi', included: true },
-      { text: 'Çox kanallı əlaqə sistemi', included: true },
-      { text: 'Tam sosial media ekosistemi', included: true },
-      { text: '12 aylıq pulsuz dəstək', included: true },
-      { text: 'Tam e-ticarət platforması', included: true },
-      { text: 'Premium animasiyalar', included: true },
-      { text: 'Fərdi CMS sistemi', included: true },
-      { text: 'Xüsusi API inteqrasiyası', included: true },
+      'Responsiv dizayn (Mobil uyumlu)',
+      'Xüsusi dizayn',
+      '4 dəfə düzəliş paketi',
+      '7+ səhifə',
+      '1 il .az domen',
+      '1 il hosting',
+      'Google Maps inteqrasiyası',
+      'SEO inteqrasiyası',
+      'Google Analytics qurulumu',
+      'Əlaqə forması',
+      'SSL sertifikatı',
+      'WhatsApp düyməsi',
+      'Sosial media inteqrasiyası',
+      'Çoxlu dil dəstəyi',
+      'Rezervasiya / sifariş sistemi',
+      'Performans optimizasiyası',
+      '2 ay pulsuz nəzarət',
+      'Google My Business quraşdırma',
+      'Korporativ e-poçt (2 ədəd)',
+    ],
+    suitableFor: [
+      'Orta və böyük bizneslər üçün',
+      'Çoxsaylı məhsul və ya xidmət təqdim edənlər üçün',
+      'Online sifariş və ya rezervasiya sistemi istəyənlər üçün',
+      'Bir neçə dildə fəaliyyət göstərən və ya genişlənmək istəyənlər üçün',
+      'Yüksək performans və peşəkar sayt tələb edənlər üçün',
+      'Saytın davamlı işləməsi və dəstək istəyənlər üçün',
     ],
     cta: 'Layihəni Müzakirə Et',
     ctaHref: '/contact',
@@ -96,15 +133,17 @@ const PLANS = [
 ];
 
 const COMPARISON_FEATURES = [
-  { name: 'Səhifə sayı', starter: '5-ə qədər', standard: '15-ə qədər', premium: 'Limitsiz' },
-  { name: 'Dizayn', starter: 'Standart', standard: 'Xüsusi', premium: 'Premium' },
-  { name: 'Animasiyalar', starter: '—', standard: 'Əsas', premium: 'Tam' },
-  { name: 'SEO', starter: 'Əsas', standard: 'Tam', premium: 'Tam + Audit' },
-  { name: 'E-ticarət', starter: '—', standard: '50 məhsul', premium: 'Limitsiz' },
-  { name: 'CMS', starter: '—', standard: 'Standart', premium: 'Fərdi' },
-  { name: 'API inteqrasiyası', starter: '—', standard: '—', premium: 'Tam' },
-  { name: 'Dəstək müddəti', starter: '3 ay', standard: '6 ay', premium: '12 ay' },
-  { name: 'Çatdırılma müddəti', starter: '2–3 həftə', standard: '4–8 həftə', premium: '8–16 həftə' },
+  { name: 'Səhifə sayı', starter: '1–3', standard: '5–7', premium: '7+' },
+  { name: 'Dizayn', starter: 'Yarı xüsusi', standard: 'Xüsusi', premium: 'Xüsusi' },
+  { name: 'Düzəliş paketi', starter: '2 dəfə', standard: '3 dəfə', premium: '4 dəfə' },
+  { name: 'SEO', starter: 'Var', standard: 'Var', premium: 'Var' },
+  { name: 'Google Analytics', starter: '—', standard: 'Var', premium: 'Var' },
+  { name: 'Bloq bölməsi', starter: '—', standard: 'Var', premium: 'Var' },
+  { name: 'Çoxlu dil', starter: '—', standard: '—', premium: 'Var' },
+  { name: 'Rezervasiya sistemi', starter: '—', standard: '—', premium: 'Var' },
+  { name: 'Korporativ e-poçt', starter: '—', standard: '1 ədəd', premium: '2 ədəd' },
+  { name: 'Pulsuz nəzarət', starter: '—', standard: '1 ay', premium: '2 ay' },
+  { name: 'Domen + Hosting', starter: '1 il', standard: '1 il', premium: '1 il' },
 ];
 
 export default function PlansPage() {
@@ -126,6 +165,9 @@ export default function PlansPage() {
               Hər ölçüdə bizneslər üçün şəffaf qiymətlər. Gizli ödəniş yoxdur.
               Qərar vermədən əvvəl pulsuz konsultasiya üçün bizimlə əlaqə saxlayın.
             </p>
+            <div className="mt-6 inline-flex items-center gap-2 bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-sm font-semibold px-5 py-2.5 rounded-full">
+              🎉 Bütün paketlərdə 50% endirim — məhdud müddətlidir!
+            </div>
           </div>
         </Container>
       </section>
@@ -133,26 +175,32 @@ export default function PlansPage() {
       {/* Pricing Cards */}
       <section className="py-12 sm:py-16 md:py-20">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto items-start">
             {PLANS.map((plan) => {
               const Icon = plan.icon;
               return (
                 <div
                   key={plan.id}
-                  className={`relative rounded-3xl border-2 bg-white overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-2xl ${
+                  className={`relative rounded-3xl border-2 bg-white flex flex-col transition-shadow duration-300 hover:shadow-2xl ${
                     plan.popular
-                      ? 'border-brand-blue shadow-xl shadow-brand-blue/20 scale-105'
+                      ? 'border-brand-blue shadow-xl shadow-brand-blue/20 md:-mt-4 md:mb-4 will-change-transform isolate'
                       : plan.borderColor
                   }`}
+                  style={plan.popular ? { transform: 'translateZ(0)' } : undefined}
                 >
                   {plan.popular && (
-                    <div className="bg-brand-blue text-white text-sm font-semibold text-center py-2">
+                    <div className="bg-brand-blue text-white text-sm font-semibold text-center py-2 rounded-t-[22px]">
                       Ən Çox Seçilən
                     </div>
                   )}
 
                   {/* Header */}
-                  <div className={`bg-gradient-to-br ${plan.color} p-6 sm:p-8 text-white`}>
+                  <div
+                    className={`bg-gradient-to-br ${plan.color} p-6 sm:p-8 text-white ${
+                      plan.popular ? '' : 'rounded-t-[22px]'
+                    }`}
+                    style={{ transform: 'translateZ(0)' }}
+                  >
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center">
                         <Icon className="w-6 h-6" />
@@ -162,38 +210,51 @@ export default function PlansPage() {
                         <p className="text-white/70 text-sm">{plan.subtitle}</p>
                       </div>
                     </div>
-                    <div className="flex items-end gap-1">
+
+                    {/* Pricing */}
+                    <div className="flex items-center gap-3">
                       <span className="text-4xl font-heading font-700">
                         {plan.currency}{plan.price}
                       </span>
+                      <div className="flex flex-col">
+                        <span className="text-white/50 line-through text-sm">
+                          {plan.currency}{plan.originalPrice}
+                        </span>
+                        <span className="bg-white/20 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                          -{plan.discount}
+                        </span>
+                      </div>
                     </div>
                     <p className="text-white/70 text-sm mt-1">{plan.period}</p>
                   </div>
 
-                  {/* Features */}
+                  {/* Features + Suitable For */}
                   <div className="p-6 sm:p-8 flex-1 flex flex-col">
-                    <ul className="space-y-3 flex-1">
+                    <ul className="space-y-2.5 flex-1">
                       {plan.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          {feature.included ? (
-                            <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
-                              <Check className="w-3 h-3 text-green-600" />
-                            </div>
-                          ) : (
-                            <div className="w-5 h-5 rounded-full bg-gray-100 flex items-center justify-center shrink-0 mt-0.5">
-                              <X className="w-3 h-3 text-gray-400" />
-                            </div>
-                          )}
-                          <span
-                            className={`text-sm ${
-                              feature.included ? 'text-brand-dark' : 'text-gray-400'
-                            }`}
-                          >
-                            {feature.text}
-                          </span>
+                          <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                            <Check className="w-3 h-3 text-green-600" />
+                          </div>
+                          <span className="text-sm text-brand-dark">{feature}</span>
                         </li>
                       ))}
                     </ul>
+
+                    {/* Who it's for */}
+                    <div className="mt-6 pt-6 border-t border-gray-100">
+                      <p className="text-xs font-semibold text-brand-gray uppercase tracking-wider mb-3">
+                        Kimlər üçün uyğundur?
+                      </p>
+                      <ul className="space-y-1.5">
+                        {plan.suitableFor.map((item, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <span className="text-brand-blue mt-1 shrink-0 text-xs">✓</span>
+                            <span className="text-xs text-brand-gray">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
                     <Link
                       href={plan.ctaHref}
@@ -214,7 +275,7 @@ export default function PlansPage() {
           </div>
 
           <p className="text-center text-brand-gray text-sm mt-8">
-            * Göstərilən qiymətlər təxminidir. Yekun qiymət layihənin tələblərinə əsasən müəyyənləşdirilir.
+            * Endirim müddəti məhduddur. Qiymətlər layihənin tələblərinə əsasən dəyişə bilər.
           </p>
         </Container>
       </section>
@@ -237,10 +298,10 @@ export default function PlansPage() {
                 <thead>
                   <tr className="bg-brand-dark text-white">
                     <th className="text-left py-4 px-6 font-semibold rounded-tl-2xl">Xüsusiyyət</th>
-                    <th className="py-4 px-6 font-semibold text-center">Başlanğıc</th>
+                    <th className="py-4 px-6 font-semibold text-center">Small</th>
                     <th className="py-4 px-6 font-semibold text-center bg-brand-blue">
                       <span className="flex flex-col items-center gap-1">
-                        Standart
+                        Medium
                         <span className="text-xs font-normal bg-brand-orange px-2 py-0.5 rounded-full">
                           Populyar
                         </span>
