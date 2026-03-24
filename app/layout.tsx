@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { plusJakartaSans } from '@/lib/fonts';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import WhatsAppButton from '@/components/shared/WhatsAppButton';
 import { Providers } from './providers';
 import './globals.css';
 
@@ -46,6 +47,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <WhatsAppButton />
         </Providers>
       </body>
     </html>
