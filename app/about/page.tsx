@@ -57,10 +57,10 @@ const team = [
 ];
 
 const differentiators = [
-  { title: 'Yerli Anlayış', description: 'Azərbaycan bazarını və onun xüsusi ehtiyaclarını bilirik — dil, ödəniş sistemləri, iş mədəniyyəti.' },
-  { title: 'Müasir Texnologiya', description: 'React, Next.js, TypeScript — qlobal şirkətlər tərəfindən istifadə olunan alətlər, kiçik biznes qiymətləriylə.' },
-  { title: 'Sabit Qiymətli Layihələr', description: 'Saatlıq hesablama sürprizləri yoxdur. Qiyməti əvvəlcədən razılaşırıq və ona sadiq qalırıq.' },
-  { title: 'Pulsuz 1 İllik Dəstək', description: 'Buraxılışdan sonra da yanınızdayıq. Səhvlər, yeniləmələr, suallar — 12 ay ərzində daxildir.' },
+  { title: 'Yerli Bazar Bilikləri', description: 'Azərbaycan biznes mühitini, istehlakçı davranışını və rəqəmsal ehtiyacları dərindən bilirik. Yerli kontekstə uyğun həllər təqdim edirik.' },
+  { title: 'Sənaye Standartı Texnologiya', description: 'React, Next.js, TypeScript — dünyanın aparıcı texnologiya şirkətlərinin etibar etdiyi stack. Miqyaslana bilən, sürətli və təhlükəsiz quruluş.' },
+  { title: 'Şəffaf Qiymət Siyasəti', description: 'Gizli ödənişlər yoxdur. Layihə başlamazdan əvvəl tam məbləği razılaşırıq — büdcəniz həmişə nəzarətinizdə olur.' },
+  { title: 'Nəticəyönümlü Yanaşma', description: 'Sadəcə sayt deyil, biznesinizin rəqəmsal motoru qururuq. Hər qərar istifadəçi təcrübəsi və konversiya məntiqinə əsaslanır.' },
 ];
 
 export default function AboutPage() {
@@ -84,8 +84,8 @@ export default function AboutPage() {
           <SectionHeading title="Dəyərlərimiz" subtitle="Hər şeyi idarə edən prinsiplərimiz" className="mb-14" />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {values.map((value, index) => (
-              <ScrollReveal key={value.title} delay={index * 0.1}>
-                <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <ScrollReveal key={value.title} delay={index * 0.1} className="h-full">
+                <div className="bg-white rounded-2xl p-6 shadow-sm h-full flex flex-col">
                   <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${value.gradient} mb-4 flex items-center justify-center`}>
                     <value.Icon className="w-6 h-6 text-white" />
                   </div>
