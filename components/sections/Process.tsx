@@ -11,7 +11,7 @@ export default function Process() {
       <Container>
         <SectionHeading
           title="Necə İşləyirik"
-          subtitle="İdeadan buraxılışa sadə, şəffaf bir proses"
+          subtitle="İdeadan buraxılışa strukturlu və şəffaf iş prosesi"
           className="mb-14"
         />
         <div className="relative">
