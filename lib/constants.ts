@@ -13,7 +13,9 @@ export const NAV_LINKS = [
   { label: 'Ana Səhifə', href: '/' },
   { label: 'Xidmətlər', href: '/services' },
   { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Paketlər', href: '/plans' },
   { label: 'Haqqımızda', href: '/about' },
+  { label: 'FAQ', href: '/faq' },
   { label: 'Əlaqə', href: '/contact' },
 ];
 
@@ -294,6 +296,8 @@ export const FOOTER_LINKS = {
   company: [
     { label: 'Haqqımızda', href: '/about' },
     { label: 'Portfolio', href: '/portfolio' },
+    { label: 'Paketlər', href: '/plans' },
+    { label: 'FAQ', href: '/faq' },
     { label: 'Əlaqə', href: '/contact' },
   ],
 };

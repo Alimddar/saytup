@@ -35,7 +35,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 min-h-[420px] flex items-end overflow-hidden">
+      <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 min-h-[300px] sm:min-h-[420px] flex items-end overflow-hidden">
         {/* Background image */}
         <Image
           src={PROJECT_IMAGES[project.slug] ?? project.image}
@@ -84,7 +84,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       </section>
 
       {/* Details */}
-      <section className="py-20 bg-brand-light">
+      <section className="py-12 sm:py-16 md:py-20 bg-brand-light">
         <Container>
           <div className="max-w-3xl mx-auto">
             <ScrollReveal>
@@ -92,7 +92,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               <p className="text-brand-gray font-body leading-relaxed mb-12">{project.fullDescription}</p>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
               {[
                 { label: 'Problem', content: project.challenge, color: 'bg-red-50 border-red-100', accent: 'text-red-500' },
                 { label: 'Həll', content: project.solution, color: 'bg-brand-blue-light border-brand-blue/10', accent: 'text-brand-blue' },

@@ -6,7 +6,7 @@ import { TESTIMONIALS } from '@/lib/constants';
 
 export default function Testimonials() {
   return (
-    <section className="py-20 lg:py-24 bg-brand-dark">
+    <section className="py-12 sm:py-16 lg:py-24 bg-brand-dark">
       <Container>
         <SectionHeading
           title="Müştərilərimiz Nə Deyir"

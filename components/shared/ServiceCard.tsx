@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import * as Icons from 'lucide-react';
 import { Service } from '@/lib/constants';
 import { cn } from '@/lib/utils';
@@ -15,7 +15,7 @@ export default function ServiceCard({ service, className }: ServiceCardProps) {
   const IconComponent = Icons[service.icon as keyof typeof Icons] as React.ComponentType<LucideProps> | undefined;
 
   return (
-    <motion.div
+    <m.div
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2, ease: 'easeOut' }}
       className={cn(
@@ -32,6 +32,6 @@ export default function ServiceCard({ service, className }: ServiceCardProps) {
 
       <h3 className="font-heading font-semibold text-brand-dark text-lg mb-2">{service.title}</h3>
       <p className="text-sm text-brand-gray font-body leading-relaxed">{service.description}</p>
-    </motion.div>
+    </m.div>
   );
 }

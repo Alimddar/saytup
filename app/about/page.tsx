@@ -64,7 +64,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-32 pb-20">
+      <section className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-24 sm:pt-32 pb-12 sm:pb-20">
         <Container>
           <div className="text-white max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-6">Saytup Haqqında</h1>
@@ -76,10 +76,10 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20 lg:py-24 bg-brand-light">
+      <section className="py-12 sm:py-16 lg:py-24 bg-brand-light">
         <Container>
           <SectionHeading title="Dəyərlərimiz" subtitle="Hər şeyi idarə edən prinsiplərimiz" className="mb-14" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {values.map((value, index) => (
               <ScrollReveal key={value.title} delay={index * 0.1}>
                 <div className="bg-white rounded-2xl p-6 shadow-sm">
@@ -94,10 +94,10 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <Container>
           <SectionHeading title="Komandamız" subtitle="Kiçik komanda, böyük nəticələr" className="mb-14" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {team.map((member, index) => (
               <ScrollReveal key={member.name} delay={index * 0.1}>
                 <div className="text-center">
@@ -115,7 +115,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 lg:py-24 bg-brand-light">
+      <section className="py-12 sm:py-16 lg:py-24 bg-brand-light">
         <Container>
           <SectionHeading title="Niyə Bizi Seçin" subtitle="Saytup ilə işləməyi fərqləndirən nədir" className="mb-14" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

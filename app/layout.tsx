@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { instrumentSans, dmSans } from '@/lib/fonts';
+import { plusJakartaSans } from '@/lib/fonts';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import { Providers } from './providers';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -36,11 +37,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="az" className={`${instrumentSans.variable} ${dmSans.variable}`}>
+    <html lang="az" className={plusJakartaSans.variable}>
+      <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className="font-body antialiased" suppressHydrationWarning>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

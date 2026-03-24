@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 interface ScrollRevealProps {
@@ -11,10 +11,10 @@ interface ScrollRevealProps {
 }
 
 const directionVariants = {
-  up: { y: 30, opacity: 0 },
-  down: { y: -30, opacity: 0 },
-  left: { x: 30, opacity: 0 },
-  right: { x: -30, opacity: 0 },
+  up: { y: 20, opacity: 0 },
+  down: { y: -20, opacity: 0 },
+  left: { x: 20, opacity: 0 },
+  right: { x: -20, opacity: 0 },
 };
 
 export default function ScrollReveal({
@@ -24,14 +24,14 @@ export default function ScrollReveal({
   className,
 }: ScrollRevealProps) {
   return (
-    <motion.div
+    <m.div
       initial={directionVariants[direction]}
       whileInView={{ x: 0, y: 0, opacity: 1 }}
-      viewport={{ once: true, margin: '-100px' }}
-      transition={{ duration: 0.6, delay, ease: 'easeOut' }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.35, delay, ease: 'easeOut' }}
       className={cn(className)}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

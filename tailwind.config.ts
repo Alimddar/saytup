@@ -62,8 +62,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        heading: ['var(--font-instrument-sans)', 'sans-serif'],
-        body: ['var(--font-dm-sans)', 'sans-serif'],
+        heading: ['var(--font-plus-jakarta-sans)', 'sans-serif'],
+        body: ['var(--font-plus-jakarta-sans)', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

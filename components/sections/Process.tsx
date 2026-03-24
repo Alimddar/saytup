@@ -7,7 +7,7 @@ import { PROCESS_STEPS } from '@/lib/constants';
 
 export default function Process() {
   return (
-    <section className="py-20 lg:py-24 bg-white">
+    <section className="py-12 sm:py-16 lg:py-24 bg-white">
       <Container>
         <SectionHeading
           title="Necə İşləyirik"

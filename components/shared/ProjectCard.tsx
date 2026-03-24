@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
@@ -16,7 +16,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, className }: ProjectCardProps) {
   return (
-    <motion.div
+    <m.div
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2, ease: 'easeOut' }}
       className={cn('group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col h-full', className)}
@@ -65,6 +65,6 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
           ))}
         </div>
       </div>
-    </motion.div>
+    </m.div>
   );
 }

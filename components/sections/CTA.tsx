@@ -5,10 +5,10 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 
 export default function CTA() {
   return (
-    <section className="py-20 lg:py-24 bg-brand-light">
+    <section className="py-12 sm:py-16 lg:py-24 bg-brand-light">
       <Container>
         <ScrollReveal>
-          <div className="bg-white rounded-3xl p-12 lg:p-16 text-center shadow-sm border border-brand-blue/10 relative overflow-hidden">
+          <div className="bg-white rounded-3xl p-6 sm:p-10 lg:p-16 text-center shadow-sm border border-brand-blue/10 relative overflow-hidden">
             {/* Background accent */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-blue-light rounded-full -translate-y-32 translate-x-32 opacity-50" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-brand-orange-light rounded-full translate-y-24 -translate-x-24 opacity-50" />

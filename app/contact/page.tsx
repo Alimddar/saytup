@@ -64,7 +64,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-32 pb-20">
+      <section className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-24 sm:pt-32 pb-12 sm:pb-20">
         <Container>
           <div className="text-center text-white">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4">Bizimlə Əlaqə</h1>
@@ -75,11 +75,11 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      <section className="py-20 bg-brand-light">
+      <section className="py-12 sm:py-16 md:py-20 bg-brand-light">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-12">
             {/* Form */}
-            <div className="lg:col-span-3 bg-white rounded-3xl p-8 shadow-sm">
+            <div className="lg:col-span-3 bg-white rounded-3xl p-5 sm:p-8 shadow-sm">
               {submitted ? (
                 <div className="flex flex-col items-center justify-center h-full py-16 text-center">
                   <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-6">

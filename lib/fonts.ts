@@ -1,15 +1,8 @@
-import { Instrument_Sans, DM_Sans } from 'next/font/google';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 
-export const instrumentSans = Instrument_Sans({
-  subsets: ['latin'],
+export const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin', 'latin-ext'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-instrument-sans',
-  display: 'swap',
-});
-
-export const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-dm-sans',
+  variable: '--font-plus-jakarta-sans',
   display: 'swap',
 });

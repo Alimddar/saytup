@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import Container from '@/components/layout/Container';
 import ProjectCard from '@/components/shared/ProjectCard';
 import { PROJECTS } from '@/lib/constants';
@@ -48,23 +48,23 @@ export default function PortfolioPage() {
           </div>
 
           {/* Grid */}
-          <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <m.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <AnimatePresence mode="popLayout">
               {filtered.map((project) => (
-                <motion.div
+                <m.div
                   key={project.id}
                   layout
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.2 }}
                   className="h-full"
                 >
                   <ProjectCard project={project} />
-                </motion.div>
+                </m.div>
               ))}
             </AnimatePresence>
-          </motion.div>
+          </m.div>
         </Container>
       </section>
     </>

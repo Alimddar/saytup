@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -18,45 +18,45 @@ export default function Hero() {
         }}
       />
 
-      <Container className="relative z-10 py-20 lg:py-32">
+      <Container className="relative z-10 py-12 sm:py-16 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <div>
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
+              transition={{ duration: 0.4, ease: 'easeOut' }}
             >
               <span className="inline-flex items-center gap-2 bg-brand-blue-light text-brand-blue text-sm font-body font-medium px-4 py-1.5 rounded-full mb-6">
                 <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
                 Veb İnkişaf Studiyası · Bakı, Azərbaycan
               </span>
-            </motion.div>
+            </m.div>
 
-            <motion.h1
+            <m.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
+              transition={{ duration: 0.4, delay: 0.08, ease: 'easeOut' }}
               className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-brand-dark leading-tight mb-6"
             >
               Biznesinizi Böyüdən{' '}
               <span className="text-brand-blue">Veb Tətbiqlər</span>{' '}
               Qururuq
-            </motion.h1>
+            </m.h1>
 
-            <motion.p
+            <m.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+              transition={{ duration: 0.4, delay: 0.16, ease: 'easeOut' }}
               className="text-lg text-brand-gray font-body leading-relaxed mb-8 max-w-lg"
             >
               Saytup.az kiçik bizneslərin gözəl, sürətli və effektiv veb tətbiqlər işə salmasına kömək edən Bakıda veb inkişaf studiyasıdır.
-            </motion.p>
+            </m.p>
 
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
+              transition={{ duration: 0.4, delay: 0.24, ease: 'easeOut' }}
               className="flex flex-col sm:flex-row gap-4"
             >
               <Link href="/portfolio">
@@ -73,14 +73,14 @@ export default function Hero() {
                   Pulsuz Qiymət Al
                 </Button>
               </Link>
-            </motion.div>
+            </m.div>
           </div>
 
           {/* Right — Abstract Graphic */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+            transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
             className="hidden lg:flex items-center justify-center relative"
           >
             <div className="relative w-full max-w-lg">
@@ -132,9 +132,9 @@ export default function Hero() {
               </div>
 
               {/* Floating badge 1 */}
-              <motion.div
+              <m.div
                 animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2"
               >
                 <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
@@ -144,19 +144,19 @@ export default function Hero() {
                   <p className="text-xs font-heading font-semibold text-brand-dark">98% Bal</p>
                   <p className="text-xs font-body text-brand-gray">Lighthouse</p>
                 </div>
-              </motion.div>
+              </m.div>
 
               {/* Floating badge 2 */}
-              <motion.div
+              <m.div
                 animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut', delay: 0.4 }}
                 className="absolute -bottom-4 -left-4 bg-brand-blue rounded-2xl shadow-lg px-4 py-3"
               >
                 <p className="text-xs font-heading font-bold text-white">15+ Layihə</p>
                 <p className="text-xs font-body text-white/70">Bakıda Tamamlandı</p>
-              </motion.div>
+              </m.div>
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </Container>
     </section>

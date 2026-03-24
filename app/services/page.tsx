@@ -16,7 +16,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-32 pb-20">
+      <section className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-24 sm:pt-32 pb-12 sm:pb-20">
         <Container>
           <div className="text-center text-white">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4">Xidmətlərimiz</h1>
@@ -28,7 +28,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services List */}
-      <section className="py-20 lg:py-24 bg-brand-light">
+      <section className="py-12 sm:py-16 lg:py-24 bg-brand-light">
         <Container>
           <div className="flex flex-col gap-16">
             {SERVICES.map((service, index) => {
@@ -36,7 +36,7 @@ export default function ServicesPage() {
               const isEven = index % 2 === 0;
               return (
                 <ScrollReveal key={service.id} delay={0.1}>
-                  <div className={`bg-white rounded-3xl p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${!isEven ? 'lg:flex lg:flex-row-reverse' : ''}`}>
+                  <div className={`bg-white rounded-3xl p-5 sm:p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center ${!isEven ? 'lg:flex lg:flex-row-reverse' : ''}`}>
                     {/* Icon side */}
                     <div className={`flex ${isEven ? 'lg:justify-start' : 'lg:justify-end'}`}>
                       <div className="w-24 h-24 rounded-3xl bg-brand-blue-light flex items-center justify-center">

@@ -17,7 +17,7 @@ export default function AnimatedCounter({ target, suffix, label }: AnimatedCount
   useEffect(() => {
     if (!isInView) return;
     let start = 0;
-    const duration = 2000;
+    const duration = 1200;
     const step = target / (duration / 16);
     const timer = setInterval(() => {
       start += step;
@@ -33,7 +33,7 @@ export default function AnimatedCounter({ target, suffix, label }: AnimatedCount
 
   return (
     <div ref={ref} className="flex flex-col items-center text-center">
-      <span className="text-4xl lg:text-5xl font-heading font-bold text-white">
+      <span className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white">
         {count}{suffix}
       </span>
       <span className="text-sm font-body text-white/70 mt-1">{label}</span>
