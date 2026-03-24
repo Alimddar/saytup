@@ -19,7 +19,7 @@ export default function ServiceCard({ service, className }: ServiceCardProps) {
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2, ease: 'easeOut' }}
       className={cn(
-        'bg-white rounded-2xl p-6 border border-transparent hover:border-brand-blue/20 shadow-sm hover:shadow-lg transition-all duration-300 group',
+        'bg-white rounded-2xl p-6 border border-transparent hover:border-brand-blue/20 shadow-sm hover:shadow-lg transition-all duration-300 group flex flex-col',
         className
       )}
     >
