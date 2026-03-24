@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Award, Eye, Handshake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/layout/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
@@ -16,16 +16,19 @@ const values = [
     title: 'Keyfiyyət Kəmiyyətdən Üstündür',
     description: 'Daha yaxşı nəticə vermək üçün az layihə götürürük. Hər müştəri tam diqqətimizi alır.',
     gradient: 'from-brand-blue to-brand-blue-dark',
+    Icon: Award,
   },
   {
     title: 'Şəffaflıq',
     description: 'Aydın ünsiyyət, heç bir sürpriz, dürüst müddətlər. Layihənizin necə getdiyi həmişə məlum olur.',
     gradient: 'from-brand-orange to-orange-600',
+    Icon: Eye,
   },
   {
     title: 'Uzunmüddətli Tərəfdaşlıq',
-    description: 'Biz qurmaqla bitiririk — biz sizimlə böyüyürük. Buraxılışdan sonra 1 illik pulsuz dəstək.',
+    description: 'Biz qurmaqla bitiririk — biz sizimlə böyüyürük. Seçdiyiniz paketə uyğun dəstək xidməti ilə yanınızdayıq.',
     gradient: 'from-green-500 to-emerald-600',
+    Icon: Handshake,
   },
 ];
 
@@ -83,7 +86,9 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <ScrollReveal key={value.title} delay={index * 0.1}>
                 <div className="bg-white rounded-2xl p-6 shadow-sm">
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${value.gradient} mb-4`} />
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${value.gradient} mb-4 flex items-center justify-center`}>
+                    <value.Icon className="w-6 h-6 text-white" />
+                  </div>
                   <h3 className="font-heading font-semibold text-brand-dark text-lg mb-2">{value.title}</h3>
                   <p className="text-sm text-brand-gray font-body leading-relaxed">{value.description}</p>
                 </div>
