@@ -155,9 +155,9 @@ export default function ContactPage() {
                         className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm font-body ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                       >
                         <option value="">Paket seçin</option>
-                        <option value="small">Small — 225 ₼</option>
-                        <option value="medium">Medium — 450 ₼</option>
-                        <option value="premium">Premium — 625 ₼</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="premium">Premium</option>
                         <option value="custom">Xüsusi paket</option>
                       </select>
                     </div>
