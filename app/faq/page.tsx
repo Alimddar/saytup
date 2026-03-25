@@ -11,19 +11,19 @@ const FAQ_ITEMS = [
     id: 1,
     question: 'Siz hansı texnologiyalardan istifadə edirsiniz?',
     answer:
-      'Biz əsasən React, Next.js, TypeScript və Tailwind CSS ilə işləyirik. Backend tərəfindən Node.js, PostgreSQL və ya MongoDB istifadə edirik. Hər layihə üçün ən uyğun texnologiya seçimi aparılır.',
+      'Frontend tərəfdə Next.js, React.js və TypeScript istifadə edirik — sürətli, SEO-dostu və miqyaslana bilən interfeyslər üçün. Backend tərəfdə isə Django, Express, Node.js və PostgreSQL ilə işləyirik. Hər layihənin tələbinə uyğun ən optimal texnologiya seçimi aparılır.',
   },
   {
     id: 2,
     question: 'Bir vebsayt layihəsi nə qədər vaxt alır?',
     answer:
-      'Bu layihənin mürəkkəbliyindən asılıdır. Sadə korporativ sayt 2–4 həftəyə hazır olur. Orta mürəkkəblikdə e-ticarət platforması 6–10 həftə, böyük fərdi veb tətbiqlər isə 3–6 ay çəkə bilər. Konsultasiyadan sonra daha dəqiq müddət müəyyənləşdiririk.',
+      'Müddət seçdiyiniz paketə və layihənin həcminə görə dəyişir. Ortalama bir sayt 5–7 gün ərzində hazırlanıb tam təhvil verilir. Daha böyük və ya xüsusi funksionallıq tələb edən layihələr üçün müddət əvvəlcədən razılaşdırılır.',
   },
   {
     id: 3,
     question: 'Layihənin qiyməti necə müəyyən edilir?',
     answer:
-      'Qiymət layihənin həcminə, funksionallığına və müddətinə görə dəyişir. Biz əvvəlcə sizinlə pulsuz konsultasiya keçirib tələbləri dəqiqləşdiririk, sonra şəffaf qiymət təklifi hazırlayırıq. Gizli ödənişlər yoxdur.',
+      'Qiymət sizin seçdiyiniz paket və ya sizin üçün hazırladığımız xüsusi paket əsasında müəyyən edilir. Siz nə istədiyinizi bizə bildirirsiniz — biz sizə uyğun hazır paket təklif edir, əgər ehtiyaclarınız standart paketlərə sığmırsa, xüsusi qiymət təklifi hazırlayırıq.',
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const FAQ_ITEMS = [
     id: 5,
     question: 'Buraxılışdan sonra texniki dəstək varmı?',
     answer:
-      'Hər layihəyə 1 illik pulsuz texniki dəstək daxildir. Bu müddətdə kiçik səhvlər, yeniləmələr və sorğulara 24 saat ərzində cavab veririk. Uzunmüddətli dəstək üçün ayrıca paketlər təklif edirik.',
+      'Bəli, seçdiyiniz paketə görə texniki dəstək müddəti dəyişir: Small paketdə 1 ay, Medium paketdə 2 ay, Premium paketdə isə 3 ay texniki dəstək daxildir. Bu müddət bitdikdən sonra dəstəyin davam etdirilməsi üçün əlavə ödəniş tələb olunur.',
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const FAQ_ITEMS = [
     id: 8,
     question: 'Siz yalnız Bakı şirkətləri ilə işləyirsinizmi?',
     answer:
-      'Xeyr, biz Azərbaycan daxilindəki bütün şəhərlərdən, həmçinin xarici ölkələrdən müştərilərlə uzaqdan işləyirik. Video zəng, e-poçt və messencer vasitəsilə rahat ünsiyyət qururuq.',
+      'Xeyr, biz Azərbaycan daxilindəki bütün şəhərlərdən, həmçinin xarici ölkələrdən müştərilərlə uzaqdan işləyirik. Video zəng, e-poçt və WhatsApp vasitəsilə rahat ünsiyyət qururuq.',
   },
   {
     id: 9,
