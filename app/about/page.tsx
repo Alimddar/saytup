@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckCircle2, ArrowRight, Award, Eye, Handshake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/layout/Container';
@@ -34,25 +35,22 @@ const values = [
 
 const team = [
   {
-    name: 'Elvin Məmmədov',
-    role: 'Təsisçi və Baş Proqramçı',
-    bio: '7+ illik veb tətbiq hazırlama təcrübəsi. Təmiz kod və əla istifadəçi təcrübəsi ehtirasına sahibdir.',
-    initials: 'EM',
-    gradient: 'from-brand-blue to-brand-blue-dark',
+    name: 'Alimdar Musayev',
+    role: 'Backend Developer & AI/ML Engineer',
+    bio: 'Server tərəfi arxitektura və süni intellekt həllərinin kəsişməsində işləyir. API dizaynından model inteqrasiyasına qədər — sistemin düzgün düşünməsini təmin edir.',
+    image: 'https://i.ibb.co/cKhQvPTw/image.jpg',
   },
   {
-    name: 'Nigar Həsənova',
-    role: 'UI/UX Dizayneri',
-    bio: 'Bakı texnologiya startapında keçmiş məhsul dizayneri. Həm gözəl həm de funksional interfeyslər yaradır.',
-    initials: 'NH',
-    gradient: 'from-purple-500 to-indigo-600',
+    name: 'Muhammedali Aliyev',
+    role: 'Backend Developer',
+    bio: 'Performanslı, miqyaslana bilən backend sistemlər qurur. Mürəkkəb iş məntiqini sadə, etibarlı kod xəttinə çevirməyi bacarır.',
+    image: 'https://i.ibb.co/5hFv3vnF/image.jpg',
   },
   {
-    name: 'Rəşad Əliyev',
-    role: 'Full-Stack Proqramçı',
-    bio: 'Frontend bilikləri olan backend mütəxəssisi. Hər şeyin göründüyü qədər yaxşı işlədiyini təmin edir.',
-    initials: 'RA',
-    gradient: 'from-brand-orange to-red-500',
+    name: 'Tunar Novruzzade',
+    role: 'Frontend Developer & UI/UX Designer',
+    bio: 'İstifadəçinin gördüyü hər pikseldən məsuldur. Dizayn düşüncəsi ilə frontend texnikasını birləşdirib həm gözəl, həm də işlək interfeyslər yaradır.',
+    image: 'https://i.ibb.co/JRYhgXcD/image.jpg',
   },
 ];
 
@@ -106,8 +104,15 @@ export default function AboutPage() {
             {team.map((member, index) => (
               <ScrollReveal key={member.name} delay={index * 0.1}>
                 <div className="text-center">
-                  <div className={`w-24 h-24 rounded-full bg-gradient-to-br ${member.gradient} flex items-center justify-center mx-auto mb-4`}>
-                    <span className="text-2xl font-heading font-bold text-white">{member.initials}</span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-brand-blue-light">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={96}
+                      height={96}
+                      className="w-full h-full object-cover"
+                      unoptimized
+                    />
                   </div>
                   <h3 className="font-heading font-semibold text-brand-dark text-lg">{member.name}</h3>
                   <p className="text-brand-orange text-sm font-body font-medium mb-2">{member.role}</p>
