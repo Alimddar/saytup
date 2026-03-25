@@ -70,7 +70,7 @@ export default function Hero() {
                   variant="outline"
                   className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-body font-medium px-8 py-3 h-auto text-base transition-colors duration-200"
                 >
-                  Pulsuz Qiymət Al
+                  Müraciət Et
                 </Button>
               </Link>
             </m.div>
