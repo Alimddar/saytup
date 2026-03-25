@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, CheckCircle2 } from 'lucide-react';
+import { Mail, Phone, MapPin, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -210,13 +210,6 @@ export default function ContactPage() {
                     <div>
                       <p className="text-xs text-brand-gray font-body mb-0.5">Ünvan</p>
                       <p className="text-sm font-body text-brand-dark">{SITE_CONFIG.address}</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Clock className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-xs text-brand-gray font-body mb-0.5">İş Saatları</p>
-                      <p className="text-sm font-body text-brand-dark">{SITE_CONFIG.workingHours}</p>
                     </div>
                   </li>
                 </ul>
