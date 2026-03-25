@@ -15,10 +15,10 @@ export default function CTA() {
 
             <div className="relative z-10">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-semibold text-brand-dark mb-4">
-                Böyük Bir Şey Qurmağa Hazırsınız?
+                Fikriniz Var?
               </h2>
               <p className="text-brand-gray font-body text-lg mb-10 max-w-xl mx-auto">
-                24 saat ərzində pulsuz məsləhət və layihə qiyməti əldə edin.
+                24 saat ərzində sizinlə əlaqə saxlayacağıq.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
