@@ -60,7 +60,7 @@ export const SERVICES: Service[] = [
     id: 'ui-ux',
     icon: 'Palette',
     title: 'UI/UX Dizayn',
-    description: 'İstifadəçilərin sevdiyi gözəl, intuitiv interfeyslər. İstifadəçi tədqiqatı aparır, sxemlər yaradır və piksel-mükəmməl dizaynlar təqdim edirik.',
+    description: 'Saytınıza girən ziyarətçi nə etməli olduğunu dərhal bilir — axtarmır, çaşmır, çıxıb getmir. Hər ekranı, hər düyməni, hər addımı müştərinizin davranışına görə qururuq. Nəticə isə sadədir: gözəl görünən, asan istifadə edilən və satış gətirən interfeys.',
     deliverables: ['İstifadəçi tədqiqatı və personajlar', 'Sxemlər və prototiplər', 'Dizayn sistemi yaradılması', 'İstifadə qabiliyyəti testləri'],
   },
   {
