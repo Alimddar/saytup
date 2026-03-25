@@ -162,8 +162,7 @@ export default function PlansPage() {
               <span className="text-brand-orange"> Paketi Seçin</span>
             </h1>
             <p className="text-lg text-blue-100 leading-relaxed">
-              Hər ölçüdə bizneslər üçün şəffaf qiymətlər. Gizli ödəniş yoxdur.
-              Qərar vermədən əvvəl pulsuz konsultasiya üçün bizimlə əlaqə saxlayın.
+              Biznesinizin mərhələsinə uyğun paket seçin. Hər paket real nəticəyə yönəlmiş, dəqiq müəyyənləşdirilmiş xidmətləri əhatə edir.
             </p>
             <div className="mt-6 inline-flex items-center gap-2 bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-sm font-semibold px-5 py-2.5 rounded-full">
               🎉 Bütün paketlərdə 50% endirim — məhdud müddətlidir!
