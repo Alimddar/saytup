@@ -67,7 +67,7 @@ export const SERVICES: Service[] = [
     id: 'seo',
     icon: 'TrendingUp',
     title: 'SEO və Performans',
-    description: 'Google-da tapılın və rəqiblərinizdən sürətli yüklənin. Saytınızı axtarış motorları üçün optimallaşdırırıq.',
+    description: 'Müştəriniz sizi axtarır — amma sizi tapmır. Saytınızı Google-da ilk sıralara çıxarır, rəqiblərinizdən sürətli yüklənirik. Daha çox görünüş, daha çox ziyarətçi, daha çox satış.',
     deliverables: ['Texniki SEO auditi', 'Core Web Vitals optimallaşdırması', 'Açar söz strategiyası', 'Aylıq hesabat'],
   },
 ];
