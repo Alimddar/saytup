@@ -146,7 +146,7 @@ export default function ContactPage() {
                       </select>
                     </div>
                     <div>
-                      <label htmlFor="budget" className="block text-sm font-body font-medium text-brand-dark mb-1.5">Layihə Büdcəsi</label>
+                      <label htmlFor="budget" className="block text-sm font-body font-medium text-brand-dark mb-1.5">Paket Seçimi</label>
                       <select
                         id="budget"
                         name="budget"
@@ -154,11 +154,11 @@ export default function ContactPage() {
                         onChange={handleChange}
                         className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm font-body ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                       >
-                        <option value="">Büdcə aralığı seçin</option>
-                        <option value="under-300">300 ₼-dən az</option>
-                        <option value="300-600">300 ₼ – 600 ₼</option>
-                        <option value="600-1000">600 ₼ – 1.000 ₼</option>
-                        <option value="1000+">1.000 ₼+</option>
+                        <option value="">Paket seçin</option>
+                        <option value="small">Small — 225 ₼</option>
+                        <option value="medium">Medium — 450 ₼</option>
+                        <option value="premium">Premium — 625 ₼</option>
+                        <option value="custom">Xüsusi paket</option>
                       </select>
                     </div>
                   </div>
