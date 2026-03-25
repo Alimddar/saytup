@@ -39,8 +39,8 @@ export default function Hero() {
               transition={{ duration: 0.4, delay: 0.08, ease: 'easeOut' }}
               className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-brand-dark leading-tight mb-6"
             >
-              Rəqəmsal Dünyada{' '}
-              <span className="text-brand-blue">Güclü Yer Tutun</span>
+              Biznesinizi{' '}
+              <span className="text-brand-blue">Böyütmək İstəyirsiniz?</span>
             </m.h1>
 
             <m.p
@@ -49,7 +49,7 @@ export default function Hero() {
               transition={{ duration: 0.4, delay: 0.16, ease: 'easeOut' }}
               className="text-lg text-brand-gray font-body leading-relaxed mb-8 max-w-lg"
             >
-              Bakıda fəaliyyət göstərən bir veb inkişaf studiyasıyıq. Saytınızı sıfırdan qururuq — sürətli, mobil uyumlu və müştəri cəlb edən şəkildə.
+              Saytup kiçik bizneslərin gözəl, sürətli və effektiv veb tətbiqlər işə salmasını təmin edən Bakıda platformadır.
             </m.p>
 
             <m.div
