@@ -46,7 +46,7 @@ export const SERVICES: Service[] = [
     id: 'responsive-sites',
     icon: 'Smartphone',
     title: 'Responsiv Vebsaytlar',
-    description: 'Hər cihazda mükəmməl görünən mobil-first saytlar. Sürətli yüklənən, SEO-ya uyğun, brendinizi peşəkarcasına təmsil edən.',
+    description: 'Telefonda da, planşetdə də, kompüterdə də; saytınız hər zaman mükəmməl görünür. Sürətli yüklənən, SEO-ya uyğun, brendinizi peşəkarcasına təmsil edən.',
     deliverables: ['Mobil-first dizayn', 'Çarpaz brauzer uyğunluğu', 'Səhifə sürəti optimallaşdırması', 'CMS inteqrasiyası'],
   },
   {
