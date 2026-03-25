@@ -53,7 +53,7 @@ export const SERVICES: Service[] = [
     id: 'maintenance',
     icon: 'Wrench',
     title: 'Sayt Texniki Dəstəyi',
-    description: 'Saytınızı işlək vəziyyətdə saxlayın. Yeniləmələr, ehtiyat nüsxələr, təhlükəsizlik yamalarını biz həll edirik ki, siz biznesinizə fokuslanasınız.',
+    description: 'Sayt çökür — müştəri itirilir. Bu qədər sadədir. Biz saytınızın arxasında dayanırıq ki, siz heç vaxt bu problemlə üzləşməyəsiniz. Yeniləmələri, təhlükəsizliyi, texniki məsələləri biz idarə edirik. Siz yalnız biznesinizlə məşğul olursunuz.',
     deliverables: ['Müntəzəm yeniləmə və yamalar', 'Performans monitorinqi', 'Kontent yeniləmələri', '24 saat dəstək cavabı'],
   },
   {
