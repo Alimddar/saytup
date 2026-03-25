@@ -34,6 +34,7 @@ const PLANS = [
       '1 il hosting',
       'SEO inteqrasiyası',
       'WhatsApp düyməsi',
+      '1 ay texniki dəstək',
     ],
     suitableFor: [
       'Yeni fəaliyyətə başlayan bizneslər üçün',
@@ -73,7 +74,7 @@ const PLANS = [
       'Bloq bölməsi',
       'Sosial media inteqrasiyası',
       'Korporativ e-poçt (1 ədəd)',
-      '1 ay pulsuz nəzarət',
+      '2 ay texniki dəstək',
     ],
     suitableFor: [
       'Artıq fəaliyyətdə olan bizneslər üçün',
@@ -115,7 +116,7 @@ const PLANS = [
       'Çoxlu dil dəstəyi',
       'Rezervasiya / sifariş sistemi',
       'Performans optimizasiyası',
-      '2 ay pulsuz nəzarət',
+      '3 ay texniki dəstək',
       'Google My Business quraşdırma',
       'Korporativ e-poçt (2 ədəd)',
     ],
@@ -142,7 +143,7 @@ const COMPARISON_FEATURES = [
   { name: 'Çoxlu dil', starter: '—', standard: '—', premium: 'Var' },
   { name: 'Rezervasiya sistemi', starter: '—', standard: '—', premium: 'Var' },
   { name: 'Korporativ e-poçt', starter: '—', standard: '1 ədəd', premium: '2 ədəd' },
-  { name: 'Pulsuz nəzarət', starter: '—', standard: '1 ay', premium: '2 ay' },
+  { name: 'Texniki dəstək', starter: '1 ay', standard: '2 ay', premium: '3 ay' },
   { name: 'Domen + Hosting', starter: '1 il', standard: '1 il', premium: '1 il' },
 ];
 
