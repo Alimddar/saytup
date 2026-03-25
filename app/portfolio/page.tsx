@@ -6,7 +6,7 @@ import Container from '@/components/layout/Container';
 import ProjectCard from '@/components/shared/ProjectCard';
 import { PROJECTS } from '@/lib/constants';
 
-const categories = ['Hamısı', 'Veb Tətbiq', 'E-Commerce', 'Korporativ', 'UI/UX'];
+const categories = ['Hamısı', 'Korporativ Sayt', 'E-Commerce', 'Veb Tətbiq', 'Landing Page'];
 
 export default function PortfolioPage() {
   const [active, setActive] = useState('Hamısı');

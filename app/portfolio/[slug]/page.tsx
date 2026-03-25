@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/layout/Container';
 import ScrollReveal from '@/components/shared/ScrollReveal';
+import ProjectCarousel from '@/components/shared/ProjectCarousel';
 import { PROJECTS } from '@/lib/constants';
 import { PROJECT_IMAGES } from '@/lib/projectImages';
 
@@ -87,28 +88,22 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <section className="py-12 sm:py-16 md:py-20 bg-brand-light">
         <Container>
           <div className="max-w-3xl mx-auto">
+
+            {/* Carousel */}
             <ScrollReveal>
-              <h2 className="text-2xl font-heading font-semibold text-brand-dark mb-4">Layihə Haqqında</h2>
-              <p className="text-brand-gray font-body leading-relaxed mb-12">{project.fullDescription}</p>
+              <ProjectCarousel images={project.images} title={project.title} />
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-              {[
-                { label: 'Problem', content: project.challenge, color: 'bg-red-50 border-red-100', accent: 'text-red-500' },
-                { label: 'Həll', content: project.solution, color: 'bg-brand-blue-light border-brand-blue/10', accent: 'text-brand-blue' },
-                { label: 'Nəticə', content: project.result, color: 'bg-green-50 border-green-100', accent: 'text-green-600' },
-              ].map((item, i) => (
-                <ScrollReveal key={item.label} delay={i * 0.1} className="h-full">
-                  <div className={`rounded-2xl p-5 border h-full flex flex-col gap-2 ${item.color}`}>
-                    <span className={`text-xs font-heading font-bold uppercase tracking-wider ${item.accent}`}>{item.label}</span>
-                    <p className="text-sm text-brand-gray font-body leading-relaxed flex-1">{item.content}</p>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
+            {/* Description */}
+            <ScrollReveal delay={0.1}>
+              <div className="mt-10">
+                <h2 className="text-2xl font-heading font-semibold text-brand-dark mb-4">Layihə Haqqında</h2>
+                <p className="text-brand-gray font-body leading-relaxed">{project.fullDescription}</p>
+              </div>
+            </ScrollReveal>
 
             {/* Navigation */}
-            <div className="flex justify-between items-center pt-8 border-t border-brand-gray/20">
+            <div className="flex justify-between items-center pt-12 mt-12 border-t border-brand-gray/20">
               {prev ? (
                 <Link href={`/portfolio/${prev.slug}`} className="flex items-center gap-2 text-brand-blue font-body font-medium hover:gap-3 transition-all">
                   <ArrowLeft className="w-4 h-4" /> {prev.title}

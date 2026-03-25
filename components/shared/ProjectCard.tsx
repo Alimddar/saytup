@@ -39,7 +39,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
             href={`/portfolio/${project.slug}`}
             className="flex items-center gap-2 text-white font-body font-medium text-sm border border-white/50 rounded-full px-5 py-2.5 hover:bg-white hover:text-brand-blue transition-colors duration-200"
           >
-            Keys Araşdırması <ArrowRight className="w-4 h-4" />
+            Layihəyə Bax <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
 

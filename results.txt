@@ -1,0 +1,5 @@
+.htaccess           [33m (Status: 403)[0m [Size: 290]
+.htpasswd           [33m (Status: 403)[0m [Size: 290]
+report              [32m (Status: 200)[0m [Size: 16912]
+scripts             [36m (Status: 301)[0m [Size: 317][34m [--> http://10.112.188.232/scripts/][0m
+server-status       [33m (Status: 403)[0m [Size: 294]

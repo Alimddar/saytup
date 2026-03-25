@@ -82,6 +82,7 @@ export interface Project {
   tags: string[];
   gradient: string;
   image: string;
+  images: string[];
   url?: string;
   challenge: string;
   solution: string;
@@ -99,6 +100,11 @@ export const PROJECTS: Project[] = [
     tags: ['Next.js', 'Stripe', 'PostgreSQL', 'Tailwind CSS'],
     gradient: 'from-blue-500 to-indigo-600',
     image: 'https://picsum.photos/seed/bakushop/800/500',
+    images: [
+      'https://picsum.photos/seed/bakushop/800/500',
+      'https://picsum.photos/seed/bakushop2/800/500',
+      'https://picsum.photos/seed/bakushop3/800/500',
+    ],
     challenge: 'Müştərinin mövcud rəqəmsal infrastrukturu yox idi; Azərbaycan dilini dəstəkləyən və yerli ödəniş prosessorları ilə işləyən platforma lazım idi.',
     solution: 'Çoxdilli dəstəklə Next.js e-ticarət platforması qurduk, yerli ödəniş şlüzlərini Stripe ilə birlikdə inteqrasiya etdik və komandanın özü idarə edə biləcəyi sadə admin panel hazırladıq.',
     result: '6 həftədə buraxıldı. Mağaza ilk ayda 120+ sifariş topladı və müştərinin mağaxana iş yükünü 30% azaltdı.',
@@ -107,12 +113,17 @@ export const PROJECTS: Project[] = [
     id: '2',
     slug: 'azeritech-corporate',
     title: 'AzeriTech Korporativ Saytı',
-    category: 'Korporativ',
+    category: 'Korporativ Sayt',
     description: 'Azərbaycanda aparıcı texnologiya şirkəti üçün premium korporativ vebsayt.',
     fullDescription: 'AzeriTech bazar liderliyi mövqeyinə uyğun — peşəkar, cilalı və yüksək performanslı bir sayt istəyirdi. Xidmət nümayişi, komanda profilləri və xəbər bölməsi olan hərtərəfli korporativ təmsil qurdurq.',
     tags: ['Next.js', 'Framer Motion', 'Sanity CMS', 'TypeScript'],
     gradient: 'from-slate-600 to-slate-800',
     image: 'https://picsum.photos/seed/azeritech/800/500',
+    images: [
+      'https://picsum.photos/seed/azeritech/800/500',
+      'https://picsum.photos/seed/azeritech2/800/500',
+      'https://picsum.photos/seed/azeritech3/800/500',
+    ],
     challenge: 'Şirkətin köhnəlmiş saytı bazar mövqeyini əks etdirmirdi; SEO və performans göstəriciləri çox aşağı idi.',
     solution: 'Kontent idarəetməsi üçün Sanity CMS, premium animasiyalar üçün Framer Motion və SEO üçün strukturlaşdırılmış data tətbiqini ehtiva edən tam yenidən dizayn.',
     result: 'Lighthouse balı 42-dən 96-ya çıxdı. Üzvi trafik 3 ayda 180% artdı. Komanda indi developer müdaxiləsi olmadan kontent yeniləyə bilir.',
@@ -127,6 +138,11 @@ export const PROJECTS: Project[] = [
     tags: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
     gradient: 'from-orange-400 to-red-500',
     image: 'https://picsum.photos/seed/foodrun/800/500',
+    images: [
+      'https://picsum.photos/seed/foodrun/800/500',
+      'https://picsum.photos/seed/foodrun2/800/500',
+      'https://picsum.photos/seed/foodrun3/800/500',
+    ],
     challenge: 'Həm müştərilər həm də restoran işçiləri üçün UX-ni sadə saxlayaraq çoxsaylı restoranlar üzrə paralel sifarişləri idarə edəcək real vaxt sistem qurmaq.',
     solution: 'Real vaxt yeniləmələr üçün Socket.io ilə React frontend, sifariş emalı üçün Node.js backend və restoran ilə koordinatorlar üçün ayrı idarəetmə panelləri hazırladıq.',
     result: 'İlk ayda 15 restoran qoşuldu. Platforma 99,8% uptime ilə gündəlik 200+ sifariş emal edir.',
@@ -135,12 +151,17 @@ export const PROJECTS: Project[] = [
     id: '4',
     slug: 'prolaw-firm-website',
     title: 'ProLaw Hüquq Xidmətləri',
-    category: 'Korporativ',
+    category: 'Korporativ Sayt',
     description: 'Bakının tanınmış hüquq firması üçün onlayn görüş rezervasiyası ilə peşəkar vebsayt.',
     fullDescription: 'ProLaw onlayn mövcudluğunu müasirləşdirmək və telefon sorğularını azaltmaq üçün onlayn görüş sistemi əlavə etmək istəyirdi. Dizayn etimad, ekspertlik və peşəkarlıq çatdırmalı idi.',
     tags: ['Next.js', 'Calendly API', 'Tailwind CSS', 'TypeScript'],
     gradient: 'from-gray-700 to-gray-900',
     image: 'https://picsum.photos/seed/prolaw/800/500',
+    images: [
+      'https://picsum.photos/seed/prolaw/800/500',
+      'https://picsum.photos/seed/prolaw2/800/500',
+      'https://picsum.photos/seed/prolaw3/800/500',
+    ],
     challenge: 'Hüquq firması saytları çox vaxt köhnəlmiş və anonim görünür. Müştəri hüquq sektoruna xas ağırlığı qoruyaraq fərqlənmək istəyirdi.',
     solution: 'Rezervasiya üçün Calendly inteqrasiyası, SEO üçün hüquqi məqalə bölməsi ilə qaranlıq temalı premium dizayn hazırladıq.',
     result: 'Onlayn görüş rezervasiyaları yeni müştəri sorğularının 60%-ni təşkil edir; resepsionist daha dəyərli işlərə vaxt ayıra bilir.',
@@ -155,6 +176,11 @@ export const PROJECTS: Project[] = [
     tags: ['Next.js', 'Prisma', 'PostgreSQL', 'NextAuth'],
     gradient: 'from-green-500 to-emerald-600',
     image: 'https://picsum.photos/seed/fitclub/800/500',
+    images: [
+      'https://picsum.photos/seed/fitclub/800/500',
+      'https://picsum.photos/seed/fitclub2/800/500',
+      'https://picsum.photos/seed/fitclub3/800/500',
+    ],
     challenge: 'Çox filial üzrə üzvlük, dərs rezervasiyası və məşqçi cədvəlini birləşik sistemdə idarə etmək — zalın gündəlik işçiləri üçün sadə saxlayaraq.',
     solution: 'Rol əsaslı giriş nəzarəti, real vaxt dərs rezervasiyası, avtomatik üzvlük yenilənmə xatırlatmaları və qabaq masa işçiləri üçün sadə idarəetmə paneli olan çox lokasiyalı tətbiq.',
     result: 'Üzvlük inzibati vaxtı 40% azaldı. Üzvlər onlayn rezervasiya edə bildikdən sonra dərs davamiyyəti 25% artdı. Avtomatik xatırlatmalar sayəsində buraxma sıfıra endi.',
@@ -169,6 +195,11 @@ export const PROJECTS: Project[] = [
     tags: ['Next.js', 'Stripe', 'Sanity CMS', 'Resend'],
     gradient: 'from-teal-400 to-cyan-600',
     image: 'https://picsum.photos/seed/caspiantours/800/500',
+    images: [
+      'https://picsum.photos/seed/caspiantours/800/500',
+      'https://picsum.photos/seed/caspiantours2/800/500',
+      'https://picsum.photos/seed/caspiantours3/800/500',
+    ],
     challenge: 'Turizm agentliyi onlayn platforması olan rəqiblərə müştəri itirirdi. Sürətli həll lazım idi, mürəkkəb inteqrasiyalar üçün büdcə yox idi.',
     solution: 'Sanity CMS ilə idarə olunan dinamik tur paketləri, Stripe ilə ödənişlər və Resend ilə avtomatik təsdiq e-poçtları olan sadələşdirilmiş rezervasiya platforması.',
     result: 'Onlayn rezervasiyalar buraxılışdan 2 ay sonra ümumi gəlirin 65%-ni təşkil etdi. Komanda həftəlik 10+ saatı manual rezervasiya inzibatçılığından azad etdi.',
