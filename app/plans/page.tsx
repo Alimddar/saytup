@@ -84,7 +84,7 @@ const PLANS = [
       'Müştəri axınını artırmaq istəyənlər üçün',
       'Peşəkar görünüşə önəm verənlər üçün',
     ],
-    cta: 'Ətraflı Müzakirə Et',
+    cta: 'Başla',
     ctaHref: '/contact',
   },
   {
@@ -129,7 +129,7 @@ const PLANS = [
       'Yüksək performans və peşəkar sayt tələb edənlər üçün',
       'Saytın davamlı işləməsi və dəstək istəyənlər üçün',
     ],
-    cta: 'Layihəni Müzakirə Et',
+    cta: 'Başla',
     ctaHref: '/contact',
   },
 ];
