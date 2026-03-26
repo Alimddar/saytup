@@ -8,8 +8,8 @@ import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Sayt Qiymətləri | Veb Sayt Paketləri — Saytup.az',
-  description: 'Azərbaycanda sayt qiyməti nə qədərdir? Saytup.az-ın veb sayt paketləri: Small (225₼), Medium (450₼), Premium (625₼). Domen, hosting, SEO daxildir. Pulsuz konsultasiya.',
+  title: 'Sayt Qiymətləri | Veb Sayt Paketləri — Saytup.digital',
+  description: 'Azərbaycanda sayt qiyməti nə qədərdir? Saytup.digital-ın veb sayt paketləri: Small (225₼), Medium (450₼), Premium (625₼). Domen, hosting, SEO daxildir. Pulsuz konsultasiya.',
   keywords: [
     'sayt qiymətləri', 'veb sayt qiyməti', 'sayt hazırlamaq qiyməti',
     'Azərbaycanda sayt qiyməti nə qədərdir', 'ucuz sayt hazırlanması',
@@ -161,15 +161,15 @@ export default function PlansPage() {
   const productSchemas = PLANS.map((plan) => ({
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: `${plan.name} Paket — Saytup.az`,
+    name: `${plan.name} Paket — Saytup.digital`,
     description: plan.subtitle,
-    brand: { '@id': 'https://saytup.az/#organization' },
+    brand: { '@id': 'https://saytup.digital/#organization' },
     offers: {
       '@type': 'Offer',
       price: plan.price,
       priceCurrency: 'AZN',
       availability: 'https://schema.org/InStock',
-      url: 'https://saytup.az/plans',
+      url: 'https://saytup.digital/plans',
     },
   }));
 

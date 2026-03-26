@@ -11,7 +11,7 @@ import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Saytup Haqqında | Bakıda Veb İnkişaf Studiyası',
-  description: 'Saytup.az haqqında — Bakı, Azərbaycanda qurulan veb inkişaf studiyası. Kiçik bizneslərin güclü onlayn mövcudluq yaratmasına kömək edirik. Komandamız, dəyərlərimiz.',
+  description: 'Saytup.digital haqqında — Bakı, Azərbaycanda qurulan veb inkişaf studiyası. Kiçik bizneslərin güclü onlayn mövcudluq yaratmasına kömək edirik. Komandamız, dəyərlərimiz.',
   keywords: [
     'saytup haqqında', 'veb studiya Bakı', 'veb inkişaf komandası',
     'Bakıda veb inkişaf şirkəti', 'Azərbaycan veb dizayn agentliyi',
@@ -124,7 +124,7 @@ export default function AboutPage() {
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-brand-blue-light">
                     <Image
                       src={member.image}
-                      alt={`${member.name} — ${member.role}, Saytup.az komandası, Bakı`}
+                      alt={`${member.name} — ${member.role}, Saytup.digital komandası, Bakı`}
                       width={96}
                       height={96}
                       className="w-full h-full object-cover"
@@ -144,7 +144,7 @@ export default function AboutPage() {
       {/* Why Choose Us */}
       <section className="py-12 sm:py-16 lg:py-24 bg-brand-light" aria-labelledby="why-us-heading">
         <Container>
-          <SectionHeading title="Niyə Bizi Seçməlisiniz" subtitle="Bakıda sayt hazırlamaq üçün niyə Saytup.az?" className="mb-14" />
+          <SectionHeading title="Niyə Bizi Seçməlisiniz" subtitle="Bakıda sayt hazırlamaq üçün niyə Saytup.digital?" className="mb-14" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {differentiators.map((item, index) => (
               <ScrollReveal key={item.title} delay={index * 0.1}>

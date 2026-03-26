@@ -11,8 +11,8 @@ import { SERVICES } from '@/lib/constants';
 import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Sayt Hazırlanması Xidmətləri | Saytup.az',
-  description: 'Bakıda peşəkar sayt hazırlanması xidmətləri. Korporativ saytlar, landing page, e-ticarət, rezervasiya sistemləri, sayt yenilənməsi və SEO. Saytup.az ilə saytınızı sifariş edin.',
+  title: 'Sayt Hazırlanması Xidmətləri | Saytup.digital',
+  description: 'Bakıda peşəkar sayt hazırlanması xidmətləri. Korporativ saytlar, landing page, e-ticarət, rezervasiya sistemləri, sayt yenilənməsi və SEO. Saytup.digital ilə saytınızı sifariş edin.',
   keywords: [
     'sayt hazırlanması xidmətləri', 'veb dizayn', 'sayt yaratmaq',
     'veb inkişaf xidmətləri', 'korporativ sayt hazırlanması',
@@ -27,10 +27,10 @@ export default function ServicesPage() {
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: service.title,
-    provider: { '@id': 'https://saytup.az/#organization' },
+    provider: { '@id': 'https://saytup.digital/#organization' },
     areaServed: { '@type': 'Country', name: 'Azerbaijan' },
     description: service.description,
-    url: `https://saytup.az/services#${service.id}`,
+    url: `https://saytup.digital/services#${service.id}`,
   }));
 
   return (

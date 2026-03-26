@@ -13,7 +13,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://saytup.az/sitemap.xml',
-    host: 'https://saytup.az',
+    sitemap: 'https://saytup.digital/sitemap.xml',
+    host: 'https://saytup.digital',
   };
 }

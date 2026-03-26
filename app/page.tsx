@@ -10,8 +10,8 @@ import Container from '@/components/layout/Container';
 import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Sayt Hazırlanması | Saytup.az — Bakıda Peşəkar Veb Sayt Sifarişi',
-  description: 'Sayt hazırlamaq istəyirsiniz? Saytup.az Bakıda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayır. Korporativ saytlar, e-ticarət, landing page. Pulsuz konsultasiya.',
+  title: 'Sayt Hazırlanması | Saytup.digital — Bakıda Peşəkar Veb Sayt Sifarişi',
+  description: 'Sayt hazırlamaq istəyirsiniz? Saytup.digital Bakıda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayır. Korporativ saytlar, e-ticarət, landing page. Pulsuz konsultasiya.',
   keywords: [
     'sayt', 'sayt hazırlamaq', 'veb sayt', 'sayt sifarişi', 'sayt yaratmaq',
     'Bakıda sayt hazırlayan şirkət', 'sayt sifariş etmək Azərbaycan',
@@ -24,13 +24,13 @@ const schemas = [
   {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://saytup.az/#organization',
-    name: 'Saytup.az',
+    '@id': 'https://saytup.digital/#organization',
+    name: 'Saytup.digital',
     alternateName: 'Saytup',
-    url: 'https://saytup.az',
+    url: 'https://saytup.digital',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://saytup.az/logo.png',
+      url: 'https://saytup.digital/logo.png',
       width: 512,
       height: 512,
     },
@@ -56,17 +56,17 @@ const schemas = [
   {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://saytup.az/#website',
-    name: 'Saytup.az',
-    url: 'https://saytup.az',
+    '@id': 'https://saytup.digital/#website',
+    name: 'Saytup.digital',
+    url: 'https://saytup.digital',
     description: 'Bakıda veb sayt hazırlayan peşəkar studiya',
-    publisher: { '@id': 'https://saytup.az/#organization' },
+    publisher: { '@id': 'https://saytup.digital/#organization' },
     inLanguage: 'az',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://saytup.az/portfolio?q={search_term_string}',
+        urlTemplate: 'https://saytup.digital/portfolio?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
@@ -74,10 +74,10 @@ const schemas = [
   {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    '@id': 'https://saytup.az/#localbusiness',
-    name: 'Saytup.az — Veb İnkişaf Studiyası',
-    image: 'https://saytup.az/og-image.jpg',
-    url: 'https://saytup.az',
+    '@id': 'https://saytup.digital/#localbusiness',
+    name: 'Saytup.digital — Veb İnkişaf Studiyası',
+    image: 'https://saytup.digital/og-image.jpg',
+    url: 'https://saytup.digital',
     telephone: '+994-51-665-81-43',
     email: 'contact@saytup.digital',
     address: {
@@ -135,7 +135,7 @@ export default function HomePage() {
               Bakıda Peşəkar Sayt Hazırlanması
             </h2>
             <p className="text-brand-gray font-body leading-relaxed mb-4">
-              Saytup.az Azərbaycanda kiçik və orta bizneslər üçün <strong>peşəkar veb sayt hazırlayan</strong> studiyasıdır.
+              Saytup.digital Azərbaycanda kiçik və orta bizneslər üçün <strong>peşəkar veb sayt hazırlayan</strong> studiyasıdır.
               Sayt sifarişi vermək prosesini sadə, şəffaf və sürətli edir — ilk görüşdən buraxılışa qədər hər mərhələdə yanınızdayıq.
             </p>
             <p className="text-brand-gray font-body leading-relaxed mb-4">

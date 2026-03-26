@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = PROJECTS.find((p) => p.slug === slug);
   if (!project) return {};
   return generatePageMetadata({
-    title: `${project.title} Layihəsi | Saytup.az Portfolio`,
-    description: `${project.description} Saytup.az tərəfindən hazırlanmış veb sayt layihəsi. Azərbaycanda peşəkar veb inkişaf.`,
+    title: `${project.title} Layihəsi | Saytup.digital Portfolio`,
+    description: `${project.description} Saytup.digital tərəfindən hazırlanmış veb sayt layihəsi. Azərbaycanda peşəkar veb inkişaf.`,
     keywords: [
       `${project.title} layihəsi`, 'veb tətbiq nümunəsi', 'sayt case study',
       ...project.tags, 'Bakı', 'Azərbaycan',
@@ -46,7 +46,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     '@type': 'CreativeWork',
     name: project.title,
     description: project.description,
-    creator: { '@id': 'https://saytup.az/#organization' },
+    creator: { '@id': 'https://saytup.digital/#organization' },
     image: project.image,
     url: `${SITE_URL}/portfolio/${project.slug}`,
     keywords: project.tags.join(', '),
@@ -64,7 +64,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       >
         <Image
           src={project.image}
-          alt={`${project.title} — Saytup.az tərəfindən hazırlanmış veb sayt layihəsi, Bakı, Azərbaycan`}
+          alt={`${project.title} — Saytup.digital tərəfindən hazırlanmış veb sayt layihəsi, Bakı, Azərbaycan`}
           fill
           className="object-cover"
           priority

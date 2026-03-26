@@ -6,7 +6,7 @@ interface BreadcrumbItem {
   href: string;
 }
 
-const SITE_URL = 'https://saytup.az';
+const SITE_URL = 'https://saytup.digital';
 
 export default function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   const allItems = [{ label: 'Ana Səhifə', href: '/' }, ...items];

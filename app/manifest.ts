@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Saytup.az — Veb İnkişaf Studiyası',
+    name: 'Saytup.digital — Veb İnkişaf Studiyası',
     short_name: 'Saytup',
     description: 'Bakıda peşəkar veb sayt hazırlayan studiya',
     start_url: '/',

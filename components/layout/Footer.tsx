@@ -96,7 +96,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/40 font-body">
-            © 2026 Saytup.az — Bütün hüquqlar qorunur
+            © 2026 Saytup.digital — Bütün hüquqlar qorunur
           </p>
         </div>
       </Container>

@@ -1,12 +1,12 @@
 export const SITE_CONFIG = {
-  name: 'Saytup.az',
+  name: 'Saytup.digital',
   tagline: 'Bakıda Veb İnkişaf Studiyası',
-  description: 'Saytup.az kiçik bizneslərin gözəl, sürətli və effektiv veb tətbiqlər işə salmasına kömək edən Bakıda veb inkişaf studiyasıdır.',
+  description: 'Saytup.digital kiçik bizneslərin gözəl, sürətli və effektiv veb tətbiqlər işə salmasına kömək edən Bakıda veb inkişaf studiyasıdır.',
   email: 'contact@saytup.digital',
   phone: '+994 51 665 81 43',
   address: 'Bakı, Azərbaycan',
   workingHours: 'B.e–Cümə, 10:00–19:00 (Bakı vaxtı)',
-  url: 'https://saytup.az',
+  url: 'https://saytup.digital',
 };
 
 export const NAV_LINKS = [
@@ -366,7 +366,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     id: 15,
     question: 'SEO nədir və niyə vacibdir?',
     answer:
-      'SEO (Axtarış Mühərriyi Optimallaşdırması) saytınızın Google kimi axtarış mühərriklərində daha yuxarıda görünməsinə kömək edir. Düzgün SEO ilə potensial müştərilər sizi "sayt hazırlamaq Bakı" kimi sorğularla tapa bilər. Saytup.az bütün layihələrə əsas texniki SEO daxil edir: sürətli yüklənmə, semantik HTML, meta etiketlər, mobil uyğunluq — bunların hamısı Google sıralamalarına birbaşa təsir edir.',
+      'SEO (Axtarış Mühərriyi Optimallaşdırması) saytınızın Google kimi axtarış mühərriklərində daha yuxarıda görünməsinə kömək edir. Düzgün SEO ilə potensial müştərilər sizi "sayt hazırlamaq Bakı" kimi sorğularla tapa bilər. Saytup.digital bütün layihələrə əsas texniki SEO daxil edir: sürətli yüklənmə, semantik HTML, meta etiketlər, mobil uyğunluq — bunların hamısı Google sıralamalarına birbaşa təsir edir.',
   },
   {
     id: 16,
@@ -378,7 +378,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     id: 17,
     question: 'Hosting və domen nədir?',
     answer:
-      'Domen saytınızın internet ünvanıdır (məsələn, saytınız.az). Hosting isə saytınızın fayllarının saxlandığı serverdır. Saytup.az bütün paketlərinə 1 il .az domen qeydiyyatı və 1 il hosting daxildir. Biz sizin üçün bu prosesi tam idarə edirik — siz yalnız layihənizə fokuslanırsınız.',
+      'Domen saytınızın internet ünvanıdır (məsələn, saytınız.az). Hosting isə saytınızın fayllarının saxlandığı serverdır. Saytup.digital bütün paketlərinə 1 il .az domen qeydiyyatı və 1 il hosting daxildir. Biz sizin üçün bu prosesi tam idarə edirik — siz yalnız layihənizə fokuslanırsınız.',
   },
   {
     id: 18,
@@ -390,19 +390,19 @@ export const FAQ_ITEMS: FaqItem[] = [
     id: 19,
     question: 'WordPress yoxsa xüsusi kod — hansı daha yaxşıdır?',
     answer:
-      'Hər ikisinin öz üstünlükləri var. WordPress qurulumu tez, idarəetməsi asandır, lakin yavaş ola bilər və mütəmadi yeniləmə tələb edir. Xüsusi kod (Next.js/React) daha sürətli, daha təhlükəsiz, tam fərdiləşdirilə bilən, SEO üçün daha əlverişlidir — lakin daha çox texniki iş tələb edir. Saytup.az əsasən xüsusi kod ilə işləyir, çünki bu, uzunmüddətli performans və miqyaslanma baxımından daha güclüdür.',
+      'Hər ikisinin öz üstünlükləri var. WordPress qurulumu tez, idarəetməsi asandır, lakin yavaş ola bilər və mütəmadi yeniləmə tələb edir. Xüsusi kod (Next.js/React) daha sürətli, daha təhlükəsiz, tam fərdiləşdirilə bilən, SEO üçün daha əlverişlidir — lakin daha çox texniki iş tələb edir. Saytup.digital əsasən xüsusi kod ilə işləyir, çünki bu, uzunmüddətli performans və miqyaslanma baxımından daha güclüdür.',
   },
   {
     id: 20,
     question: 'Saytımın Google-da görünməsi üçün nə etməliyəm?',
     answer:
-      'Google-da görünmək üçün bir neçə addım lazımdır: texniki SEO optimallaşdırması (saytınız bizim tərəfimizdən hazırlardı), Google Search Console-a qeydiyyat, Google Business Profile yaradılması, keyfiyyətli kontent əlavəsi. Saytup.az bütün əsas texniki SEO addımlarını layihənizə daxil edir. Əlavə SEO kampaniyası istəsəniz, ayrıca paketi tövsiyə edirik.',
+      'Google-da görünmək üçün bir neçə addım lazımdır: texniki SEO optimallaşdırması (saytınız bizim tərəfimizdən hazırlardı), Google Search Console-a qeydiyyat, Google Business Profile yaradılması, keyfiyyətli kontent əlavəsi. Saytup.digital bütün əsas texniki SEO addımlarını layihənizə daxil edir. Əlavə SEO kampaniyası istəsəniz, ayrıca paketi tövsiyə edirik.',
   },
   {
     id: 21,
     question: 'Rəqiblərdən nə ilə fərqlənirsiniz?',
     answer:
-      'Saytup.az-ı fərqləndirən üç əsas amil var: birincisi, sadəcə dizayn deyil, biznes nəticəsinə fokuslanırıq — hər qərar konversiya və etibar üzərinde qurulur. İkincisi, müasir texnologiya (Next.js, TypeScript) istifadə edirik — bu, saytların daha sürətli, daha təhlükəsiz və SEO üçün daha əlverişli olmasını təmin edir. Üçüncüsü, şəffaf qiymət siyasəti — gizli xərclər yoxdur, hər şey əvvəlcədən razılaşdırılır.',
+      'Saytup.digital-ı fərqləndirən üç əsas amil var: birincisi, sadəcə dizayn deyil, biznes nəticəsinə fokuslanırıq — hər qərar konversiya və etibar üzərinde qurulur. İkincisi, müasir texnologiya (Next.js, TypeScript) istifadə edirik — bu, saytların daha sürətli, daha təhlükəsiz və SEO üçün daha əlverişli olmasını təmin edir. Üçüncüsü, şəffaf qiymət siyasəti — gizli xərclər yoxdur, hər şey əvvəlcədən razılaşdırılır.',
   },
 ];
 

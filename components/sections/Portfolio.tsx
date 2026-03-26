@@ -17,7 +17,7 @@ export default function Portfolio() {
           subtitle="Hazırladığımız layihələr"
           className="mb-14"
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredProjects.map((project, index) => (
             <ScrollReveal key={project.id} delay={index * 0.1} className="h-full">
               <ProjectCard project={project} />

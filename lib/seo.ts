@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-export const SITE_URL = 'https://saytup.az';
+export const SITE_URL = 'https://saytup.digital';
 
 export function generatePageMetadata({
   title,
@@ -26,7 +26,7 @@ export function generatePageMetadata({
       title,
       description,
       url,
-      siteName: 'Saytup.az',
+      siteName: 'Saytup.digital',
       locale: 'az_AZ',
       type: 'website',
       images: [{ url: image, width: 1200, height: 630, alt: title }],

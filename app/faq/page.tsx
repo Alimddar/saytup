@@ -7,8 +7,8 @@ import { FAQ_ITEMS } from '@/lib/constants';
 import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Tez-tez Verilən Suallar | Saytup.az FAQ',
-  description: 'Sayt hazırlamaq barədə suallarınız var? Saytup.az FAQ-da veb sayt qiyməti, müddəti, texnologiyalar, dəstək və digər suallara cavab tapın.',
+  title: 'Tez-tez Verilən Suallar | Saytup.digital FAQ',
+  description: 'Sayt hazırlamaq barədə suallarınız var? Saytup.digital FAQ-da veb sayt qiyməti, müddəti, texnologiyalar, dəstək və digər suallara cavab tapın.',
   keywords: [
     'sayt sualları', 'veb sayt FAQ', 'tez-tez verilən suallar',
     'sayt hazırlamaq nə qədər vaxt alır', 'hansı texnologiyalar istifadə olunur',

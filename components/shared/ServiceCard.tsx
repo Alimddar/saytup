@@ -2,6 +2,7 @@
 
 import { m } from 'framer-motion';
 import * as Icons from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { Service } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { LucideProps } from 'lucide-react';
@@ -19,19 +20,36 @@ export default function ServiceCard({ service, className }: ServiceCardProps) {
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2, ease: 'easeOut' }}
       className={cn(
-        'bg-white rounded-2xl p-6 border border-transparent hover:border-brand-blue/20 shadow-sm hover:shadow-lg transition-all duration-300 group flex flex-col',
+        'group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:border-brand-blue/20 hover:shadow-md',
         className
       )}
     >
-      {/* Icon */}
-      <div className="w-12 h-12 rounded-xl bg-brand-blue-light flex items-center justify-center mb-4 group-hover:bg-brand-blue transition-colors duration-300">
+      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-blue-light">
         {IconComponent && (
-          <IconComponent className="w-6 h-6 text-brand-blue group-hover:text-white transition-colors duration-300" />
+          <IconComponent className="h-6 w-6 text-brand-blue" />
         )}
       </div>
 
-      <h3 className="font-heading font-semibold text-brand-dark text-lg mb-2">{service.title}</h3>
-      <p className="text-sm text-brand-gray font-body leading-relaxed">{service.description}</p>
+      <div className="mt-5 flex items-start justify-between gap-4">
+        <div className="min-w-0">
+          <h3 className="font-heading text-lg font-semibold leading-tight text-brand-dark">
+            {service.title}
+          </h3>
+          <p className="mt-2 text-sm font-body leading-relaxed text-brand-gray">
+            {service.description}
+          </p>
+        </div>
+
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 text-brand-blue transition-colors duration-300 group-hover:bg-brand-blue group-hover:text-white">
+          <ArrowUpRight className="h-4 w-4" />
+        </div>
+      </div>
+
+      <div className="mt-auto pt-5">
+        <p className="text-xs font-body font-medium uppercase tracking-[0.16em] text-brand-orange">
+          {service.highlight}
+        </p>
+      </div>
     </m.div>
   );
 }

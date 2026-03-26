@@ -5,8 +5,8 @@ import PortfolioGrid from './PortfolioGrid';
 import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Portfolio | Hazırlanmış Saytlar — Saytup.az',
-  description: 'Saytup.az-ın hazırladığı veb sayt nümunələri. Azərbaycanda kiçik bizneslər üçün hazırlanmış korporativ saytlar, landing page-lər, e-ticarət həlləri. Portfolio işlərimizə baxın.',
+  title: 'Portfolio | Hazırlanmış Saytlar — Saytup.digital',
+  description: 'Saytup.digital-ın hazırladığı veb sayt nümunələri. Azərbaycanda kiçik bizneslər üçün hazırlanmış korporativ saytlar, landing page-lər, e-ticarət həlləri. Portfolio işlərimizə baxın.',
   keywords: [
     'portfolio', 'hazırlanmış saytlar', 'veb layihələr', 'sayt nümunələri',
     'Azərbaycanda hazırlanmış veb saytlar', 'sayt portfolio nümunələri',
