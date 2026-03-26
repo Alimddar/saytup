@@ -137,12 +137,12 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    slug: 'bda-travel-planner',
-    title: 'BDA Travel Planner',
+    slug: 'travelia',
+    title: 'Travelia',
     client: 'BDA (Baku Design Academy)',
     category: 'Veb Tətbiq',
     description: 'Azərbaycanda səyahət planlama, otel seçimi və marşrut qurma təcrübəsini bir platformada birləşdirən turizm yönümlü rəqəmsal həll.',
-    fullDescription: 'BDA Travel Planner, Azərbaycanda turizm təcrübəsini daha rahat, planlı və ilhamverici hala gətirmək məqsədilə hazırlanmış rəqəmsal məhsuldur. Platforma istifadəçiyə səyahətini əvvəlcədən planlamaq, maraq dairəsinə uyğun istiqamətləri kəşf etmək, uyğun otelləri tapmaq və bütün səfər axınını bir yerdən idarə etmək imkanı yaradır. Layihənin əsas məqsədi parçalanmış məlumat mənbələrini birləşdirərək turistə daha aydın qərarvermə prosesi və daha güclü səfər təcrübəsi təqdim etmək idi. Bu yanaşma həm yerli turizmin rəqəmsal görünürlüğünü gücləndirir, həm də gələcəkdə otel, tur və partnyor inteqrasiyaları üçün genişlənə bilən məhsul bazası yaradır.',
+    fullDescription: 'Travelia, Azərbaycanda turizm təcrübəsini daha rahat, planlı və ilhamverici hala gətirmək məqsədilə hazırlanmış rəqəmsal məhsuldur. Platforma istifadəçiyə səyahətini əvvəlcədən planlamaq, maraq dairəsinə uyğun istiqamətləri kəşf etmək, uyğun otelləri tapmaq və bütün səfər axınını bir yerdən idarə etmək imkanı yaradır. Layihənin əsas məqsədi parçalanmış məlumat mənbələrini birləşdirərək turistə daha aydın qərarvermə prosesi və daha güclü səfər təcrübəsi təqdim etmək idi. Bu yanaşma həm yerli turizmin rəqəmsal görünürlüğünü gücləndirir, həm də gələcəkdə otel, tur və partnyor inteqrasiyaları üçün genişlənə bilən məhsul bazası yaradır.',
     tags: ['Next.js', 'Trip Planning', 'Hotel Discovery', 'UX/UI'],
     gradient: 'from-sky-500 to-cyan-600',
     image: 'https://i.ibb.co/9mdNh95k/sekil1.png',
