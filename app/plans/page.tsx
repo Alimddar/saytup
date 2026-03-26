@@ -1,4 +1,4 @@
-import { Zap, Star, Crown } from 'lucide-react';
+import { Zap, Star } from 'lucide-react';
 import Container from '@/components/layout/Container';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -14,7 +14,7 @@ const PLANS = [
     id: 'starter',
     name: 'Small',
     subtitle: 'Yeni başlayan bizneslər üçün',
-    icon: Zap,
+    icon: 'Zap',
     originalPrice: '450',
     price: '225',
     currency: '₼',
@@ -50,7 +50,7 @@ const PLANS = [
     id: 'medium',
     name: 'Medium',
     subtitle: 'Böyüməkdə olan bizneslər üçün',
-    icon: Star,
+    icon: 'Star',
     originalPrice: '900',
     price: '450',
     currency: '₼',
@@ -91,7 +91,7 @@ const PLANS = [
     id: 'premium',
     name: 'Premium',
     subtitle: 'Böyük layihələr üçün',
-    icon: Crown,
+    icon: 'Crown',
     originalPrice: '1,250',
     price: '625',
     currency: '₼',

@@ -1,13 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import { Check, ChevronDown, ChevronUp } from 'lucide-react';
+import { Check, ChevronDown, ChevronUp, Zap, Star, Crown } from 'lucide-react';
+
+const ICON_MAP: Record<string, React.ElementType> = { Zap, Star, Crown };
 
 interface Plan {
   id: string;
   name: string;
   subtitle: string;
-  icon: React.ElementType;
+  icon: string;
   originalPrice: string;
   price: string;
   currency: string;
@@ -29,7 +31,7 @@ export default function PlanCards({ plans }: { plans: Plan[] }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto items-stretch">
       {plans.map((plan) => {
-        const Icon = plan.icon;
+        const Icon = ICON_MAP[plan.icon] ?? Zap;
         const isExpanded = expanded[plan.id] ?? false;
 
         return (
