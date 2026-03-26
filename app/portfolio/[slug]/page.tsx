@@ -9,7 +9,6 @@ import Container from '@/components/layout/Container';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 import ProjectCarousel from '@/components/shared/ProjectCarousel';
 import { PROJECTS } from '@/lib/constants';
-import { PROJECT_IMAGES } from '@/lib/projectImages';
 
 export async function generateStaticParams() {
   return PROJECTS.map((p) => ({ slug: p.slug }));
@@ -39,7 +38,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <section className="relative pt-24 sm:pt-32 pb-12 sm:pb-20 min-h-[300px] sm:min-h-[420px] flex items-end overflow-hidden">
         {/* Background image */}
         <Image
-          src={PROJECT_IMAGES[project.slug] ?? project.image}
+          src={project.image}
           alt={project.title}
           fill
           className="object-cover"
@@ -63,6 +62,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
             {/* Description */}
             <p className="text-white/80 font-body text-base sm:text-lg max-w-xl">{project.description}</p>
+
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-body text-white/80">
+              <span className="text-white/60">Sifarişçi:</span>
+              <span className="font-medium text-white">{project.client}</span>
+            </div>
 
             {/* Tags + optional live URL */}
             <div className="flex flex-wrap items-center gap-2">
@@ -102,19 +106,38 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               </div>
             </ScrollReveal>
 
+            <ScrollReveal delay={0.2}>
+              <div className="mt-10 grid gap-4 md:grid-cols-3">
+                <div className="rounded-2xl border border-brand-blue/10 bg-white p-5 shadow-sm">
+                  <p className="text-xs font-body font-semibold uppercase tracking-[0.16em] text-brand-orange mb-3">Çağırış</p>
+                  <p className="text-sm font-body leading-relaxed text-brand-gray">{project.challenge}</p>
+                </div>
+                <div className="rounded-2xl border border-brand-blue/10 bg-white p-5 shadow-sm">
+                  <p className="text-xs font-body font-semibold uppercase tracking-[0.16em] text-brand-blue mb-3">Həll</p>
+                  <p className="text-sm font-body leading-relaxed text-brand-gray">{project.solution}</p>
+                </div>
+                <div className="rounded-2xl border border-brand-blue/10 bg-white p-5 shadow-sm">
+                  <p className="text-xs font-body font-semibold uppercase tracking-[0.16em] text-emerald-600 mb-3">Nəticə</p>
+                  <p className="text-sm font-body leading-relaxed text-brand-gray">{project.result}</p>
+                </div>
+              </div>
+            </ScrollReveal>
+
             {/* Navigation */}
-            <div className="flex justify-between items-center pt-12 mt-12 border-t border-brand-gray/20">
-              {prev ? (
-                <Link href={`/portfolio/${prev.slug}`} className="flex items-center gap-2 text-brand-blue font-body font-medium hover:gap-3 transition-all">
-                  <ArrowLeft className="w-4 h-4" /> {prev.title}
-                </Link>
-              ) : <div />}
-              {next ? (
-                <Link href={`/portfolio/${next.slug}`} className="flex items-center gap-2 text-brand-blue font-body font-medium hover:gap-3 transition-all">
-                  {next.title} <ArrowRight className="w-4 h-4" />
-                </Link>
-              ) : <div />}
-            </div>
+            {(prev || next) && (
+              <div className="flex justify-between items-center pt-12 mt-12 border-t border-brand-gray/20">
+                {prev ? (
+                  <Link href={`/portfolio/${prev.slug}`} className="flex items-center gap-2 text-brand-blue font-body font-medium hover:gap-3 transition-all">
+                    <ArrowLeft className="w-4 h-4" /> {prev.title}
+                  </Link>
+                ) : <div />}
+                {next ? (
+                  <Link href={`/portfolio/${next.slug}`} className="flex items-center gap-2 text-brand-blue font-body font-medium hover:gap-3 transition-all">
+                    {next.title} <ArrowRight className="w-4 h-4" />
+                  </Link>
+                ) : <div />}
+              </div>
+            )}
           </div>
         </Container>
       </section>

@@ -6,9 +6,8 @@ import Container from '@/components/layout/Container';
 import ProjectCard from '@/components/shared/ProjectCard';
 import { PROJECTS } from '@/lib/constants';
 
-const categories = ['Hamısı', 'Korporativ Sayt', 'E-Commerce', 'Veb Tətbiq', 'Landing Page'];
-
 export default function PortfolioPage() {
+  const categories = ['Hamısı', ...new Set(PROJECTS.map((project) => project.category))];
   const [active, setActive] = useState('Hamısı');
 
   const filtered = active === 'Hamısı' ? PROJECTS : PROJECTS.filter((p) => p.category === active);
@@ -30,25 +29,29 @@ export default function PortfolioPage() {
       {/* Filter + Grid */}
       <section className="py-20 bg-brand-light">
         <Container>
-          {/* Filter Bar */}
-          <div className="flex flex-wrap gap-2 justify-center mb-12">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActive(cat)}
-                className={`px-5 py-2 rounded-full text-sm font-body font-medium transition-all duration-200 ${
-                  active === cat
-                    ? 'bg-brand-blue text-white shadow-md'
-                    : 'bg-white text-brand-gray hover:text-brand-blue hover:border-brand-blue border border-transparent'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
+          {categories.length > 2 && (
+            <div className="flex flex-wrap gap-2 justify-center mb-12">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActive(cat)}
+                  className={`px-5 py-2 rounded-full text-sm font-body font-medium transition-all duration-200 ${
+                    active === cat
+                      ? 'bg-brand-blue text-white shadow-md'
+                      : 'bg-white text-brand-gray hover:text-brand-blue hover:border-brand-blue border border-transparent'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+          )}
 
           {/* Grid */}
-          <m.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <m.div
+            layout
+            className={`grid gap-6 ${filtered.length === 1 ? 'max-w-5xl mx-auto grid-cols-1' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'}`}
+          >
             <AnimatePresence mode="popLayout">
               {filtered.map((project) => (
                 <m.div
