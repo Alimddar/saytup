@@ -9,7 +9,7 @@ import { SERVICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Xidmətlər',
-  description: 'Azərbaycanda kiçik bizneslər üçün tam veb inkişaf xidmətləri — fərdi veb tətbiqlər, e-ticarət, responsiv saytlar, UI/UX dizayn, SEO və daha çox.',
+  description: 'Azərbaycanda kiçik bizneslər üçün nəticəyə fokuslanan veb xidmətləri — korporativ saytlar, landing page-lər, e-ticarət, rezervasiya sistemləri, redesign və texniki dəstək.',
 };
 
 export default function ServicesPage() {
@@ -21,7 +21,7 @@ export default function ServicesPage() {
           <div className="text-center text-white">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4">Xidmətlərimiz</h1>
             <p className="text-lg text-white/70 font-body max-w-xl mx-auto">
-              Onlayn mövcudluğunuzu qurmaq, işə salmaq və böyütmək üçün lazım olan hər şey.
+              Saytup satış, təqdimat və daxili prosesləri gücləndirən nəticəyönümlü veb həlləri qurur.
             </p>
           </div>
         </Container>
@@ -33,28 +33,59 @@ export default function ServicesPage() {
           <div className="flex flex-col gap-16">
             {SERVICES.map((service, index) => {
               const IconComponent = Icons[service.icon as keyof typeof Icons] as React.ComponentType<LucideProps> | undefined;
-              const isEven = index % 2 === 0;
               return (
-                <ScrollReveal key={service.id} delay={0.1}>
-                  <div className={`bg-white rounded-3xl p-5 sm:p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center ${!isEven ? 'lg:flex lg:flex-row-reverse' : ''}`}>
-                    {/* Icon side */}
-                    <div className={`flex ${isEven ? 'lg:justify-start' : 'lg:justify-end'}`}>
-                      <div className="w-24 h-24 rounded-3xl bg-brand-blue-light flex items-center justify-center">
-                        {IconComponent && <IconComponent className="w-12 h-12 text-brand-blue" />}
+                <ScrollReveal key={service.id} delay={index * 0.06}>
+                  <div className="rounded-3xl border border-brand-blue/10 bg-white p-5 shadow-sm sm:p-8 lg:p-10">
+                    <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
+                      <div className="lg:w-[42%]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-blue-light">
+                            {IconComponent && <IconComponent className="h-7 w-7 text-brand-blue" />}
+                          </div>
+
+                          <div className="min-w-0">
+                            <p className="text-xs font-body font-semibold uppercase tracking-[0.18em] text-brand-orange">
+                              Xidmət {String(index + 1).padStart(2, '0')}
+                            </p>
+                            <h2 className="mt-1 text-2xl font-heading font-semibold text-brand-dark">
+                              {service.title}
+                            </h2>
+                            <p className="mt-2 text-sm font-body font-medium text-brand-blue">
+                              {service.highlight}
+                            </p>
+                          </div>
+                        </div>
+
+                        <p className="mt-5 font-body leading-relaxed text-brand-gray">
+                          {service.description}
+                        </p>
+
+                        <div className="mt-5 rounded-2xl border border-brand-blue/10 bg-brand-light p-4">
+                          <p className="text-xs font-body font-semibold uppercase tracking-[0.18em] text-brand-gray">
+                            Ən uyğun
+                          </p>
+                          <p className="mt-2 text-sm font-body leading-relaxed text-brand-dark">
+                            {service.idealFor}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    {/* Content */}
-                    <div>
-                      <h2 className="text-2xl font-heading font-semibold text-brand-dark mb-3">{service.title}</h2>
-                      <p className="text-brand-gray font-body mb-6 leading-relaxed">{service.description}</p>
-                      <ul className="flex flex-col gap-2">
-                        {service.deliverables.map((item) => (
-                          <li key={item} className="flex items-center gap-3">
-                            <CheckCircle2 className="w-5 h-5 text-brand-blue shrink-0" />
-                            <span className="text-sm font-body text-brand-dark">{item}</span>
-                          </li>
-                        ))}
-                      </ul>
+
+                      <div className="flex-1">
+                        <p className="text-xs font-body font-semibold uppercase tracking-[0.18em] text-brand-gray">
+                          Bu xidmətə daxildir
+                        </p>
+                        <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+                          {service.deliverables.map((item) => (
+                            <li
+                              key={item}
+                              className="flex items-start gap-3 rounded-2xl border border-brand-blue/10 bg-white px-4 py-4"
+                            >
+                              <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand-blue" />
+                              <span className="text-sm font-body leading-relaxed text-brand-dark">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </ScrollReveal>

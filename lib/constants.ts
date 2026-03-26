@@ -23,52 +23,96 @@ export interface Service {
   id: string;
   icon: string;
   title: string;
+  highlight: string;
+  idealFor: string;
   description: string;
   deliverables: string[];
 }
 
 export const SERVICES: Service[] = [
   {
-    id: 'web-apps',
-    icon: 'Globe',
-    title: 'Fərdi Veb Tətbiqlər',
-    description: 'React və Next.js ilə tam stack veb tətbiqlər. Mürəkkəb idarəetmə panellərindən müştəri portallarına qədər biznesinizlə böyüyən həllər hazırlayırıq.',
-    deliverables: ['React / Next.js frontend', 'REST və ya GraphQL API', 'Verilənlər bazası dizaynı', 'Admin panel'],
+    id: 'corporate-websites',
+    icon: 'Building2',
+    title: 'Korporativ Vebsaytlar',
+    highlight: 'Etibar yaradan təqdimat',
+    idealFor: 'Xidmət biznesləri, klinikalar, hüquq büroları və peşəkar təqdimata ehtiyacı olan komandalar üçün.',
+    description: 'Brendinizi peşəkar göstərən, xidmətlərinizi aydın izah edən və müraciət toplayan sürətli korporativ saytlar hazırlayırıq.',
+    deliverables: [
+      'Fərdi səhifə strukturu və kontent axını',
+      'Əlaqə forması, WhatsApp və xəritə inteqrasiyası',
+      'Mobil uyğun, SEO əsaslı quruluş',
+      'Analytics və idarə edilən məzmun blokları',
+    ],
+  },
+  {
+    id: 'landing-pages',
+    icon: 'Megaphone',
+    title: 'Landing Page və Kampaniya Səhifələri',
+    highlight: 'Trafiki müraciətə çevirən flow',
+    idealFor: 'Reklam kampaniyaları, kurslar, tədbirlər və bir təklif ətrafında satış edən bizneslər üçün.',
+    description: 'Google, Meta və sosial media trafikini bir hədəfə yönəldən, CTA mərkəzli satış səhifələri qururuq.',
+    deliverables: [
+      'Tək təklifə fokuslanan satış strukturu',
+      'Lead formaları və güclü CTA blokları',
+      'Pixel, Analytics və dönüşüm izləmə',
+      'Sürətli yüklənən mobil-first dizayn',
+    ],
   },
   {
     id: 'ecommerce',
     icon: 'ShoppingCart',
     title: 'E-Ticarət Həlləri',
-    description: 'Ziyarətçiləri müştəriyə çevirən onlayn mağazalar. Ödəniş sistemlərini inteqrasiya edir, məhsul kataloqlarını idarə edir və satışı maksimuma çatdırırıq.',
-    deliverables: ['Məhsul kataloqu və axtarış', 'Təhlükəsiz ödəniş inteqrasiyası', 'Sifariş idarəetmə sistemi', 'Stok izləmə'],
+    highlight: '24/7 satış infrastrukturu',
+    idealFor: 'Məhsul satan mağazalar, butiklər və onlayn sifariş qəbul etmək istəyən brendlər üçün.',
+    description: 'Kataloqdan ödənişə qədər tam alış-veriş axını quran, satışa fokuslanan onlayn mağazalar hazırlayırıq.',
+    deliverables: [
+      'Məhsul kataloqu, filtr və axtarış',
+      'Səbət, checkout və ödəniş inteqrasiyası',
+      'Sifariş, stok və kampaniya idarəetməsi',
+      'Satış analitikası və əsas SEO optimizasiyası',
+    ],
   },
   {
-    id: 'responsive-sites',
-    icon: 'Smartphone',
-    title: 'Responsiv Vebsaytlar',
-    description: 'Telefonda da, planşetdə də, kompüterdə də; saytınız hər zaman mükəmməl görünür. Sürətli yüklənir, SEO-ya uyğundur, brendiniz peşəkarcasına təmsil edilir.',
-    deliverables: ['Mobil-first dizayn', 'Çarpaz brauzer uyğunluğu', 'Səhifə sürəti optimallaşdırması', 'CMS inteqrasiyası'],
+    id: 'booking-panels',
+    icon: 'CalendarDays',
+    title: 'Rezervasiya və İdarəetmə Panelləri',
+    highlight: 'Manual prosesi avtomatlaşdırır',
+    idealFor: 'Salonlar, klinikalar, fitness, turizm və müraciət axınını sistemləşdirmək istəyən bizneslər üçün.',
+    description: 'Rezervasiya, sifariş və daxili iş axınını sadələşdirən idarəetmə panelləri və onlayn proseslər qururuq.',
+    deliverables: [
+      'Rezervasiya və ya sifariş axını',
+      'Admin panel və status idarəetməsi',
+      'Bildiriş və xatırlatma məntiqi',
+      'Filial, komanda və xidmət strukturu',
+    ],
   },
   {
-    id: 'maintenance',
-    icon: 'Wrench',
-    title: 'Sayt Texniki Dəstəyi',
-    description: 'Sayt çökür — müştəri itirilir. Bu qədər sadədir. Biz saytınızın arxasında dayanırıq ki, siz heç vaxt bu problemlə üzləşməyəsiniz. Yeniləmələri, təhlükəsizliyi, texniki məsələləri biz idarə edirik. Siz yalnız biznesinizlə məşğul olursunuz.',
-    deliverables: ['Müntəzəm yeniləmə və yamalar', 'Performans monitorinqi', 'Kontent yeniləmələri', '24 saat dəstək cavabı'],
+    id: 'redesign-migration',
+    icon: 'RefreshCcw',
+    title: 'Sayt Yenilənməsi və Miqrasiya',
+    highlight: 'Köhnə saytı müasir sistemə keçirir',
+    idealFor: 'Yavaş, köhnəlmiş və nəticə verməyən mövcud saytı olan bizneslər üçün.',
+    description: 'Hazır saytınızı daha güclü strukturla yeniləyir, kontent və SEO dəyərini qoruyaraq müasir sistemə daşıyırıq.',
+    deliverables: [
+      'Yeni UX/UI və səhifə xəritəsi',
+      'Kontent, SEO və yönləndirmə qorunması',
+      'Kod və performans təmizlənməsi',
+      'Yeni CMS və ya idarəetmə axınına keçid',
+    ],
   },
   {
-    id: 'ui-ux',
-    icon: 'Palette',
-    title: 'UI/UX Dizayn',
-    description: 'Saytınıza girən ziyarətçi nə etməli olduğunu dərhal bilir — axtarmır, çaşmır, çıxıb getmir. Hər ekranı, hər düyməni, hər addımı müştərinizin davranışına görə qururuq. Nəticə isə sadədir: gözəl görünən, asan istifadə edilən və satış gətirən interfeys.',
-    deliverables: ['İstifadəçi tədqiqatı və personajlar', 'Sxemlər və prototiplər', 'Dizayn sistemi yaradılması', 'İstifadə qabiliyyəti testləri'],
-  },
-  {
-    id: 'seo',
-    icon: 'TrendingUp',
-    title: 'SEO və Performans',
-    description: 'Müştəriniz sizi axtarır — amma sizi tapmır. Saytınızı Google-da ilk sıralara çıxarır, rəqiblərinizdən sürətli yüklənirik. Daha çox görünüş, daha çox ziyarətçi, daha çox satış.',
-    deliverables: ['Texniki SEO auditi', 'Core Web Vitals optimallaşdırması', 'Açar söz strategiyası', 'Aylıq hesabat'],
+    id: 'support-optimization',
+    icon: 'Gauge',
+    title: 'SEO, Sürət və Texniki Dəstək',
+    highlight: 'Buraxılışdan sonra da işlək qalır',
+    idealFor: 'Saytı aktiv satış və ya müraciət kanalı kimi istifadə edən bizneslər üçün.',
+    description: 'Saytın görünməsi, sürəti və sabit işləməsi üçün texniki optimizasiya və davamlı dəstək veririk.',
+    deliverables: [
+      'Texniki SEO və Core Web Vitals optimallaşdırması',
+      'Aylıq yeniləmə, təhlükəsizlik və monitorinq',
+      'Kontent və kampaniya dəstəyi',
+      'Problemlərə sürətli cavab və inkişaf planı',
+    ],
   },
 ];
 
