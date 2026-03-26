@@ -29,29 +29,24 @@ export default function PortfolioPage() {
       {/* Filter + Grid */}
       <section className="py-20 bg-brand-light">
         <Container>
-          {categories.length > 2 && (
-            <div className="flex flex-wrap gap-2 justify-center mb-12">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActive(cat)}
-                  className={`px-5 py-2 rounded-full text-sm font-body font-medium transition-all duration-200 ${
-                    active === cat
-                      ? 'bg-brand-blue text-white shadow-md'
-                      : 'bg-white text-brand-gray hover:text-brand-blue hover:border-brand-blue border border-transparent'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-          )}
+          <div className="flex flex-wrap gap-2 justify-center mb-12">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActive(cat)}
+                className={`px-5 py-2 rounded-full text-sm font-body font-medium transition-all duration-200 ${
+                  active === cat
+                    ? 'bg-brand-blue text-white shadow-md'
+                    : 'bg-white text-brand-gray hover:text-brand-blue hover:border-brand-blue border border-transparent'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
 
           {/* Grid */}
-          <m.div
-            layout
-            className={`grid gap-6 ${filtered.length === 1 ? 'max-w-5xl mx-auto grid-cols-1' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'}`}
-          >
+          <m.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <AnimatePresence mode="popLayout">
               {filtered.map((project) => (
                 <m.div
