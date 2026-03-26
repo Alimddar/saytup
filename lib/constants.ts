@@ -160,6 +160,28 @@ export const PROJECTS: Project[] = [
     solution: 'Layihə çərçivəsində bölgə əsaslı kəşf axını, otel tapma təcrübəsi, gün-gün səyahət planlama strukturu və istifadəçinin maraq dairəsinə uyğun təklif sistemi üzərində qurulmuş məhsul konsepti hazırladıq. Vizual dil daha çox ilham və rahatlıq hissi verir, informasiya arxitekturası isə turistin planlama zamanı itmək əvəzinə sürətli seçim etməsini asanlaşdırır.',
     result: 'Nəticədə BDA üçün sadəcə təqdimat saytı deyil, gələcəkdə partnyor, otel və tur inteqrasiyaları ilə genişlənə bilən real məhsul bazası formalaşdı. Platforma Azərbaycanın turizm imkanlarını daha aydın göstərən, istifadəçiyə səyahətini bir yerdən planlamaq imkanı verən və ümumi təcrübəni daha premium hiss etdirən rəqəmsal həllə çevrildi.',
   },
+  {
+    id: '2',
+    slug: 'seomentor',
+    title: 'SEOmentor',
+    client: 'Cursor AI Hackathon',
+    category: 'AI Platforması',
+    description: 'Claude AI ilə işləyən, vebsaytın SEO vəziyyətini analiz edib rəqibləri, açar söz boşluqlarını və gün-gün icra planını çıxaran ağıllı platforma.',
+    fullDescription: 'SEOmentor, istənilən vebsaytı analiz edərək onun SEO sağlamlığını ölçən, əsas problemləri aşkarlayan və istifadəçiyə real icra planı təqdim edən AI-powered platformadır. Məhsulun əsas ideyası texniki audit, kontent boşluqları, rəqib analizi və açar söz imkanlarını bir dashboard içində toplamaq idi. Platforma istifadəçiyə sadəcə problem siyahısı vermir, eyni zamanda 7-30 günlük addım-addım yol xəritəsi, hər gün üçün konkret task-lar, KPI-lar və dərin icra checklist-ləri təqdim edir. Beləliklə, SEOmentor həm marketinq komandaları, həm də agentliklər üçün analizdən icraya keçidi xeyli sürətləndirən praktik məhsula çevrilir.',
+    tags: ['React 19', 'FastAPI', 'Claude AI', 'TypeScript', 'Python 3.11', 'SQLite'],
+    gradient: 'from-indigo-500 to-sky-600',
+    image: 'https://i.ibb.co/VWhqnZhg/sekil1.png',
+    images: [
+      'https://i.ibb.co/VWhqnZhg/sekil1.png',
+      'https://i.ibb.co/j70mPYJ/sekil4.png',
+      'https://i.ibb.co/Y77z3qs8/sekil3.png',
+      'https://i.ibb.co/0jXt84w9/sekil2.png',
+      'https://i.ibb.co/Q3nBH7Xp/s.png',
+    ],
+    challenge: 'SEO audit alətləri çox vaxt ya həddindən artıq texniki olur, ya da istifadəçiyə növbəti addımı aydın göstərmir. Məqsəd vebsaytı analiz edən, rəqibləri müəyyənləşdirən və nəticələri icra oluna bilən plan şəklində verən vahid məhsul yaratmaq idi.',
+    solution: 'Frontend React 19 + Vite 7 üzərində quruldu, backend isə FastAPI və Claude AI inteqrasiyası ilə inkişaf etdirildi. Platforma crawled SEO siqnallarını toplayır, problemləri kateqoriyalara ayırır, rəqibləri aşkarlayır, keyword gap çıxarır və hər gün üçün ayrıca deliverable və KPI-larla roadmap yaradır.',
+    result: 'SEOmentor nəticədə sadə audit panelindən daha artıq dəyər təqdim edən tam məhsula çevrildi: istifadəçi URL daxil edir, AI isə vəziyyəti analiz edib birbaşa görüləcək iş planını təqdim edir. Bu yanaşma SEO qərarverməsini sürətləndirir, komandalar üçün prioritetləri aydınlaşdırır və analizi operativ icra sənədinə çevirir.',
+  },
 ];
 
 export interface Testimonial {
