@@ -9,7 +9,11 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="WhatsApp ilə əlaqə"
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-lg bg-[#25D366] text-white"
+      className="fixed z-50 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg sm:h-14 sm:w-14"
+      style={{
+        right: 'calc(env(safe-area-inset-right) + 1rem)',
+        bottom: 'calc(env(safe-area-inset-bottom) + 1rem)',
+      }}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1, type: 'spring', stiffness: 260, damping: 20 }}

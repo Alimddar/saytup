@@ -8,7 +8,7 @@ import Container from '@/components/layout/Container';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-brand-light pt-20">
+    <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-brand-light pt-20">
       {/* Dot Grid Background */}
       <div
         className="absolute inset-0 opacity-40"
@@ -27,7 +27,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, ease: 'easeOut' }}
             >
-              <span className="inline-flex items-center gap-2 bg-brand-blue-light text-brand-blue text-sm font-body font-medium px-4 py-1.5 rounded-full mb-6">
+              <span className="mb-6 inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-full bg-brand-blue-light px-4 py-1.5 text-sm font-body font-medium text-brand-blue">
                 <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
                 Veb İnkişaf Studiyası · Bakı, Azərbaycan
               </span>

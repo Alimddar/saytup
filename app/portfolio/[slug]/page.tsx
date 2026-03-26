@@ -88,7 +88,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
             <p className="text-white/80 font-body text-base sm:text-lg max-w-xl">{project.description}</p>
 
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-body text-white/80">
+            <div className="inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-full bg-white/10 px-4 py-2 text-sm font-body text-white/80">
               <span className="text-white/60">Sifarişçi:</span>
               <span className="font-medium text-white">{project.client}</span>
             </div>

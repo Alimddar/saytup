@@ -186,7 +186,7 @@ export default function PlansPage() {
           <div className="max-w-3xl mx-auto">
             <Breadcrumbs items={[{ label: 'Paketlər', href: '/plans' }]} />
             <div className="text-center">
-              <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-4 py-2 rounded-full mb-6 backdrop-blur-sm">
+              <div className="mb-6 inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full bg-white/10 px-4 py-2 text-center text-sm font-medium text-white backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
                 Qiymət Paketləri
               </div>
@@ -198,7 +198,7 @@ export default function PlansPage() {
                 Azərbaycanda sayt qiyməti nə qədərdir? Biznesinizin mərhələsinə uyğun paket seçin.
                 Hər paket domen, hosting, SEO və texniki dəstəyi əhatə edir.
               </p>
-              <div className="mt-6 inline-flex items-center gap-2 bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-sm font-semibold px-5 py-2.5 rounded-full">
+              <div className="mt-6 inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-brand-orange/40 bg-brand-orange/20 px-5 py-2.5 text-center text-sm font-semibold text-brand-orange">
                 🎉 Bütün paketlərdə 50% endirim — məhdud müddətlidir!
               </div>
             </div>
@@ -231,7 +231,29 @@ export default function PlansPage() {
               </p>
             </div>
 
-            <div className="overflow-x-auto rounded-2xl border border-gray-200">
+            <div className="space-y-4 md:hidden">
+              {COMPARISON_FEATURES.map((row) => (
+                <div key={row.name} className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+                  <h3 className="text-sm font-semibold text-brand-dark">{row.name}</h3>
+                  <div className="mt-3 grid gap-2">
+                    <div className="flex items-center justify-between rounded-xl bg-brand-light px-3 py-2">
+                      <span className="text-xs font-medium text-brand-gray">Small</span>
+                      <span className="text-sm font-medium text-brand-dark">{row.starter}</span>
+                    </div>
+                    <div className="flex items-center justify-between rounded-xl bg-brand-blue-light/40 px-3 py-2">
+                      <span className="text-xs font-medium text-brand-blue">Medium</span>
+                      <span className="text-sm font-semibold text-brand-blue">{row.standard}</span>
+                    </div>
+                    <div className="flex items-center justify-between rounded-xl bg-brand-orange-light px-3 py-2">
+                      <span className="text-xs font-medium text-brand-orange">Premium</span>
+                      <span className="text-sm font-semibold text-brand-orange">{row.premium}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="hidden overflow-x-auto rounded-2xl border border-gray-200 md:block">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="bg-brand-dark text-white">
