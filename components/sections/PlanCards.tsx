@@ -129,7 +129,7 @@ export default function PlanCards({ plans }: { plans: Plan[] }) {
               {/* CTA */}
               <Link
                 href={plan.ctaHref}
-                className={`mt-6 w-full flex items-center justify-center py-3.5 px-6 rounded-xl font-semibold text-sm transition-opacity duration-200 hover:opacity-90 ${
+                className={`mt-auto pt-6 w-full flex items-center justify-center py-3.5 px-6 rounded-xl font-semibold text-sm transition-opacity duration-200 hover:opacity-90 ${
                   plan.popular
                     ? 'bg-brand-blue text-white'
                     : plan.id === 'premium'
