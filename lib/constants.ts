@@ -48,7 +48,7 @@ export const SERVICES: Service[] = [
     id: 'landing-pages',
     icon: 'Megaphone',
     title: 'Landing Page və Kampaniya Səhifələri',
-    highlight: 'Trafiki müraciətə çevirən flow',
+    highlight: 'Kliki müraciətə çevirən struktur',
     idealFor: 'Reklam kampaniyaları, kurslar, tədbirlər və bir təklif ətrafında satış edən bizneslər üçün.',
     description: 'Google, Meta və sosial media trafikini bir hədəfə yönəldən, CTA mərkəzli satış səhifələri qururuq.',
     deliverables: [

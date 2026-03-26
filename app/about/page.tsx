@@ -14,20 +14,20 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    title: 'Keyfiyyət Kəmiyyətdən Üstündür',
-    description: 'Daha yaxşı nəticə vermək üçün az layihə götürürük. Hər müştəri tam diqqətimizi alır.',
+    title: 'Nəticəyə Fokuslanırıq',
+    description: 'Hər layihəyə sadəcə dizayn işi kimi yox, etibar, müraciət və satış problemi kimi baxırıq. Verdiyimiz qərarlar real nəticə gətirməlidir.',
     gradient: 'from-brand-blue to-brand-blue-dark',
     Icon: Award,
   },
   {
-    title: 'Şəffaflıq',
-    description: 'Aydın ünsiyyət, heç bir sürpriz, dürüst müddətlər. Layihənizin necə getdiyi həmişə məlum olur.',
+    title: 'Prosesi Aydın Saxlayırıq',
+    description: 'Müddət, görülən iş və növbəti addımlar hər mərhələdə aydın olur. Siz layihənizin hansı vəziyyətdə olduğunu hər zaman dəqiq bilirsiniz.',
     gradient: 'from-brand-orange to-orange-600',
     Icon: Eye,
   },
   {
-    title: 'Uzunmüddətli Tərəfdaşlıq',
-    description: 'Biz qurmaqla bitiririk — biz sizimlə böyüyürük. Seçdiyiniz paketə uyğun dəstək xidməti ilə yanınızdayıq.',
+    title: 'Buraxılışdan Sonra da Yanınızdayıq',
+    description: 'Saytı təhvil verib geri çəkilmirik. Dəstək, optimizasiya və inkişaf ilə layihənizin uzunmüddətli işlək qalmasına kömək edirik.',
     gradient: 'from-green-500 to-emerald-600',
     Icon: Handshake,
   },
@@ -149,7 +149,7 @@ export default function AboutPage() {
         <Container>
           <ScrollReveal>
             <h2 className="text-3xl font-heading font-semibold text-white mb-4">Layihənizə başlamağa hazırsınız?</h2>
-            <p className="text-white/60 font-body mb-8 max-w-md mx-auto">Birlikdə əla bir şey quralım.</p>
+            <p className="text-white/60 font-body mb-8 max-w-md mx-auto">İdeyanızı işlək rəqəmsal həllə çevirək.</p>
             <Link href="/contact">
               <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-body font-medium px-10 py-4 h-auto text-base">
                 Bizimlə Əlaqə <ArrowRight className="w-4 h-4 ml-2" />
