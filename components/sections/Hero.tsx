@@ -49,7 +49,7 @@ export default function Hero() {
               transition={{ duration: 0.4, delay: 0.16, ease: 'easeOut' }}
               className="text-lg text-brand-gray font-body leading-relaxed mb-8 max-w-lg"
             >
-              Saytup kiçik bizneslərin gözəl, sürətli və effektiv veb tətbiqlər işə salmasını təmin edən Bakıda platformadır.
+              Saytup brendinizi daha peşəkar göstərən, etibar yaradan və müraciətləri real nəticəyə çevirən sürətli vebsaytlar və rəqəmsal həllər hazırlayır.
             </m.p>
 
             <m.div
