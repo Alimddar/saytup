@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Check, ChevronDown, ChevronUp, Zap, Star, Crown } from 'lucide-react';
 
 const ICON_MAP: Record<string, React.ElementType> = { Zap, Star, Crown };
@@ -21,11 +22,11 @@ interface Plan {
   features: string[];
   suitableFor: string[];
   cta: string;
+  ctaHref: string;
 }
 
 export default function PlanCards({ plans }: { plans: Plan[] }) {
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
-
   const toggle = (id: string) => setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
 
   return (
@@ -82,9 +83,10 @@ export default function PlanCards({ plans }: { plans: Plan[] }) {
               <p className="text-white/70 text-sm mt-1">{plan.period}</p>
             </div>
 
-            {/* Features */}
-            <div className="p-6 sm:p-8 flex-1 flex flex-col">
-              <ul className="space-y-2.5 flex-1">
+            {/* Body */}
+            <div className="p-6 sm:p-8 flex flex-col flex-1">
+              {/* Features */}
+              <ul className="space-y-2.5">
                 {plan.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
@@ -95,28 +97,28 @@ export default function PlanCards({ plans }: { plans: Plan[] }) {
                 ))}
               </ul>
 
-              {/* Daha çox göstər */}
+              {/* Toggle button */}
               <button
                 onClick={() => toggle(plan.id)}
-                className="mt-6 w-full flex items-center justify-center gap-2 py-3 px-6 rounded-xl border border-gray-200 text-sm font-medium text-brand-gray hover:border-brand-blue hover:text-brand-blue transition-colors duration-200"
+                className="mt-4 w-full flex items-center justify-center gap-1.5 py-2 text-xs font-medium text-brand-gray hover:text-brand-blue transition-colors duration-200"
               >
                 {isExpanded ? (
-                  <>Daha az göstər <ChevronUp className="w-4 h-4" /></>
+                  <>Daha az göstər <ChevronUp className="w-3.5 h-3.5" /></>
                 ) : (
-                  <>Daha çox göstər <ChevronDown className="w-4 h-4" /></>
+                  <>Daha çox göstər <ChevronDown className="w-3.5 h-3.5" /></>
                 )}
               </button>
 
-              {/* suitableFor — collapse/expand */}
+              {/* suitableFor */}
               {isExpanded && (
-                <div className="mt-4 pt-4 border-t border-gray-100">
-                  <p className="text-xs font-semibold text-brand-gray uppercase tracking-wider mb-3">
+                <div className="pt-3 border-t border-gray-100">
+                  <p className="text-xs font-semibold text-brand-gray uppercase tracking-wider mb-2">
                     Kimlər üçün uyğundur?
                   </p>
                   <ul className="space-y-1.5">
                     {plan.suitableFor.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <span className="text-brand-blue mt-1 shrink-0 text-xs">✓</span>
+                        <span className="text-brand-blue mt-0.5 shrink-0 text-xs">✓</span>
                         <span className="text-xs text-brand-gray">{item}</span>
                       </li>
                     ))}
@@ -124,9 +126,10 @@ export default function PlanCards({ plans }: { plans: Plan[] }) {
                 </div>
               )}
 
-              {/* Static CTA */}
-              <div
-                className={`mt-6 w-full flex items-center justify-center py-4 px-6 rounded-xl font-semibold text-sm ${
+              {/* CTA */}
+              <Link
+                href={plan.ctaHref}
+                className={`mt-6 w-full flex items-center justify-center py-3.5 px-6 rounded-xl font-semibold text-sm transition-opacity duration-200 hover:opacity-90 ${
                   plan.popular
                     ? 'bg-brand-blue text-white'
                     : plan.id === 'premium'
@@ -135,7 +138,7 @@ export default function PlanCards({ plans }: { plans: Plan[] }) {
                 }`}
               >
                 {plan.cta}
-              </div>
+              </Link>
             </div>
           </div>
         );
