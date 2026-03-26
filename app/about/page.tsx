@@ -70,7 +70,7 @@ export default function AboutPage() {
           <div className="text-white max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-6">Saytup Haqqında</h1>
             <p className="text-lg text-white/80 font-body leading-relaxed">
-              Bakıda fəaliyyət göstərən veb inkişaf studiyasıyıq. Kiçik biznes sahiblərinə sayt qurmaqda kömək edirik — dizayndan tutmuş işə salınmasına qədər. Texniki tərəfləri biz idarə edirik; siz yalnız biznesinizə baxırsınız.
+              Saytup kiçik və orta bizneslər üçün etibar yaradan, peşəkar görünən və real nəticə gətirən rəqəmsal həllər hazırlayan veb inkişaf studiyasıdır. Strategiyadan dizayna, inkişafdan buraxılışa qədər bütün prosesi idarə edirik ki, siz biznesinizi böyütməyə fokuslana biləsiniz.
             </p>
           </div>
         </Container>
