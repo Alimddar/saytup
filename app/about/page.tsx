@@ -127,7 +127,7 @@ export default function AboutPage() {
       {/* Why Choose Us */}
       <section className="py-12 sm:py-16 lg:py-24 bg-brand-light">
         <Container>
-          <SectionHeading title="Niyə Bizi Seçin" subtitle="Saytup ilə işləməyi fərqləndirən nədir" className="mb-14" />
+          <SectionHeading title="Niyə Bizi Seçməlisiniz" subtitle="Saytup ilə işləməyi fərqləndirən nədir" className="mb-14" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {differentiators.map((item, index) => (
               <ScrollReveal key={item.title} delay={index * 0.1}>
