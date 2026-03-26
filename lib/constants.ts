@@ -129,9 +129,6 @@ export interface Project {
   image: string;
   images: string[];
   url?: string;
-  challenge: string;
-  solution: string;
-  result: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -156,9 +153,6 @@ export const PROJECTS: Project[] = [
       'https://i.ibb.co/rfKPWZKB/sekil7.png',
       'https://i.ibb.co/PvKFNt0t/sekil8.png',
     ],
-    challenge: 'Azərbaycanda səyahət planlayan istifadəçi çox vaxt otel axtarışı, marşrut qurma, görməli yerləri seçmə və ümumi planlama üçün bir neçə fərqli mənbə arasında parçalanmış təcrübə yaşayır. BDA məqsəd olaraq bu qarışıq prosesi birləşdirən, istifadəçiyə daha rahat qərar verməyə kömək edən və ölkə daxilində turizm təcrübəsini rəqəmsal olaraq gücləndirən vahid platforma istəyirdi.',
-    solution: 'Layihə çərçivəsində bölgə əsaslı kəşf axını, otel tapma təcrübəsi, gün-gün səyahət planlama strukturu və istifadəçinin maraq dairəsinə uyğun təklif sistemi üzərində qurulmuş məhsul konsepti hazırladıq. Vizual dil daha çox ilham və rahatlıq hissi verir, informasiya arxitekturası isə turistin planlama zamanı itmək əvəzinə sürətli seçim etməsini asanlaşdırır.',
-    result: 'Nəticədə BDA üçün sadəcə təqdimat saytı deyil, gələcəkdə partnyor, otel və tur inteqrasiyaları ilə genişlənə bilən real məhsul bazası formalaşdı. Platforma Azərbaycanın turizm imkanlarını daha aydın göstərən, istifadəçiyə səyahətini bir yerdən planlamaq imkanı verən və ümumi təcrübəni daha premium hiss etdirən rəqəmsal həllə çevrildi.',
   },
   {
     id: '2',
@@ -178,9 +172,27 @@ export const PROJECTS: Project[] = [
       'https://i.ibb.co/0jXt84w9/sekil2.png',
       'https://i.ibb.co/Q3nBH7Xp/s.png',
     ],
-    challenge: 'SEO audit alətləri çox vaxt ya həddindən artıq texniki olur, ya da istifadəçiyə növbəti addımı aydın göstərmir. Məqsəd vebsaytı analiz edən, rəqibləri müəyyənləşdirən və nəticələri icra oluna bilən plan şəklində verən vahid məhsul yaratmaq idi.',
-    solution: 'Frontend React 19 + Vite 7 üzərində quruldu, backend isə FastAPI və Claude AI inteqrasiyası ilə inkişaf etdirildi. Platforma crawled SEO siqnallarını toplayır, problemləri kateqoriyalara ayırır, rəqibləri aşkarlayır, keyword gap çıxarır və hər gün üçün ayrıca deliverable və KPI-larla roadmap yaradır.',
-    result: 'SEOmentor nəticədə sadə audit panelindən daha artıq dəyər təqdim edən tam məhsula çevrildi: istifadəçi URL daxil edir, AI isə vəziyyəti analiz edib birbaşa görüləcək iş planını təqdim edir. Bu yanaşma SEO qərarverməsini sürətləndirir, komandalar üçün prioritetləri aydınlaşdırır və analizi operativ icra sənədinə çevirir.',
+  },
+  {
+    id: '3',
+    slug: 'vira-design',
+    title: 'Vira Design',
+    client: 'Nümunə Layihə',
+    category: 'Gözəllik Salonu Saytı',
+    description: 'Gözəllik salonu üçün hazırlanmış, xidmətləri, ustaları və rezervasiya axınını premium təqdim edən React əsaslı nümunə vebsayt konsepti.',
+    fullDescription: 'Vira Design, gözəllik salonları üçün necə daha premium, etibarlı və konversiyaya yaxın rəqəmsal təqdimat qurmaq mümkün olduğunu göstərən nümunə layihədir. React ilə hazırlanmış bu konsept sayt xidmət kateqoriyalarını, komanda təqdimatını, vizual iş nümunələrini və rezervasiya yönümlü CTA bloklarını vahid axın içində birləşdirir. Məqsəd sadəcə estetik görünən salon saytı hazırlamaq yox, istifadəçiyə xidmət seçimini asanlaşdıran, salonun peşəkarlığını gücləndirən və müraciəti daha rahat nöqtəyə aparan struktur qurmaq idi. Layihə real müştəri üçün deyil, portfolioda beauty və wellness sahəsi üçün necə fərqli, zərif və satış yönümlü sayt həlli təqdim etdiyimizi göstərmək üçün hazırlanmış konsept nümunəsidir.',
+    tags: ['React', 'Beauty Website', 'Booking Flow', 'UI Concept'],
+    gradient: 'from-rose-400 to-orange-400',
+    image: 'https://i.ibb.co/bg45PkG3/sekil1.png',
+    images: [
+      'https://i.ibb.co/HpKPB5NP/sekil7.png',
+      'https://i.ibb.co/nM76FxCS/sekil6.png',
+      'https://i.ibb.co/zWzq72t4/sekil5.png',
+      'https://i.ibb.co/s9Q7stCY/sekil4.png',
+      'https://i.ibb.co/M5gWDKvK/sekil3.png',
+      'https://i.ibb.co/b5VvvGXT/sekil2.png',
+      'https://i.ibb.co/bg45PkG3/sekil1.png',
+    ],
   },
 ];
 
