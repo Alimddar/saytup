@@ -27,7 +27,7 @@ export default function PlanCards({ plans }: { plans: Plan[] }) {
   const toggle = (id: string) => setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto items-start">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto items-stretch">
       {plans.map((plan) => {
         const Icon = plan.icon;
         const isExpanded = expanded[plan.id] ?? false;
@@ -37,7 +37,7 @@ export default function PlanCards({ plans }: { plans: Plan[] }) {
             key={plan.id}
             className={`relative rounded-3xl border-2 bg-white flex flex-col transition-shadow duration-300 hover:shadow-2xl ${
               plan.popular
-                ? 'border-brand-blue shadow-xl shadow-brand-blue/20 md:-mt-4 md:mb-4 will-change-transform isolate'
+                ? 'border-brand-blue shadow-xl shadow-brand-blue/20 will-change-transform isolate'
                 : plan.borderColor
             }`}
             style={plan.popular ? { transform: 'translateZ(0)' } : undefined}
