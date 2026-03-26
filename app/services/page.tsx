@@ -33,10 +33,17 @@ export default function ServicesPage() {
           <div className="flex flex-col gap-16">
             {SERVICES.map((service, index) => {
               const IconComponent = Icons[service.icon as keyof typeof Icons] as React.ComponentType<LucideProps> | undefined;
+              const isReversed = index % 2 === 1;
+
               return (
                 <ScrollReveal key={service.id} delay={index * 0.06}>
                   <div className="rounded-3xl border border-brand-blue/10 bg-white p-5 shadow-sm sm:p-8 lg:p-10">
-                    <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
+                    <div
+                      className={[
+                        'flex flex-col gap-8 lg:items-start lg:gap-10',
+                        isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row',
+                      ].join(' ')}
+                    >
                       <div className="lg:w-[42%]">
                         <div className="flex items-start gap-4">
                           <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-blue-light">
