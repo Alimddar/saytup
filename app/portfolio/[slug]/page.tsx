@@ -66,7 +66,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           src={project.image}
           alt={`${project.title} — Saytup.digital tərəfindən hazırlanmış veb sayt layihəsi, Bakı, Azərbaycan`}
           fill
-          className="object-cover"
+          className="object-cover scale-105 blur-[3px]"
           priority
           sizes="100vw"
         />
