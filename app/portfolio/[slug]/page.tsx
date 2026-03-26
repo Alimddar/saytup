@@ -128,23 +128,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               </div>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.2}>
-              <div className="mt-10 grid gap-4 md:grid-cols-3">
-                <div className="rounded-2xl border border-brand-blue/10 bg-white p-5 shadow-sm">
-                  <p className="text-xs font-body font-semibold uppercase tracking-[0.16em] text-brand-orange mb-3">Çağırış</p>
-                  <p className="text-sm font-body leading-relaxed text-brand-gray">{project.challenge}</p>
-                </div>
-                <div className="rounded-2xl border border-brand-blue/10 bg-white p-5 shadow-sm">
-                  <p className="text-xs font-body font-semibold uppercase tracking-[0.16em] text-brand-blue mb-3">Həll</p>
-                  <p className="text-sm font-body leading-relaxed text-brand-gray">{project.solution}</p>
-                </div>
-                <div className="rounded-2xl border border-brand-blue/10 bg-white p-5 shadow-sm">
-                  <p className="text-xs font-body font-semibold uppercase tracking-[0.16em] text-emerald-600 mb-3">Nəticə</p>
-                  <p className="text-sm font-body leading-relaxed text-brand-gray">{project.result}</p>
-                </div>
-              </div>
-            </ScrollReveal>
-
             {(prev || next) && (
               <div className="flex justify-between items-center pt-12 mt-12 border-t border-brand-gray/20">
                 {prev ? (
