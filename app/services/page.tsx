@@ -5,31 +5,63 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/layout/Container';
 import ScrollReveal from '@/components/shared/ScrollReveal';
+import JsonLd from '@/components/shared/JsonLd';
+import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { SERVICES } from '@/lib/constants';
+import { generatePageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Xidmətlər',
-  description: 'Azərbaycanda kiçik bizneslər üçün nəticəyə fokuslanan veb xidmətləri — korporativ saytlar, landing page-lər, e-ticarət, rezervasiya sistemləri, redesign və texniki dəstək.',
-};
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Sayt Hazırlanması Xidmətləri | Saytup.az',
+  description: 'Bakıda peşəkar sayt hazırlanması xidmətləri. Korporativ saytlar, landing page, e-ticarət, rezervasiya sistemləri, sayt yenilənməsi və SEO. Saytup.az ilə saytınızı sifariş edin.',
+  keywords: [
+    'sayt hazırlanması xidmətləri', 'veb dizayn', 'sayt yaratmaq',
+    'veb inkişaf xidmətləri', 'korporativ sayt hazırlanması',
+    'e-ticarət sayt hazırlanması', 'landing page hazırlanması', 'sayt yeniləmə xidməti',
+    'Bakı', 'Azərbaycan',
+  ],
+  path: '/services',
+});
 
 export default function ServicesPage() {
+  const serviceSchemas = SERVICES.map((service) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: service.title,
+    provider: { '@id': 'https://saytup.az/#organization' },
+    areaServed: { '@type': 'Country', name: 'Azerbaijan' },
+    description: service.description,
+    url: `https://saytup.az/services#${service.id}`,
+  }));
+
   return (
     <>
+      <JsonLd data={serviceSchemas} />
+
       {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-24 sm:pt-32 pb-12 sm:pb-20">
+      <section
+        className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-24 sm:pt-32 pb-12 sm:pb-20"
+        aria-labelledby="services-hero-heading"
+      >
         <Container>
-          <div className="text-center text-white">
-            <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4">Xidmətlərimiz</h1>
-            <p className="text-lg text-white/70 font-body max-w-xl mx-auto">
-              Saytup satış, təqdimat və daxili prosesləri gücləndirən nəticəyönümlü veb həlləri qurur.
-            </p>
+          <div className="text-white">
+            <Breadcrumbs items={[{ label: 'Xidmətlər', href: '/services' }]} />
+            <div className="text-center">
+              <h1 id="services-hero-heading" className="text-4xl sm:text-5xl font-heading font-bold mb-4">
+                Sayt Hazırlanması Xidmətləri
+              </h1>
+              <p className="text-lg text-white/70 font-body max-w-xl mx-auto">
+                Saytup satış, təqdimat və daxili prosesləri gücləndirən nəticəyönümlü veb həlləri qurur.
+                Bakıda kiçik bizneslər üçün sayt sifarişi.
+              </p>
+            </div>
           </div>
         </Container>
       </section>
 
       {/* Services List */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-brand-light">
+      <section className="py-12 sm:py-16 lg:py-24 bg-brand-light" aria-labelledby="services-list-heading">
         <Container>
+          <h2 id="services-list-heading" className="sr-only">Xidmət Siyahısı</h2>
           <div className="flex flex-col gap-16">
             {SERVICES.map((service, index) => {
               const IconComponent = Icons[service.icon as keyof typeof Icons] as React.ComponentType<LucideProps> | undefined;
@@ -37,7 +69,7 @@ export default function ServicesPage() {
 
               return (
                 <ScrollReveal key={service.id} delay={index * 0.06}>
-                  <div className="rounded-3xl border border-brand-blue/10 bg-white p-5 shadow-sm sm:p-8 lg:p-10">
+                  <div id={service.id} className="rounded-3xl border border-brand-blue/10 bg-white p-5 shadow-sm sm:p-8 lg:p-10">
                     <div
                       className={[
                         'flex flex-col gap-8 lg:items-start lg:gap-10',
@@ -110,7 +142,7 @@ export default function ServicesPage() {
             <p className="text-white/60 font-body mb-8 max-w-md mx-auto">24 saat ərzində pulsuz qiymət ilə sizinlə əlaqə saxlayacağıq.</p>
             <Link href="/contact">
               <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-body font-medium px-10 py-4 h-auto text-base">
-                Bizimlə Əlaqə <ArrowRight className="w-4 h-4 ml-2" />
+                Sayt Sifarişi Verin <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </ScrollReveal>

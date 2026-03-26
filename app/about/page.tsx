@@ -6,11 +6,19 @@ import { Button } from '@/components/ui/button';
 import Container from '@/components/layout/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import ScrollReveal from '@/components/shared/ScrollReveal';
+import Breadcrumbs from '@/components/shared/Breadcrumbs';
+import { generatePageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Haqqımızda',
-  description: 'Saytup.az haqqında öyrənin — Bakı, Azərbaycanda qurulan, kiçik bizneslərin güclü onlayn mövcudluq yaratmasına kömək edən veb inkişaf studiyası.',
-};
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Saytup Haqqında | Bakıda Veb İnkişaf Studiyası',
+  description: 'Saytup.az haqqında — Bakı, Azərbaycanda qurulan veb inkişaf studiyası. Kiçik bizneslərin güclü onlayn mövcudluq yaratmasına kömək edirik. Komandamız, dəyərlərimiz.',
+  keywords: [
+    'saytup haqqında', 'veb studiya Bakı', 'veb inkişaf komandası',
+    'Bakıda veb inkişaf şirkəti', 'Azərbaycan veb dizayn agentliyi',
+    'Bakı', 'Azərbaycan',
+  ],
+  path: '/about',
+});
 
 const values = [
   {
@@ -65,19 +73,28 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-24 sm:pt-32 pb-12 sm:pb-20">
+      <section
+        className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-24 sm:pt-32 pb-12 sm:pb-20"
+        aria-labelledby="about-hero-heading"
+      >
         <Container>
           <div className="text-white max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-6">Saytup Haqqında</h1>
+            <Breadcrumbs items={[{ label: 'Haqqımızda', href: '/about' }]} />
+            <h1 id="about-hero-heading" className="text-4xl sm:text-5xl font-heading font-bold mb-6">
+              Bakıda Veb Sayt Hazırlayan Studiya
+            </h1>
             <p className="text-lg text-white/80 font-body leading-relaxed">
-              Saytup kiçik və orta bizneslər üçün etibar yaradan, peşəkar görünən və real nəticə gətirən rəqəmsal həllər hazırlayan veb inkişaf studiyasıdır. Strategiyadan dizayna, inkişafdan buraxılışa qədər bütün prosesi idarə edirik ki, siz biznesinizi böyütməyə fokuslana biləsiniz.
+              Saytup kiçik və orta bizneslər üçün etibar yaradan, peşəkar görünən və real nəticə gətirən
+              rəqəmsal həllər hazırlayan Bakı veb inkişaf studiyasıdır.
+              Strategiyadan dizayna, inkişafdan buraxılışa qədər bütün prosesi idarə edirik ki,
+              siz biznesinizi böyütməyə fokuslana biləsiniz.
             </p>
           </div>
         </Container>
       </section>
 
       {/* Values */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-brand-light">
+      <section className="py-12 sm:py-16 lg:py-24 bg-brand-light" aria-labelledby="values-heading">
         <Container>
           <SectionHeading title="Dəyərlərimiz" subtitle="Hər şeyi idarə edən prinsiplərimiz" className="mb-14" />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -97,7 +114,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white" aria-labelledby="team-heading">
         <Container>
           <SectionHeading title="Komandamız" subtitle="Kiçik komanda, böyük nəticələr" className="mb-14" />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -107,7 +124,7 @@ export default function AboutPage() {
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-brand-blue-light">
                     <Image
                       src={member.image}
-                      alt={member.name}
+                      alt={`${member.name} — ${member.role}, Saytup.az komandası, Bakı`}
                       width={96}
                       height={96}
                       className="w-full h-full object-cover"
@@ -125,9 +142,9 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-brand-light">
+      <section className="py-12 sm:py-16 lg:py-24 bg-brand-light" aria-labelledby="why-us-heading">
         <Container>
-          <SectionHeading title="Niyə Bizi Seçməlisiniz" subtitle="Saytup ilə işləməyi fərqləndirən nədir" className="mb-14" />
+          <SectionHeading title="Niyə Bizi Seçməlisiniz" subtitle="Bakıda sayt hazırlamaq üçün niyə Saytup.az?" className="mb-14" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {differentiators.map((item, index) => (
               <ScrollReveal key={item.title} delay={index * 0.1}>
@@ -152,7 +169,7 @@ export default function AboutPage() {
             <p className="text-white/60 font-body mb-8 max-w-md mx-auto">İdeyanızı işlək rəqəmsal həllə çevirək.</p>
             <Link href="/contact">
               <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-body font-medium px-10 py-4 h-auto text-base">
-                Bizimlə Əlaqə <ArrowRight className="w-4 h-4 ml-2" />
+                Pulsuz Konsultasiya Alın <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </ScrollReveal>

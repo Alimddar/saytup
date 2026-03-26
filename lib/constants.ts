@@ -271,6 +271,141 @@ export const SOCIAL_LINKS = [
   { label: 'Behance', href: '#', icon: 'ExternalLink' },
 ];
 
+export interface FaqItem {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+export const FAQ_ITEMS: FaqItem[] = [
+  {
+    id: 1,
+    question: 'Siz hansı texnologiyalardan istifadə edirsiniz?',
+    answer:
+      'Frontend tərəfdə Next.js, React.js və TypeScript istifadə edirik — sürətli, SEO-dostu və miqyaslana bilən interfeyslər üçün. Backend tərəfdə isə Django, Express, Node.js və PostgreSQL ilə işləyirik. Hər layihənin tələbinə uyğun ən optimal texnologiya seçimi aparılır.',
+  },
+  {
+    id: 2,
+    question: 'Bir vebsayt layihəsi nə qədər vaxt alır?',
+    answer:
+      'Müddət seçdiyiniz paketə və layihənin həcminə görə dəyişir. Ortalama bir sayt 5–7 gün ərzində hazırlanıb tam təhvil verilir. Daha böyük və ya xüsusi funksionallıq tələb edən layihələr üçün müddət əvvəlcədən razılaşdırılır.',
+  },
+  {
+    id: 3,
+    question: 'Layihənin qiyməti necə müəyyən edilir?',
+    answer:
+      'Qiymət sizin seçdiyiniz paket və ya sizin üçün hazırladığımız xüsusi paket əsasında müəyyən edilir. Siz nə istədiyinizi bizə bildirirsiniz — biz sizə uyğun hazır paket təklif edir, əgər ehtiyaclarınız standart paketlərə sığmırsa, xüsusi qiymət təklifi hazırlayırıq.',
+  },
+  {
+    id: 4,
+    question: 'Layihə başladıqdan sonra tələblər dəyişə bilərmi?',
+    answer:
+      'Bəli, dəyişikliklər mümkündür. Kiçik dəyişikliklər əlavə xərc tələb etmir. Əsaslı dəyişikliklər üçün yeni qiymət razılaşdırılır. Bütün prosesdə şəffaf ünsiyyəti özəl tutururq.',
+  },
+  {
+    id: 5,
+    question: 'Buraxılışdan sonra texniki dəstək varmı?',
+    answer:
+      'Bəli, seçdiyiniz paketə görə texniki dəstək müddəti dəyişir: Small paketdə 1 ay, Medium paketdə 2 ay, Premium paketdə isə 3 ay texniki dəstək daxildir. Bu müddət bitdikdən sonra dəstəyin davam etdirilməsi üçün əlavə ödəniş tələb olunur.',
+  },
+  {
+    id: 6,
+    question: 'Domain adı və hosting məsələsini siz həll edirsinizmi?',
+    answer:
+      'Bəli, domain qeydiyyatı və hosting seçimində tam yardım göstəririk. Sizin üçün ən uyğun hosting planını tövsiyə edir, qurulumu həyata keçiririk. İstəsəniz, bu xidmətləri bizdən davamlı olaraq ala bilərsiniz.',
+  },
+  {
+    id: 7,
+    question: 'Mövcud saytımı yenidən qurmaq mümkündürmü?',
+    answer:
+      'Əlbəttə. Köhnəlmiş saytların tam yenidən dizaynı və hazırlanması xidmətlərini göstəririk. Əvvəlki saytınızdakı kontent, SEO dəyərləri və digər vacib elementləri qoruyaraq müasir platforma köçürürük.',
+  },
+  {
+    id: 8,
+    question: 'Siz yalnız Bakı şirkətləri ilə işləyirsinizmi?',
+    answer:
+      'Xeyr, biz Azərbaycan daxilindəki bütün şəhərlərdən, həmçinin xarici ölkələrdən müştərilərlə uzaqdan işləyirik. Video zəng, e-poçt və WhatsApp vasitəsilə rahat ünsiyyət qururuq.',
+  },
+  {
+    id: 9,
+    question: 'Saytımın mobil cihazlarda düzgün görünməsini necə təmin edirsiniz?',
+    answer:
+      'Biz hər layihəni "mobil-first" yanaşması ilə hazırlayırıq. Bu o deməkdir ki, dizayn ilk növbədə mobil ekranlar üçün optimallaşdırılır, sonra böyük ekranlara uyğunlaşdırılır. Bütün cihazlarda sınaqdan keçirilir.',
+  },
+  {
+    id: 10,
+    question: 'SEO xidməti ayrıca ödənişlidirmi?',
+    answer:
+      'Bütün hazırladığımız saytlara əsas SEO optimallaşdırması daxildir: sürətli yüklənmə, semantik HTML, meta etiketlər, Open Graph. Davamlı SEO kampaniyası və açar söz strategiyası isə ayrıca xidmət kimi təklif olunur.',
+  },
+  {
+    id: 11,
+    question: 'Ödəniş şərtləri necədir?',
+    answer:
+      'Adətən ödəniş iki hissəyə bölünür: layihə başlanmazdan əvvəl 50%, buraxılışda isə qalan 50%. Böyük layihələr üçün aylıq hissə-hissə ödəniş planı da razılaşdırıla bilər.',
+  },
+  {
+    id: 12,
+    question: 'Layihə prosesinin hansı mərhələlərindən ibarətdir?',
+    answer:
+      'Prosesimiz 4 mərhələdən ibarətdir: Kəşf (biznesinizi tanıyırıq), Dizayn (sxemlər və vizual hazırlanır), İnkişaf (kod yazılır, sınaqlar keçirilir) və Buraxılış & Dəstək (sayt yayımlanır, bizdən dəstək davam edir).',
+  },
+  {
+    id: 13,
+    question: 'Sayt hazırlamaq nə qədərə başa gəlir?',
+    answer:
+      'Saytın qiyməti seçdiyiniz paketə görə dəyişir. Giriş səviyyəsi üçün Small paketimiz 225 ₼-dan, orta həcmli layihələr üçün Medium paket 450 ₼-dan, böyük və funksional layihələr üçün Premium paket isə 625 ₼-dan başlayır. Bütün paketlərə domen, hosting, SSL sertifikatı və texniki dəstək daxildir. Fərdi layihələr üçün pulsuz qiymət əldə etmək üçün bizimlə əlaqə saxlayın.',
+  },
+  {
+    id: 14,
+    question: 'E-ticarət saytı hazırlatmaq istəyirəm, nə etməliyəm?',
+    answer:
+      'E-ticarət saytı üçün əvvəlcə bizimlə pulsuz konsultasiya zəngi keçirin. Məhsullarınızın sayını, ödəniş üsullarını, inteqrasiya tələblərini müzakirə edəcəyik. E-ticarət həllərinizdə məhsul kataloqu, filtr, axtarış, səbət, checkout və Azərbaycan ödəniş sistemləri ilə inteqrasiya daxildir. Sonra sizə uyğun paket təklif edirik.',
+  },
+  {
+    id: 15,
+    question: 'SEO nədir və niyə vacibdir?',
+    answer:
+      'SEO (Axtarış Mühərriyi Optimallaşdırması) saytınızın Google kimi axtarış mühərriklərində daha yuxarıda görünməsinə kömək edir. Düzgün SEO ilə potensial müştərilər sizi "sayt hazırlamaq Bakı" kimi sorğularla tapa bilər. Saytup.az bütün layihələrə əsas texniki SEO daxil edir: sürətli yüklənmə, semantik HTML, meta etiketlər, mobil uyğunluq — bunların hamısı Google sıralamalarına birbaşa təsir edir.',
+  },
+  {
+    id: 16,
+    question: 'Saytı özüm idarə edə bilərəm?',
+    answer:
+      'Bəli, istəyirsinizsə saytınıza idarəetmə paneli (CMS) qura bilərik. Bu panel vasitəsilə məzmun, şəkillər, qiymətlər və digər elementləri texniki biliyə ehtiyac duymadan özünüz yeniləyə bilərsiniz. Hansı məzmunların tez-tez dəyişdiyini bizimlə paylaşsanız, ən uyğun həlli tövsiyə edərik.',
+  },
+  {
+    id: 17,
+    question: 'Hosting və domen nədir?',
+    answer:
+      'Domen saytınızın internet ünvanıdır (məsələn, saytınız.az). Hosting isə saytınızın fayllarının saxlandığı serverdır. Saytup.az bütün paketlərinə 1 il .az domen qeydiyyatı və 1 il hosting daxildir. Biz sizin üçün bu prosesi tam idarə edirik — siz yalnız layihənizə fokuslanırsınız.',
+  },
+  {
+    id: 18,
+    question: 'Sayt hazırlandıqdan sonra dəstək verirsizmi?',
+    answer:
+      'Bəli, hər paketə texniki dəstək müddəti daxildir (1–3 ay). Bu müddətdə saytdakı xətaların düzəldilməsi, kiçik yeniləmələr və texniki sualların cavablandırılması üzrə dəstək veririk. Dəstək müddəti bitdikdən sonra aylıq texniki dəstək paketi əldə etmək mümkündür.',
+  },
+  {
+    id: 19,
+    question: 'WordPress yoxsa xüsusi kod — hansı daha yaxşıdır?',
+    answer:
+      'Hər ikisinin öz üstünlükləri var. WordPress qurulumu tez, idarəetməsi asandır, lakin yavaş ola bilər və mütəmadi yeniləmə tələb edir. Xüsusi kod (Next.js/React) daha sürətli, daha təhlükəsiz, tam fərdiləşdirilə bilən, SEO üçün daha əlverişlidir — lakin daha çox texniki iş tələb edir. Saytup.az əsasən xüsusi kod ilə işləyir, çünki bu, uzunmüddətli performans və miqyaslanma baxımından daha güclüdür.',
+  },
+  {
+    id: 20,
+    question: 'Saytımın Google-da görünməsi üçün nə etməliyəm?',
+    answer:
+      'Google-da görünmək üçün bir neçə addım lazımdır: texniki SEO optimallaşdırması (saytınız bizim tərəfimizdən hazırlardı), Google Search Console-a qeydiyyat, Google Business Profile yaradılması, keyfiyyətli kontent əlavəsi. Saytup.az bütün əsas texniki SEO addımlarını layihənizə daxil edir. Əlavə SEO kampaniyası istəsəniz, ayrıca paketi tövsiyə edirik.',
+  },
+  {
+    id: 21,
+    question: 'Rəqiblərdən nə ilə fərqlənirsiniz?',
+    answer:
+      'Saytup.az-ı fərqləndirən üç əsas amil var: birincisi, sadəcə dizayn deyil, biznes nəticəsinə fokuslanırıq — hər qərar konversiya və etibar üzərinde qurulur. İkincisi, müasir texnologiya (Next.js, TypeScript) istifadə edirik — bu, saytların daha sürətli, daha təhlükəsiz və SEO üçün daha əlverişli olmasını təmin edir. Üçüncüsü, şəffaf qiymət siyasəti — gizli xərclər yoxdur, hər şey əvvəlcədən razılaşdırılır.',
+  },
+];
+
 export const FOOTER_LINKS = {
   services: [
     { label: 'Veb Tətbiqlər', href: '/services' },

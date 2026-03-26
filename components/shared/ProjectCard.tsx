@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Project } from '@/lib/constants';
+import { PROJECT_IMAGES } from '@/lib/projectImages';
 import { cn } from '@/lib/utils';
 
 interface ProjectCardProps {
@@ -23,7 +24,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
       {/* Image Area */}
       <div className="relative h-48 sm:h-56 shrink-0 overflow-hidden">
         <Image
-          src={project.image}
+          src={PROJECT_IMAGES[project.slug] ?? project.image}
           alt={project.title}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -55,9 +56,6 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
         <h3 className="font-heading font-semibold text-brand-dark text-base sm:text-lg leading-snug mb-2">
           {project.title}
         </h3>
-        <p className="text-xs font-body font-medium uppercase tracking-[0.14em] text-brand-orange mb-2">
-          {project.client}
-        </p>
         <p className="text-sm text-brand-gray font-body leading-relaxed flex-1">{project.description}</p>
         <div className="flex flex-wrap gap-1.5 mt-4">
           {project.tags.slice(0, 3).map((tag) => (

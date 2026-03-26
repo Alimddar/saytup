@@ -3,11 +3,20 @@ import Container from '@/components/layout/Container';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import PlanCards from '@/components/sections/PlanCards';
+import JsonLd from '@/components/shared/JsonLd';
+import Breadcrumbs from '@/components/shared/Breadcrumbs';
+import { generatePageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Paketlər | Saytup.az — Veb İnkişaf Studiyası',
-  description: 'Saytup.az-ın qiymət paketləri. Başlanğıc, Standart və Premium planlar — biznesinizin ehtiyaclarına uyğun seçin.',
-};
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Sayt Qiymətləri | Veb Sayt Paketləri — Saytup.az',
+  description: 'Azərbaycanda sayt qiyməti nə qədərdir? Saytup.az-ın veb sayt paketləri: Small (225₼), Medium (450₼), Premium (625₼). Domen, hosting, SEO daxildir. Pulsuz konsultasiya.',
+  keywords: [
+    'sayt qiymətləri', 'veb sayt qiyməti', 'sayt hazırlamaq qiyməti',
+    'Azərbaycanda sayt qiyməti nə qədərdir', 'ucuz sayt hazırlanması',
+    'sayt sifarişi qiymət', 'Bakı', 'Azərbaycan',
+  ],
+  path: '/plans',
+});
 
 const PLANS = [
   {
@@ -149,33 +158,58 @@ const COMPARISON_FEATURES = [
 ];
 
 export default function PlansPage() {
+  const productSchemas = PLANS.map((plan) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: `${plan.name} Paket — Saytup.az`,
+    description: plan.subtitle,
+    brand: { '@id': 'https://saytup.az/#organization' },
+    offers: {
+      '@type': 'Offer',
+      price: plan.price,
+      priceCurrency: 'AZN',
+      availability: 'https://schema.org/InStock',
+      url: 'https://saytup.az/plans',
+    },
+  }));
+
   return (
     <>
+      <JsonLd data={productSchemas} />
+
       {/* Hero */}
-      <section className="bg-gradient-to-br from-brand-blue via-brand-blue-dark to-[#0f3d7a] pt-24 sm:pt-32 pb-12 sm:pb-20">
+      <section
+        className="bg-gradient-to-br from-brand-blue via-brand-blue-dark to-[#0f3d7a] pt-24 sm:pt-32 pb-12 sm:pb-20"
+        aria-labelledby="plans-hero-heading"
+      >
         <Container>
-          <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-4 py-2 rounded-full mb-6 backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
-              Qiymət Paketləri
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-700 text-white mb-6 leading-tight">
-              Biznesinizə Uyğun
-              <span className="text-brand-orange"> Paketi Seçin</span>
-            </h1>
-            <p className="text-lg text-blue-100 leading-relaxed">
-              Biznesinizin mərhələsinə uyğun paket seçin. Hər paket real nəticəyə yönəlmiş, dəqiq müəyyənləşdirilmiş xidmətləri əhatə edir.
-            </p>
-            <div className="mt-6 inline-flex items-center gap-2 bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-sm font-semibold px-5 py-2.5 rounded-full">
-              🎉 Bütün paketlərdə 50% endirim — məhdud müddətlidir!
+          <div className="max-w-3xl mx-auto">
+            <Breadcrumbs items={[{ label: 'Paketlər', href: '/plans' }]} />
+            <div className="text-center">
+              <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-4 py-2 rounded-full mb-6 backdrop-blur-sm">
+                <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
+                Qiymət Paketləri
+              </div>
+              <h1 id="plans-hero-heading" className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold text-white mb-6 leading-tight">
+                Sayt Qiymətləri —
+                <span className="text-brand-orange"> Biznesinizə Uyğun Paketi Seçin</span>
+              </h1>
+              <p className="text-lg text-blue-100 leading-relaxed font-body">
+                Azərbaycanda sayt qiyməti nə qədərdir? Biznesinizin mərhələsinə uyğun paket seçin.
+                Hər paket domen, hosting, SEO və texniki dəstəyi əhatə edir.
+              </p>
+              <div className="mt-6 inline-flex items-center gap-2 bg-brand-orange/20 border border-brand-orange/40 text-brand-orange text-sm font-semibold px-5 py-2.5 rounded-full">
+                🎉 Bütün paketlərdə 50% endirim — məhdud müddətlidir!
+              </div>
             </div>
           </div>
         </Container>
       </section>
 
       {/* Pricing Cards */}
-      <section className="py-12 sm:py-16 md:py-20">
+      <section className="py-12 sm:py-16 md:py-20" aria-labelledby="pricing-cards-heading">
         <Container>
+          <h2 id="pricing-cards-heading" className="sr-only">Qiymət Paketləri</h2>
           <PlanCards plans={PLANS} />
 
           <p className="text-center text-brand-gray text-sm mt-8">
@@ -185,14 +219,14 @@ export default function PlansPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white" aria-labelledby="comparison-heading">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-heading font-700 text-brand-dark mb-4">
+              <h2 id="comparison-heading" className="text-3xl font-heading font-semibold text-brand-dark mb-4">
                 Paketləri Müqayisə Edin
               </h2>
-              <p className="text-brand-gray">
+              <p className="text-brand-gray font-body">
                 Hansı paketin sizin üçün uyğun olduğunu aşağıdakı cədvəldən müəyyənləşdirin.
               </p>
             </div>
@@ -222,12 +256,12 @@ export default function PlansPage() {
                         idx % 2 === 0 ? 'bg-white' : 'bg-brand-light/50'
                       }`}
                     >
-                      <td className="py-4 px-6 font-medium text-brand-dark">{row.name}</td>
-                      <td className="py-4 px-6 text-center text-brand-gray">{row.starter}</td>
-                      <td className="py-4 px-6 text-center text-brand-blue font-semibold bg-brand-blue-light/30">
+                      <td className="py-4 px-6 font-medium text-brand-dark font-body">{row.name}</td>
+                      <td className="py-4 px-6 text-center text-brand-gray font-body">{row.starter}</td>
+                      <td className="py-4 px-6 text-center text-brand-blue font-semibold bg-brand-blue-light/30 font-body">
                         {row.standard}
                       </td>
-                      <td className="py-4 px-6 text-center text-brand-orange font-semibold">{row.premium}</td>
+                      <td className="py-4 px-6 text-center text-brand-orange font-semibold font-body">{row.premium}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -238,24 +272,24 @@ export default function PlansPage() {
       </section>
 
       {/* Note + FAQ callout */}
-      <section className="py-16">
+      <section className="py-16" aria-labelledby="plans-cta-heading">
         <Container>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div className="bg-brand-blue-light rounded-3xl p-8">
               <div className="w-12 h-12 rounded-2xl bg-brand-blue flex items-center justify-center mb-5">
                 <Zap className="w-6 h-6 text-white" />
               </div>
-              <h3 className="font-heading font-700 text-xl text-brand-dark mb-3">
+              <h3 className="font-heading font-semibold text-xl text-brand-dark mb-3">
                 Fərdi Təklif Lazımdır?
               </h3>
-              <p className="text-brand-gray text-sm leading-relaxed mb-5">
+              <p className="text-brand-gray text-sm leading-relaxed mb-5 font-body">
                 Layihəniz standart paketlərə sığmırsa, narahat olmayın. Tələblərinizi dinləyib sizə xüsusi qiymət təklifi hazırlayırıq.
               </p>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 text-brand-blue font-semibold text-sm hover:gap-3 transition-all duration-200"
               >
-                Pulsuz Konsultasiya →
+                Pulsuz Konsultasiya Alın →
               </Link>
             </div>
 
@@ -263,17 +297,17 @@ export default function PlansPage() {
               <div className="w-12 h-12 rounded-2xl bg-brand-orange flex items-center justify-center mb-5">
                 <Star className="w-6 h-6 text-white" />
               </div>
-              <h3 className="font-heading font-700 text-xl text-brand-dark mb-3">
+              <h3 className="font-heading font-semibold text-xl text-brand-dark mb-3">
                 Suallarınız Var?
               </h3>
-              <p className="text-brand-gray text-sm leading-relaxed mb-5">
+              <p className="text-brand-gray text-sm leading-relaxed mb-5 font-body">
                 Paketlər, proseslər və texniki detallar haqqında tez-tez sorulan sualların cavablarını FAQ səhifəmizdə tapa bilərsiniz.
               </p>
               <Link
                 href="/faq"
                 className="inline-flex items-center gap-2 text-brand-orange font-semibold text-sm hover:gap-3 transition-all duration-200"
               >
-                FAQ-a Get →
+                Sayt FAQ-a Baxın →
               </Link>
             </div>
           </div>
@@ -284,10 +318,10 @@ export default function PlansPage() {
       <section className="py-16 bg-brand-dark">
         <Container>
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-3xl font-heading font-700 text-white mb-4">
-              Layihənizi Başlatmağa Hazırsınız?
+            <h2 id="plans-cta-heading" className="text-3xl font-heading font-semibold text-white mb-4">
+              Saytınızı Sifariş Etməyə Hazırsınız?
             </h2>
-            <p className="text-slate-400 mb-8 text-lg">
+            <p className="text-slate-400 mb-8 text-lg font-body">
               Pulsuz konsultasiya üçün bu gün bizimlə əlaqə saxlayın. 24 saat ərzində cavab veririk.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -295,13 +329,13 @@ export default function PlansPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 bg-brand-orange text-white font-semibold rounded-xl hover:bg-orange-600 transition-colors duration-200"
               >
-                Layihə Başlat
+                Sayt Sifariş Et
               </Link>
               <Link
                 href="/portfolio"
                 className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/10 transition-colors duration-200"
               >
-                İşlərimizə Bax
+                Hazırlanmış Saytlara Bax
               </Link>
             </div>
           </div>

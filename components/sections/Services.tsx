@@ -9,11 +9,11 @@ export default function Services() {
     <section className="py-12 sm:py-16 lg:py-24 bg-white">
       <Container>
         <SectionHeading
-          title="Xidmətlərimiz"
-          subtitle="Satış, təqdimat və daxili proseslərinizi gücləndirmək üçün nəticəyönümlü veb həllər hazırlayırıq."
-          className="mb-12"
+          title="Nə Edirik"
+          subtitle="Kiçik bizneslər üçün hazırlanmış tam veb inkişaf xidmətləri"
+          className="mb-14"
         />
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICES.map((service, index) => (
             <ScrollReveal key={service.id} delay={index * 0.1} className="h-full">
               <ServiceCard service={service} className="h-full" />
