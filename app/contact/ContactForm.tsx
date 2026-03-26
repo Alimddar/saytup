@@ -33,11 +33,16 @@ interface FormErrors {
 }
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState<FormData>({
+  const initialFormData: FormData = {
     name: '', email: '', phone: '', service: '', budget: '', message: '',
+  };
+  const [formData, setFormData] = useState<FormData>({
+    ...initialFormData,
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
@@ -49,9 +54,39 @@ export default function ContactForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validate()) setSubmitted(true);
+    if (!validate()) {
+      return;
+    }
+
+    setSubmitting(true);
+    setSubmitError('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json().catch(() => null);
+
+      if (!response.ok) {
+        throw new Error(result?.error ?? 'Mesaj göndərilə bilmədi.');
+      }
+
+      setSubmitted(true);
+      setFormData(initialFormData);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : 'Mesaj göndərilə bilmədi. Zəhmət olmasa bir daha cəhd edin.'
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -168,9 +203,17 @@ export default function ContactForm() {
                   {errors.message && <p className="text-red-500 text-xs mt-1 font-body">{errors.message}</p>}
                 </div>
 
-                <Button type="submit" className="w-full bg-brand-blue hover:bg-brand-blue-dark text-white font-body font-medium py-3 h-auto text-base">
-                  Sayt Sifarişi Ver
+                <Button
+                  type="submit"
+                  disabled={submitting}
+                  className="w-full bg-brand-blue hover:bg-brand-blue-dark text-white font-body font-medium py-3 h-auto text-base disabled:cursor-not-allowed disabled:opacity-70"
+                >
+                  {submitting ? 'Göndərilir...' : 'Sayt Sifarişi Ver'}
                 </Button>
+
+                {submitError && (
+                  <p className="text-sm font-body text-red-500">{submitError}</p>
+                )}
               </form>
             )}
           </div>
