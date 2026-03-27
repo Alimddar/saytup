@@ -194,6 +194,33 @@ export const PROJECTS: Project[] = [
       'https://i.ibb.co/bg45PkG3/sekil1.png',
     ],
   },
+  {
+    id: '4',
+    slug: 'velour',
+    title: 'Velour',
+    client: 'Nümunə Layihə',
+    category: 'Fine-Dining Restoran Saytı',
+    description: 'İstanbul Karaköydə yerləşən niche fine-dining restoran üçün hazırlanmış, ambiyansı və kulinariya hekayəsini editorial üslubda təqdim edən portfolio vebsayt konsepti.',
+    fullDescription: 'Velour, İstanbulun Karaköy bölgəsində cəmi 28 qonaqlıq fine-dining təcrübəsi təqdim edən niche restoran üçün hazırlanmış tamhəcmli portfolio vebsaytıdır. Sayt ilk saniyədən etibarən ziyarətçiyə məkanın ambiyansını, hekayəsini və yeməklərin emosional dəyərini hiss etdirmək məqsədi ilə qurulub. Şef Miran Doğunun Anadolu köklərini Avropa mətbəx məktəbi ilə birləşdirən “Yeni Anadolu Mətbəxi” konsepti vizual sistemdən copy tonuna qədər hər detalda hiss olunur. 9 səhifədən ibarət informasiya memarlığı — ana səhifə, hekayə, menyu, təcrübə, journal, rezervasiya, əlaqə və mətbuat bölmələri — bir-birindən fərqlənən editorial ritmlə qurulsa da, vahid və ardıcıl dizayn sistemi altında birləşdirilib. Rəng palitrası, tipoqrafiya sistemi, animasiya dili və mətn tonu sıfırdan müəyyənləşdirilib ki, sayt şablon yox, məhz bu restoran üçün hazırlanmış yadda qalan rəqəmsal təcrübə kimi hiss edilsin. Mock foto URL-ləri, 12 kurslu tasting menyu məzmunu, istehsalçı hekayələri, mətbuat sitatları və component CSS tərifləri daxil olmaqla bütün kontent hazır və işlək vəziyyətdə təqdim olunub.',
+    tags: ['Editorial Design', 'Restaurant Website', 'Fine Dining', 'Reservation UX'],
+    gradient: 'from-stone-700 to-amber-700',
+    image: 'https://i.ibb.co/DfHQ6n2c/sekil6.png',
+    images: [
+      'https://i.ibb.co/Y78PG8jY/sekil13.png',
+      'https://i.ibb.co/ksRczVQJ/sekil11.png',
+      'https://i.ibb.co/vCKTnp0j/sekil8.png',
+      'https://i.ibb.co/67JV9Gm5/sekil4.png',
+      'https://i.ibb.co/21dKDXFL/sekil10.png',
+      'https://i.ibb.co/xS7vX8Cf/sekil7.png',
+      'https://i.ibb.co/Lz8K8jpn/sekil3.png',
+      'https://i.ibb.co/fbmNWgt/sekil12.png',
+      'https://i.ibb.co/zV2Jy5X6/sekil9.png',
+      'https://i.ibb.co/DfHQ6n2c/sekil6.png',
+      'https://i.ibb.co/21bFG8rd/sekil2.png',
+      'https://i.ibb.co/nqC3Ffkh/sekil1.png',
+      'https://i.ibb.co/rGGGJjbp/sekil5.png',
+    ],
+  },
 ];
 
 export interface Testimonial {
