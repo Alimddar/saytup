@@ -8,7 +8,7 @@ export default function Stats() {
       <Container>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {STATS.map((stat, index) => (
-            <div key={stat.id} className="flex items-center gap-6">
+            <div key={stat.id} className="flex items-center justify-center gap-6">
               <AnimatedCounter target={stat.value} suffix={stat.suffix} label={stat.label} />
               {index < STATS.length - 1 && (
                 <div className="hidden lg:block w-px h-12 bg-white/20 shrink-0" />

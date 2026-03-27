@@ -20,7 +20,7 @@ export default function PortfolioPage() {
     <>
       {/* Hero */}
       <section
-        className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-32 pb-20"
+        className="bg-gradient-to-br from-brand-blue to-brand-blue-dark pt-24 sm:pt-32 pb-12 sm:pb-20"
         aria-labelledby="portfolio-hero-heading"
       >
         <Container>

@@ -183,8 +183,8 @@ export default function PlansPage() {
         aria-labelledby="plans-hero-heading"
       >
         <Container>
+          <Breadcrumbs items={[{ label: 'Paketlər', href: '/plans' }]} />
           <div className="max-w-3xl mx-auto">
-            <Breadcrumbs items={[{ label: 'Paketlər', href: '/plans' }]} />
             <div className="text-center">
               <div className="mb-6 inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full bg-white/10 px-4 py-2 text-center text-sm font-medium text-white backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
