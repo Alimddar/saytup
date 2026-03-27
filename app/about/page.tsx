@@ -81,13 +81,13 @@ export default function AboutPage() {
           <div className="text-white max-w-3xl">
             <Breadcrumbs items={[{ label: 'Haqqımızda', href: '/about' }]} />
             <h1 id="about-hero-heading" className="text-4xl sm:text-5xl font-heading font-bold mb-6">
-              Bakıda Veb Sayt Hazırlayan Studiya
+              Biznesinizi Gücləndirən Veb Həllər Studiyası
             </h1>
             <p className="text-lg text-white/80 font-body leading-relaxed">
-              Saytup kiçik və orta bizneslər üçün etibar yaradan, peşəkar görünən və real nəticə gətirən
-              rəqəmsal həllər hazırlayan Bakı veb inkişaf studiyasıdır.
-              Strategiyadan dizayna, inkişafdan buraxılışa qədər bütün prosesi idarə edirik ki,
-              siz biznesinizi böyütməyə fokuslana biləsiniz.
+              Saytup kiçik və orta bizneslər üçün etibar yaradan, peşəkar görünüş təmin edən və
+              ölçülə bilən nəticələr gətirən rəqəmsal həllər hazırlayır. Strategiyadan dizayna,
+              inkişafdan yayıma qədər bütün prosesi idarə edirik ki, siz biznesinizin inkişafına
+              fokuslana biləsiniz.
             </p>
           </div>
         </Container>
