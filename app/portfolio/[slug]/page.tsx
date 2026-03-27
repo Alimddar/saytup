@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/layout/Container';
 import ScrollReveal from '@/components/shared/ScrollReveal';
-import ProjectCarousel from '@/components/shared/ProjectCarousel';
+import ProjectGalleryCarousel from '@/components/shared/ProjectGalleryCarousel';
 import JsonLd from '@/components/shared/JsonLd';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { PROJECTS } from '@/lib/constants';
@@ -115,12 +115,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       {/* Details */}
       <article className="py-12 sm:py-16 md:py-20 bg-brand-light">
         <Container>
-          <div className="max-w-3xl mx-auto">
+          <div className="mx-auto max-w-6xl">
 
             <ScrollReveal>
-              <ProjectCarousel images={project.images} title={project.title} />
+              <ProjectGalleryCarousel images={project.images} title={project.title} />
             </ScrollReveal>
+          </div>
 
+          <div className="max-w-3xl mx-auto">
             <ScrollReveal delay={0.1}>
               <div className="mt-10">
                 <h2 className="text-2xl font-heading font-semibold text-brand-dark mb-4">Layihə Haqqında</h2>

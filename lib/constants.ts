@@ -1,3 +1,5 @@
+import { getProjectImageSet } from './portfolioImages';
+
 export const SITE_CONFIG = {
   name: 'Saytup.digital',
   tagline: 'Bakıda Veb İnkişaf Studiyası',
@@ -131,6 +133,11 @@ export interface Project {
   url?: string;
 }
 
+const traveliaImages = getProjectImageSet('travelia');
+const seomentorImages = getProjectImageSet('seomentor');
+const viraDesignImages = getProjectImageSet('vira-design');
+const velourImages = getProjectImageSet('velour');
+
 export const PROJECTS: Project[] = [
   {
     id: '1',
@@ -142,17 +149,8 @@ export const PROJECTS: Project[] = [
     fullDescription: 'Travelia, Azərbaycanda turizm təcrübəsini daha rahat, planlı və ilhamverici hala gətirmək məqsədilə hazırlanmış rəqəmsal məhsuldur. Platforma istifadəçiyə səyahətini əvvəlcədən planlamaq, maraq dairəsinə uyğun istiqamətləri kəşf etmək, uyğun otelləri tapmaq və bütün səfər axınını bir yerdən idarə etmək imkanı yaradır. Layihənin əsas məqsədi parçalanmış məlumat mənbələrini birləşdirərək turistə daha aydın qərarvermə prosesi və daha güclü səfər təcrübəsi təqdim etmək idi. Bu yanaşma həm yerli turizmin rəqəmsal görünürlüğünü gücləndirir, həm də gələcəkdə otel, tur və partnyor inteqrasiyaları üçün genişlənə bilən məhsul bazası yaradır.',
     tags: ['Next.js', 'Trip Planning', 'Hotel Discovery', 'UX/UI'],
     gradient: 'from-sky-500 to-cyan-600',
-    image: 'https://i.ibb.co/9mdNh95k/sekil1.png',
-    images: [
-      'https://i.ibb.co/9mdNh95k/sekil1.png',
-      'https://i.ibb.co/JjbdXkzr/sekil2.png',
-      'https://i.ibb.co/DDVKtZCy/sekil3.png',
-      'https://i.ibb.co/cKpMTCP8/sekil4.png',
-      'https://i.ibb.co/dsrnvty4/sekil5.png',
-      'https://i.ibb.co/Rkgnq4nj/sekil6.png',
-      'https://i.ibb.co/rfKPWZKB/sekil7.png',
-      'https://i.ibb.co/PvKFNt0t/sekil8.png',
-    ],
+    image: traveliaImages.image,
+    images: traveliaImages.images,
   },
   {
     id: '2',
@@ -164,14 +162,8 @@ export const PROJECTS: Project[] = [
     fullDescription: 'SEOmentor, istənilən vebsaytı analiz edərək onun SEO sağlamlığını ölçən, əsas problemləri aşkarlayan və istifadəçiyə real icra planı təqdim edən AI-powered platformadır. Məhsulun əsas ideyası texniki audit, kontent boşluqları, rəqib analizi və açar söz imkanlarını bir dashboard içində toplamaq idi. Platforma istifadəçiyə sadəcə problem siyahısı vermir, eyni zamanda 7-30 günlük addım-addım yol xəritəsi, hər gün üçün konkret task-lar, KPI-lar və dərin icra checklist-ləri təqdim edir. Beləliklə, SEOmentor həm marketinq komandaları, həm də agentliklər üçün analizdən icraya keçidi xeyli sürətləndirən praktik məhsula çevrilir.',
     tags: ['React 19', 'FastAPI', 'Claude AI', 'TypeScript', 'Python 3.11', 'SQLite'],
     gradient: 'from-indigo-500 to-sky-600',
-    image: 'https://i.ibb.co/VWhqnZhg/sekil1.png',
-    images: [
-      'https://i.ibb.co/VWhqnZhg/sekil1.png',
-      'https://i.ibb.co/j70mPYJ/sekil4.png',
-      'https://i.ibb.co/Y77z3qs8/sekil3.png',
-      'https://i.ibb.co/0jXt84w9/sekil2.png',
-      'https://i.ibb.co/Q3nBH7Xp/s.png',
-    ],
+    image: seomentorImages.image,
+    images: seomentorImages.images,
   },
   {
     id: '3',
@@ -183,16 +175,8 @@ export const PROJECTS: Project[] = [
     fullDescription: 'Vira Design, gözəllik salonları üçün necə daha premium, etibarlı və konversiyaya yaxın rəqəmsal təqdimat qurmaq mümkün olduğunu göstərən nümunə layihədir. React ilə hazırlanmış bu konsept sayt xidmət kateqoriyalarını, komanda təqdimatını, vizual iş nümunələrini və rezervasiya yönümlü CTA bloklarını vahid axın içində birləşdirir. Məqsəd sadəcə estetik görünən salon saytı hazırlamaq yox, istifadəçiyə xidmət seçimini asanlaşdıran, salonun peşəkarlığını gücləndirən və müraciəti daha rahat nöqtəyə aparan struktur qurmaq idi. Layihə real müştəri üçün deyil, portfolioda beauty və wellness sahəsi üçün necə fərqli, zərif və satış yönümlü sayt həlli təqdim etdiyimizi göstərmək üçün hazırlanmış konsept nümunəsidir.',
     tags: ['React', 'Beauty Website', 'Booking Flow', 'UI Concept'],
     gradient: 'from-rose-400 to-orange-400',
-    image: 'https://i.ibb.co/bg45PkG3/sekil1.png',
-    images: [
-      'https://i.ibb.co/HpKPB5NP/sekil7.png',
-      'https://i.ibb.co/nM76FxCS/sekil6.png',
-      'https://i.ibb.co/zWzq72t4/sekil5.png',
-      'https://i.ibb.co/s9Q7stCY/sekil4.png',
-      'https://i.ibb.co/M5gWDKvK/sekil3.png',
-      'https://i.ibb.co/b5VvvGXT/sekil2.png',
-      'https://i.ibb.co/bg45PkG3/sekil1.png',
-    ],
+    image: viraDesignImages.image,
+    images: viraDesignImages.images,
   },
   {
     id: '4',
@@ -204,22 +188,8 @@ export const PROJECTS: Project[] = [
     fullDescription: 'Velour, İstanbulun Karaköy bölgəsində cəmi 28 qonaqlıq fine-dining təcrübəsi təqdim edən niche restoran üçün hazırlanmış tamhəcmli portfolio vebsaytıdır. Sayt ilk saniyədən etibarən ziyarətçiyə məkanın ambiyansını, hekayəsini və yeməklərin emosional dəyərini hiss etdirmək məqsədi ilə qurulub. Şef Miran Doğunun Anadolu köklərini Avropa mətbəx məktəbi ilə birləşdirən “Yeni Anadolu Mətbəxi” konsepti vizual sistemdən copy tonuna qədər hər detalda hiss olunur. 9 səhifədən ibarət informasiya memarlığı — ana səhifə, hekayə, menyu, təcrübə, journal, rezervasiya, əlaqə və mətbuat bölmələri — bir-birindən fərqlənən editorial ritmlə qurulsa da, vahid və ardıcıl dizayn sistemi altında birləşdirilib. Rəng palitrası, tipoqrafiya sistemi, animasiya dili və mətn tonu sıfırdan müəyyənləşdirilib ki, sayt şablon yox, məhz bu restoran üçün hazırlanmış yadda qalan rəqəmsal təcrübə kimi hiss edilsin. Mock foto URL-ləri, 12 kurslu tasting menyu məzmunu, istehsalçı hekayələri, mətbuat sitatları və component CSS tərifləri daxil olmaqla bütün kontent hazır və işlək vəziyyətdə təqdim olunub.',
     tags: ['Editorial Design', 'Restaurant Website', 'Fine Dining', 'Reservation UX'],
     gradient: 'from-stone-700 to-amber-700',
-    image: 'https://i.ibb.co/DfHQ6n2c/sekil6.png',
-    images: [
-      'https://i.ibb.co/Y78PG8jY/sekil13.png',
-      'https://i.ibb.co/ksRczVQJ/sekil11.png',
-      'https://i.ibb.co/vCKTnp0j/sekil8.png',
-      'https://i.ibb.co/67JV9Gm5/sekil4.png',
-      'https://i.ibb.co/21dKDXFL/sekil10.png',
-      'https://i.ibb.co/xS7vX8Cf/sekil7.png',
-      'https://i.ibb.co/Lz8K8jpn/sekil3.png',
-      'https://i.ibb.co/fbmNWgt/sekil12.png',
-      'https://i.ibb.co/zV2Jy5X6/sekil9.png',
-      'https://i.ibb.co/DfHQ6n2c/sekil6.png',
-      'https://i.ibb.co/21bFG8rd/sekil2.png',
-      'https://i.ibb.co/nqC3Ffkh/sekil1.png',
-      'https://i.ibb.co/rGGGJjbp/sekil5.png',
-    ],
+    image: velourImages.image,
+    images: velourImages.images,
   },
 ];
 
