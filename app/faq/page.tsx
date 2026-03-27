@@ -41,8 +41,8 @@ export default function FaqPage() {
         aria-labelledby="faq-hero-heading"
       >
         <Container>
+          <Breadcrumbs items={[{ label: 'FAQ', href: '/faq' }]} />
           <div className="max-w-3xl mx-auto">
-            <Breadcrumbs items={[{ label: 'FAQ', href: '/faq' }]} />
             <div className="text-center">
               <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-medium px-4 py-2 rounded-full mb-6 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
