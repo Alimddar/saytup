@@ -385,12 +385,6 @@ export const FAQ_ITEMS: FaqItem[] = [
       'Prosesimiz 4 mərhələdən ibarətdir: Kəşf (biznesinizi tanıyırıq), Dizayn (sxemlər və vizual hazırlanır), İnkişaf (kod yazılır, sınaqlar keçirilir) və Buraxılış & Dəstək (sayt yayımlanır, bizdən dəstək davam edir).',
   },
   {
-    id: 13,
-    question: 'Sayt hazırlamaq nə qədərə başa gəlir?',
-    answer:
-      'Saytın qiyməti seçdiyiniz paketə görə dəyişir. Giriş səviyyəsi üçün Small paketimiz 225 ₼-dan, orta həcmli layihələr üçün Medium paket 450 ₼-dan, böyük və funksional layihələr üçün Premium paket isə 625 ₼-dan başlayır. Bütün paketlərə domen, hosting, SSL sertifikatı və texniki dəstək daxildir. Fərdi layihələr üçün pulsuz qiymət əldə etmək üçün bizimlə əlaqə saxlayın.',
-  },
-  {
     id: 14,
     question: 'E-ticarət saytı hazırlatmaq istəyirəm, nə etməliyəm?',
     answer:
