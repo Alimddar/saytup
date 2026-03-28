@@ -31,7 +31,7 @@ export default function PortfolioPage() {
                 Hazırlanmış Saytlar — Portfoliomuz
               </h1>
               <p className="text-lg text-white/70 font-body max-w-xl mx-auto">
-                Real layihələr, real nəticələr — Azərbaycan bizneslərinin böyüməsi üçün hazırlanmış veb saytlar.
+                Hər layihə bir biznesin rəqəmsal dönüş nöqtəsidir.
               </p>
             </div>
           </div>
