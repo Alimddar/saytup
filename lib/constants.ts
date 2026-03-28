@@ -352,12 +352,6 @@ export const FAQ_ITEMS: FaqItem[] = [
       'Əlbəttə. Köhnəlmiş saytların tam yenidən dizaynı və hazırlanması xidmətlərini göstəririk. Əvvəlki saytınızdakı kontent, SEO dəyərləri və digər vacib elementləri qoruyaraq müasir platforma köçürürük.',
   },
   {
-    id: 8,
-    question: 'Siz yalnız Azərbaycanda yerləşən şirkətlərlə işləyirsinizmi?',
-    answer:
-      'Xeyr, biz Azərbaycan daxilindəki bütün şəhərlərdən, həmçinin xarici ölkələrdən müştərilərlə uzaqdan işləyirik. Video zəng, e-poçt və WhatsApp vasitəsilə rahat ünsiyyət qururuq.',
-  },
-  {
     id: 9,
     question: 'Saytımın mobil cihazlarda düzgün görünməsini necə təmin edirsiniz?',
     answer:
