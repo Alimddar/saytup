@@ -6,11 +6,11 @@ import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Əlaqə | Sayt Sifarişi — Saytup.digital',
-  description: 'Bakıda sayt sifariş etmək üçün bizimlə əlaqə saxlayın. Saytup.digital-dan pulsuz konsultasiya alın. 24 saat ərzində cavab veririk.',
+  description: 'Sayt sifariş etmək üçün bizimlə əlaqə saxlayın. Saytup.digital-dan pulsuz konsultasiya alın. 24 saat ərzində cavab veririk.',
   keywords: [
     'əlaqə', 'sayt sifarişi', 'bizimlə əlaqə', 'müraciət forması',
     'sayt sifariş etmək üçün müraciət', 'pulsuz konsultasiya',
-    'Bakı', 'Azərbaycan',
+    'Azərbaycan',
   ],
   path: '/contact',
 });

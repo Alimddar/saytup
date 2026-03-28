@@ -10,7 +10,7 @@ export const metadata: Metadata = generatePageMetadata({
   keywords: [
     'portfolio', 'hazırlanmış saytlar', 'veb layihələr', 'sayt nümunələri',
     'Azərbaycanda hazırlanmış veb saytlar', 'sayt portfolio nümunələri',
-    'Bakı', 'Azərbaycan',
+    'Azərbaycan',
   ],
   path: '/portfolio',
 });

@@ -10,11 +10,11 @@ import Container from '@/components/layout/Container';
 import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Sayt Hazırlanması | Saytup.digital — Bakıda Peşəkar Veb Sayt Sifarişi',
-  description: 'Sayt hazırlamaq istəyirsiniz? Saytup.digital Bakıda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayır. Korporativ saytlar, e-ticarət, landing page. Pulsuz konsultasiya.',
+  title: 'Sayt Hazırlanması | Saytup.digital — Azərbaycanda Peşəkar Veb Sayt Sifarişi',
+  description: 'Sayt hazırlamaq istəyirsiniz? Saytup.digital Azərbaycanda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayır. Korporativ saytlar, e-ticarət, landing page. Pulsuz konsultasiya.',
   keywords: [
     'sayt', 'sayt hazırlamaq', 'veb sayt', 'sayt sifarişi', 'sayt yaratmaq',
-    'Bakıda sayt hazırlayan şirkət', 'sayt sifariş etmək Azərbaycan',
+    'Azərbaycanda sayt hazırlayan şirkət', 'sayt sifariş etmək Azərbaycan',
     'peşəkar veb sayt hazırlanması', 'biznes üçün sayt', 'saytup',
   ],
   path: '/',
@@ -34,13 +34,13 @@ const schemas = [
       width: 512,
       height: 512,
     },
-    description: 'Bakıda kiçik bizneslər üçün peşəkar veb sayt hazırlayan studiya.',
+    description: 'Azərbaycanda kiçik bizneslər üçün peşəkar veb sayt hazırlayan studiya.',
     foundingDate: '2023',
     founders: [{ '@type': 'Person', name: 'Saytup Team' }],
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Bakı',
-      addressRegion: 'Bakı',
+      addressLocality: 'Azərbaycan',
+      addressRegion: 'Azərbaycan',
       addressCountry: 'AZ',
     },
     contactPoint: {
@@ -59,7 +59,7 @@ const schemas = [
     '@id': 'https://saytup.digital/#website',
     name: 'Saytup.digital',
     url: 'https://saytup.digital',
-    description: 'Bakıda veb sayt hazırlayan peşəkar studiya',
+    description: 'Azərbaycanda veb sayt hazırlayan peşəkar studiya',
     publisher: { '@id': 'https://saytup.digital/#organization' },
     inLanguage: 'az',
     potentialAction: {
@@ -82,8 +82,8 @@ const schemas = [
     email: 'contact@saytup.digital',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Bakı',
-      addressRegion: 'Bakı',
+      addressLocality: 'Azərbaycan',
+      addressRegion: 'Azərbaycan',
       addressCountry: 'AZ',
     },
     geo: {
@@ -104,7 +104,7 @@ const schemas = [
     },
     serviceType: ['Web Development', 'Web Design', 'E-Commerce Development', 'SEO'],
     description:
-      'Bakıda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayan studiya. Korporativ saytlar, e-ticarət, landing page, SEO və texniki dəstək.',
+      'Azərbaycanda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayan studiya. Korporativ saytlar, e-ticarət, landing page, SEO və texniki dəstək.',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
@@ -132,14 +132,14 @@ export default function HomePage() {
               id="about-saytup-heading"
               className="text-3xl font-heading font-semibold text-brand-dark mb-6"
             >
-              Bakıda Peşəkar Sayt Hazırlanması
+              Azərbaycanda Peşəkar Sayt Hazırlanması
             </h2>
             <p className="text-brand-gray font-body leading-relaxed mb-4">
               Saytup.digital Azərbaycanda kiçik və orta bizneslər üçün <strong>peşəkar veb sayt hazırlayan</strong> studiyasıdır.
               Sayt sifarişi vermək prosesini sadə, şəffaf və sürətli edir — ilk görüşdən buraxılışa qədər hər mərhələdə yanınızdayıq.
             </p>
             <p className="text-brand-gray font-body leading-relaxed mb-4">
-              Bakıda fəaliyyət göstərən bizneslər üçün korporativ saytlar, landing page-lər, e-ticarət həlləri və
+              Azərbaycanda fəaliyyət göstərən bizneslər üçün korporativ saytlar, landing page-lər, e-ticarət həlləri və
               rezervasiya sistemləri hazırlayırıq. Hər layihə <strong>sayt hazırlamaq</strong> prosesinin yalnız başlanğıcıdır —
               buraxılışdan sonra da texniki dəstək ilə yanınızdayıq.
             </p>

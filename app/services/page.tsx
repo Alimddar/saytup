@@ -12,12 +12,12 @@ import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Sayt Hazırlanması Xidmətləri | Saytup.digital',
-  description: 'Bakıda peşəkar sayt hazırlanması xidmətləri. Korporativ saytlar, landing page, e-ticarət, rezervasiya sistemləri, sayt yenilənməsi və SEO. Saytup.digital ilə saytınızı sifariş edin.',
+  description: 'Azərbaycanda peşəkar sayt hazırlanması xidmətləri. Korporativ saytlar, landing page, e-ticarət, rezervasiya sistemləri, sayt yenilənməsi və SEO. Saytup.digital ilə saytınızı sifariş edin.',
   keywords: [
     'sayt hazırlanması xidmətləri', 'veb dizayn', 'sayt yaratmaq',
     'veb inkişaf xidmətləri', 'korporativ sayt hazırlanması',
     'e-ticarət sayt hazırlanması', 'landing page hazırlanması', 'sayt yeniləmə xidməti',
-    'Bakı', 'Azərbaycan',
+    'Azərbaycan',
   ],
   path: '/services',
 });
@@ -51,7 +51,7 @@ export default function ServicesPage() {
               </h1>
               <p className="text-lg text-white/70 font-body max-w-xl mx-auto">
                 Saytup satış, təqdimat və daxili prosesləri gücləndirən nəticəyönümlü veb həlləri qurur.
-                Bakıda kiçik bizneslər üçün sayt sifarişi.
+                Azərbaycanda kiçik bizneslər üçün sayt sifarişi.
               </p>
             </div>
           </div>

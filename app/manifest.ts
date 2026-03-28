@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Saytup.digital — Veb İnkişaf Studiyası',
     short_name: 'Saytup',
-    description: 'Bakıda peşəkar veb sayt hazırlayan studiya',
+    description: 'Azərbaycanda peşəkar veb sayt hazırlayan studiya',
     start_url: '/',
     display: 'standalone',
     background_color: '#F5F5F5',

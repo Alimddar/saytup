@@ -12,7 +12,7 @@ export const metadata: Metadata = generatePageMetadata({
   keywords: [
     'sayt sualları', 'veb sayt FAQ', 'tez-tez verilən suallar',
     'sayt hazırlamaq nə qədər vaxt alır', 'hansı texnologiyalar istifadə olunur',
-    'sayt qiyməti', 'Bakı', 'Azərbaycan',
+    'sayt qiyməti', 'Azərbaycan',
   ],
   path: '/faq',
 });

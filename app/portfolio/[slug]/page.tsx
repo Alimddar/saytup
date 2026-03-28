@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: `${project.description} Saytup.digital tərəfindən hazırlanmış veb sayt layihəsi. Azərbaycanda peşəkar veb inkişaf.`,
     keywords: [
       `${project.title} layihəsi`, 'veb tətbiq nümunəsi', 'sayt case study',
-      ...project.tags, 'Bakı', 'Azərbaycan',
+      ...project.tags, 'Azərbaycan',
     ],
     path: `/portfolio/${project.slug}`,
     ogImage: project.image,
@@ -64,7 +64,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       >
         <Image
           src={project.image}
-          alt={`${project.title} — Saytup.digital tərəfindən hazırlanmış veb sayt layihəsi, Bakı, Azərbaycan`}
+          alt={`${project.title} — Saytup.digital tərəfindən hazırlanmış veb sayt layihəsi, Azərbaycan`}
           fill
           className="object-cover scale-105 blur-[3px]"
           priority

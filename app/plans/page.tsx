@@ -13,7 +13,7 @@ export const metadata: Metadata = generatePageMetadata({
   keywords: [
     'sayt qiymətləri', 'veb sayt qiyməti', 'sayt hazırlamaq qiyməti',
     'Azərbaycanda sayt qiyməti nə qədərdir', 'ucuz sayt hazırlanması',
-    'sayt sifarişi qiymət', 'Bakı', 'Azərbaycan',
+    'sayt sifarişi qiymət', 'Azərbaycan',
   ],
   path: '/plans',
 });

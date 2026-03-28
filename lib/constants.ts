@@ -2,12 +2,12 @@ import { getProjectImageSet } from './portfolioImages';
 
 export const SITE_CONFIG = {
   name: 'Saytup.digital',
-  tagline: 'Bakıda Veb İnkişaf Studiyası',
-  description: 'Saytup.digital kiçik bizneslərin gözəl, sürətli və effektiv veb tətbiqlər işə salmasına kömək edən Bakıda veb inkişaf studiyasıdır.',
+  tagline: 'Azərbaycanda Veb İnkişaf Studiyası',
+  description: 'Saytup.digital kiçik bizneslərin gözəl, sürətli və effektiv veb tətbiqlər işə salmasına kömək edən Azərbaycanda veb inkişaf studiyasıdır.',
   email: 'contact@saytup.digital',
   phone: '+994 51 665 81 43',
-  address: 'Bakı, Azərbaycan',
-  workingHours: 'B.e–Cümə, 10:00–19:00 (Bakı vaxtı)',
+  address: 'Azerbaijan, Baku',
+  workingHours: 'B.e–Cümə, 10:00–19:00 (AZT)',
   url: 'https://saytup.digital',
 };
 
@@ -143,7 +143,7 @@ export const PROJECTS: Project[] = [
     id: '1',
     slug: 'travelia',
     title: 'Travelia',
-    client: 'BDA (Baku Design Academy)',
+    client: 'BDA (Baki Design Academy)',
     category: 'Veb Tətbiq',
     description: 'Azərbaycanda səyahət planlama, otel seçimi və marşrut qurma təcrübəsini bir platformada birləşdirən turizm yönümlü rəqəmsal həll.',
     fullDescription: 'Travelia, Azərbaycanda turizm təcrübəsini daha rahat, planlı və ilhamverici hala gətirmək məqsədilə hazırlanmış rəqəmsal məhsuldur. Platforma istifadəçiyə səyahətini əvvəlcədən planlamaq, maraq dairəsinə uyğun istiqamətləri kəşf etmək, uyğun otelləri tapmaq və bütün səfər axınını bir yerdən idarə etmək imkanı yaradır. Layihənin əsas məqsədi parçalanmış məlumat mənbələrini birləşdirərək turistə daha aydın qərarvermə prosesi və daha güclü səfər təcrübəsi təqdim etmək idi. Bu yanaşma həm yerli turizmin rəqəmsal görünürlüğünü gücləndirir, həm də gələcəkdə otel, tur və partnyor inteqrasiyaları üçün genişlənə bilən məhsul bazası yaradır.',
@@ -208,7 +208,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: '1',
     name: 'Kamran Həsənov',
     role: 'CEO',
-    company: 'BakuShop',
+    company: 'AzərShop',
     quote: 'Saytup e-ticarət platformamızı rekord müddətdə hazırladı. Keyfiyyət əla idi, davamlı dəstək isə çox dəyərli oldu. Onlayn satışlarımız ilk ayda gözləntiləri aşdı.',
     rating: 5,
     initials: 'KH',
@@ -353,7 +353,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     id: 8,
-    question: 'Siz yalnız Bakı şirkətləri ilə işləyirsinizmi?',
+    question: 'Siz yalnız Azərbaycanda yerləşən şirkətlərlə işləyirsinizmi?',
     answer:
       'Xeyr, biz Azərbaycan daxilindəki bütün şəhərlərdən, həmçinin xarici ölkələrdən müştərilərlə uzaqdan işləyirik. Video zəng, e-poçt və WhatsApp vasitəsilə rahat ünsiyyət qururuq.',
   },
@@ -391,7 +391,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     id: 15,
     question: 'SEO nədir və niyə vacibdir?',
     answer:
-      'SEO (Axtarış Mühərriyi Optimallaşdırması) saytınızın Google kimi axtarış mühərriklərində daha yuxarıda görünməsinə kömək edir. Düzgün SEO ilə potensial müştərilər sizi "sayt hazırlamaq Bakı" kimi sorğularla tapa bilər. Saytup.digital bütün layihələrə əsas texniki SEO daxil edir: sürətli yüklənmə, semantik HTML, meta etiketlər, mobil uyğunluq — bunların hamısı Google sıralamalarına birbaşa təsir edir.',
+      'SEO (Axtarış Mühərriyi Optimallaşdırması) saytınızın Google kimi axtarış mühərriklərində daha yuxarıda görünməsinə kömək edir. Düzgün SEO ilə potensial müştərilər sizi "veb sayt hazırlamaq Azərbaycan" kimi sorğularla tapa bilər. Saytup.digital bütün layihələrə əsas texniki SEO daxil edir: sürətli yüklənmə, semantik HTML, meta etiketlər, mobil uyğunluq — bunların hamısı Google sıralamalarına birbaşa təsir edir.',
   },
   {
     id: 16,
