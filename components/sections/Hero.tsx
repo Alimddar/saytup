@@ -39,8 +39,8 @@ export default function Hero() {
               transition={{ duration: 0.4, delay: 0.08, ease: 'easeOut' }}
               className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-brand-dark leading-tight mb-6"
             >
-              Biznesiniz Üçün{' '}
-              <span className="text-brand-blue">Sayt Hazırlayırıq</span>
+              Biznesini Böyütmək{' '}
+              <span className="text-brand-blue">istəyənlərin Nəzərinə</span>
             </m.h1>
 
             <m.p
