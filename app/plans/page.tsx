@@ -191,8 +191,7 @@ export default function PlansPage() {
                 Qiymət Paketləri
               </div>
               <h1 id="plans-hero-heading" className="text-3xl sm:text-4xl md:text-5xl font-heading font-semibold text-white mb-6 leading-tight">
-                Sayt Qiymətləri —
-                <span className="text-brand-orange"> Biznesinizə Uyğun Paketi Seçin</span>
+                Biznesinizə Uyğun Paketi Seçin
               </h1>
               <p className="text-lg text-blue-100 leading-relaxed font-body">
                 Azərbaycanda sayt qiyməti nə qədərdir? Biznesinizin mərhələsinə uyğun paket seçin.
