@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: '%s | Saytup.digital',
     default: 'Saytup.digital — Azərbaycanda Peşəkar Sayt Hazırlanması',
   },
-  description: 'Saytup.digital Azərbaycanda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayan studiya. Korporativ saytlar, e-ticarət, landing page və daha çox. Pulsuz konsultasiya üçün müraciət edin.',
+  description: 'Saytup.digital Azərbaycanda bizneslər üçün peşəkar veb sayt hazırlayan studiya. Korporativ saytlar, e-ticarət, landing page və daha çox. Pulsuz konsultasiya üçün müraciət edin.',
   keywords: ['sayt', 'sayt hazırlamaq', 'veb sayt', 'sayt sifarişi', 'Azərbaycanda sayt hazırlayan şirkət', 'veb inkişaf', 'Azərbaycan'],
   icons: {
     icon: [
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     url: 'https://saytup.digital',
     siteName: 'Saytup.digital',
     title: 'Saytup.digital — Azərbaycanda Peşəkar Sayt Hazırlanması',
-    description: 'Azərbaycanda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayan studiya.',
+    description: 'Azərbaycanda bizneslər üçün peşəkar veb sayt hazırlayan studiya.',
     images: [{ url: 'https://saytup.digital/og-image.jpg', width: 1200, height: 630, alt: 'Saytup.digital — Azərbaycanda Peşəkar Sayt Hazırlanması' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Saytup.digital — Azərbaycanda Peşəkar Sayt Hazırlanması',
-    description: 'Azərbaycanda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayan studiya.',
+    description: 'Azərbaycanda bizneslər üçün peşəkar veb sayt hazırlayan studiya.',
     images: ['https://saytup.digital/og-image.jpg'],
   },
   alternates: {

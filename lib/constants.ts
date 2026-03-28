@@ -3,7 +3,7 @@ import { getProjectImageSet } from './portfolioImages';
 export const SITE_CONFIG = {
   name: 'Saytup.digital',
   tagline: 'Azərbaycanda Veb İnkişaf Studiyası',
-  description: 'Saytup.digital kiçik bizneslərin gözəl, sürətli və effektiv veb tətbiqlər işə salmasına kömək edən Azərbaycanda veb inkişaf studiyasıdır.',
+  description: 'Saytup.digital bizneslərin gözəl, sürətli və effektiv veb tətbiqlər işə salmasına kömək edən Azərbaycanda veb inkişaf studiyasıdır.',
   email: 'contact@saytup.digital',
   phone: '+994 51 665 81 43',
   address: 'Azerbaijan, Baku',

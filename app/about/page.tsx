@@ -84,7 +84,7 @@ export default function AboutPage() {
               Biznesinizi Gücləndirən Veb Həllər Studiyası
             </h1>
             <p className="text-lg text-white/80 font-body leading-relaxed">
-              Saytup kiçik və orta bizneslər üçün etibar yaradan, peşəkar görünüş təmin edən və
+              Saytup bizneslər üçün etibar yaradan, peşəkar görünüş təmin edən və
               ölçülə bilən nəticələr gətirən rəqəmsal həllər hazırlayır. Strategiyadan dizayna,
               inkişafdan yayıma qədər bütün prosesi idarə edirik ki, siz biznesinizin inkişafına
               fokuslana biləsiniz.

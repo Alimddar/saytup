@@ -11,7 +11,7 @@ import { generatePageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Sayt Hazırlanması | Saytup.digital — Azərbaycanda Peşəkar Veb Sayt Sifarişi',
-  description: 'Sayt hazırlamaq istəyirsiniz? Saytup.digital Azərbaycanda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayır. Korporativ saytlar, e-ticarət, landing page. Pulsuz konsultasiya.',
+  description: 'Sayt hazırlamaq istəyirsiniz? Saytup.digital Azərbaycanda bizneslər üçün peşəkar veb sayt hazırlayır. Korporativ saytlar, e-ticarət, landing page. Pulsuz konsultasiya.',
   keywords: [
     'sayt', 'sayt hazırlamaq', 'veb sayt', 'sayt sifarişi', 'sayt yaratmaq',
     'Azərbaycanda sayt hazırlayan şirkət', 'sayt sifariş etmək Azərbaycan',
@@ -34,7 +34,7 @@ const schemas = [
       width: 512,
       height: 512,
     },
-    description: 'Azərbaycanda kiçik bizneslər üçün peşəkar veb sayt hazırlayan studiya.',
+    description: 'Azərbaycanda bizneslər üçün peşəkar veb sayt hazırlayan studiya.',
     foundingDate: '2023',
     founders: [{ '@type': 'Person', name: 'Saytup Team' }],
     address: {
@@ -104,7 +104,7 @@ const schemas = [
     },
     serviceType: ['Web Development', 'Web Design', 'E-Commerce Development', 'SEO'],
     description:
-      'Azərbaycanda kiçik və orta bizneslər üçün peşəkar veb sayt hazırlayan studiya. Korporativ saytlar, e-ticarət, landing page, SEO və texniki dəstək.',
+      'Azərbaycanda bizneslər üçün peşəkar veb sayt hazırlayan studiya. Korporativ saytlar, e-ticarət, landing page, SEO və texniki dəstək.',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
@@ -135,7 +135,7 @@ export default function HomePage() {
               Azərbaycanda Peşəkar Sayt Hazırlanması
             </h2>
             <p className="text-brand-gray font-body leading-relaxed mb-4">
-              Saytup.digital Azərbaycanda kiçik və orta bizneslər üçün <strong>peşəkar veb sayt hazırlayan</strong> studiyasıdır.
+              Saytup.digital Azərbaycanda bizneslər üçün <strong>peşəkar veb sayt hazırlayan</strong> studiyasıdır.
               Sayt sifarişi vermək prosesini sadə, şəffaf və sürətli edir — ilk görüşdən buraxılışa qədər hər mərhələdə yanınızdayıq.
             </p>
             <p className="text-brand-gray font-body leading-relaxed mb-4">

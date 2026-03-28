@@ -51,7 +51,7 @@ export default function ServicesPage() {
               </h1>
               <p className="text-lg text-white/70 font-body max-w-xl mx-auto">
                 Saytup satış, təqdimat və daxili prosesləri gücləndirən nəticəyönümlü veb həlləri qurur.
-                Azərbaycanda kiçik bizneslər üçün sayt sifarişi.
+                Azərbaycanda bizneslər üçün sayt sifarişi.
               </p>
             </div>
           </div>
