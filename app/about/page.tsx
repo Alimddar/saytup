@@ -144,7 +144,7 @@ export default function AboutPage() {
       {/* Why Choose Us */}
       <section className="py-12 sm:py-16 lg:py-24 bg-brand-light" aria-labelledby="why-us-heading">
         <Container>
-          <SectionHeading title="Niyə Bizi Seçməlisiniz" subtitle="Peşəkar sayt hazırlamaq üçün niyə Saytup.digital?" className="mb-14" />
+          <SectionHeading title="Niyə Saytup?" subtitle="Peşəkar sayt hazırlamaq üçün niyə Saytup.digital?" className="mb-14" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {differentiators.map((item, index) => (
               <ScrollReveal key={item.title} delay={index * 0.1}>
