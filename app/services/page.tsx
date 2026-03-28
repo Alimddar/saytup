@@ -138,7 +138,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-brand-dark text-center">
         <Container>
           <ScrollReveal>
-            <h2 className="text-3xl font-heading font-semibold text-white mb-4">Layihə fikriniz var? Danışaq.</h2>
+            <h2 className="text-3xl font-heading font-semibold text-white mb-4">Saytınızı bu gün qurmağa başlayaq.</h2>
             <p className="text-white/60 font-body mb-8 max-w-md mx-auto">24 saat ərzində pulsuz qiymət ilə sizinlə əlaqə saxlayacağıq.</p>
             <Link href="/contact">
               <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-body font-medium px-10 py-4 h-auto text-base">
